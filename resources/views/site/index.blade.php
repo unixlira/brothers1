@@ -146,10 +146,20 @@
                                         <p>
                                             <q><img class="card-img-top" src="{{ $node['fotos']['foto'][0]['url'] }}" alt="" width="250" height="250"></q>
                                         </p>
+
+                                        <p class="container font-weight-bold" >
+                                            <cite class="text-normal">{{ $node['marca'] . ' ' . $node['modelo'] . ' ' . substr($node['versao'], 0,  219) }} ...</cite>
+                                        </p>
+                                        <hr />
+                                        <p class="container font-weight-bold" >
+                                            <cite class="text-center row">
+                                                <i class="novi-icon mdi mdi-speedometer"> {{$node['quilometragem']}}&nbsp; </i>
+                                                <i class="novi-icon mdi mdi-speedometer"> {{$node['cambio']}}&nbsp; </i>
+                                                <i class="novi-icon mdi mdi-speedometer"> {{$node['cor']}}&nbsp; </i>
+                                            </cite>
+                                        </p>
                                     </div>
-                                    <p class="container font-weight-bold" >
-                                        <cite class="text-normal">{{ $node['marca'] . ' ' . $node['modelo'] . ' ' . substr($node['versao'], 0,  219) }} ...</cite>
-                                    </p>
+
                                 </div>
                             </blockquote>
                         </div>

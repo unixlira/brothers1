@@ -29654,13 +29654,7 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
 *
 * @description  Describes style declarations for RD Navbar Mixins
 */
-.rd-navbar-nav li a:hover {
-    border-radius: 55px;
-    background-color: #eb232c;
-    padding: 12px;
-    top: -10px;
-    position: fixed;
-  }
+
 .rd-navbar-sidebar-toggle.rd-navbar-fixed .rd-navbar-toggle, .rd-navbar-default.rd-navbar-fixed .rd-navbar-nav-wrap, .rd-navbar-sidebar-toggle.rd-navbar-fixed .rd-navbar-nav-wrap, .rd-navbar-floated.rd-navbar-fixed .rd-navbar-nav-wrap, .rd-navbar-top-panel.rd-navbar-fixed .rd-navbar-nav-wrap, .rd-navbar-logo-center.rd-navbar-fixed .rd-navbar-nav-wrap, .rd-navbar-default.rd-navbar-fixed .rd-navbar-cart-dropdown, .rd-navbar-sidebar-toggle.rd-navbar-fixed .rd-navbar-cart-dropdown, .rd-navbar-floated.rd-navbar-fixed .rd-navbar-cart-dropdown, .rd-navbar-sidebar-fixed .rd-navbar-toggle, .rd-navbar-sidebar-fixed .rd-navbar-nav-wrap, .rd-navbar-sidebar-fixed .rd-navbar-nav li, .rd-navbar-default, .rd-navbar-floated.rd-navbar-static, .rd-navbar-top-panel.rd-navbar-static, .rd-navbar-logo-center.rd-navbar-static {
     transition: 0.3s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
