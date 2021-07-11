@@ -39,13 +39,13 @@
                         <!-- RD Navbar Top Panel Toggle-->
                         <button class="rd-navbar-right-buttons-toggle" data-rd-navbar-toggle=".rd-navbar, .rd-navbar-right-buttons"><span></span></button>
                         <!--Navbar Brand-->
-                        <div class="rd-navbar-brand"><a href="../index.html"><img width='135' height='55' src='{{ asset('images/logo_big.png') }}' alt='Smart Veículos'/></a></div>
+                        <div class="rd-navbar-brand"><a href="/"><img width='135' height='55' src='{{ asset('images/logo_big.png') }}' alt='Smart Veículos'/></a></div>
                     </div>
                     <div class="rd-navbar-menu-wrap">
                         <div class="rd-navbar-nav-wrap">
                             <div class="rd-navbar-mobile-scroll">
                                 <!--Navbar Brand Mobile-->
-                                <div class="rd-navbar-mobile-brand"><a href="../index.html"><img width='218' height='35' src='{{ asset('images/logo_big.png') }}' alt=''/></a></div>
+                                <div class="rd-navbar-mobile-brand"><a href="/"><img width='218' height='35' src='{{ asset('images/logo_big.png') }}' alt=''/></a></div>
                                 <!-- RD Navbar Nav-->
                                 <ul class="rd-navbar-nav">
                                     <li><a href="{{url('analise')}}"><span>Análise de Crédito</span></a>
@@ -98,11 +98,11 @@
                         </li>
                     </ul>
                     <div class="tab-content clearfix">
-                        <form action="search">
+                        <form action="busca">
                             <div class="tab-pane active" id="1b">
                                 <div class="row">
                                 <div class="col-sm-5">
-                                        <select name="category" id="" style="">
+                                        <select name="marca">
                                             <option value="">Marca</option>
                                             @foreach($newXml as $node)
                                                 <option value="">{{ $node['marca'] }}</option>
@@ -110,7 +110,7 @@
                                         </select>
                                     </div>
                                     <div class="col-sm-5">
-                                        <select name="model" id="">
+                                        <select name="modelo">
                                             <option value="">Modelo</option>
                                             @foreach($newXml as $node)
                                                 <option value="">{{ $node['modelo'] }}</option>
@@ -118,7 +118,7 @@
                                         </select>
                                     </div>
                                     <div class="col-sm">
-                                        <button type="submit" class="btn btn-danger">Pesquisar</button>
+                                        <button type="submit" class="btn btn-danger"><i class="novi-icon fa fa-search"></i> Buscar</button>
                                     </div>
                                 </div>
                             </div>

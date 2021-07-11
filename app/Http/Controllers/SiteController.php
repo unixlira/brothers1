@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use App\Http\Controllers\XmlController;
 
 class SiteController extends Controller
 {
@@ -13,8 +14,6 @@ class SiteController extends Controller
         $xml = $response->body();
         $array = $this->xmlToArray($xml);
         $newXml = $array['veiculo'];
-
-
 
         return view('site.index', compact('newXml'));
 
@@ -45,8 +44,11 @@ class SiteController extends Controller
 
     public function estoque()
     {
-        return view('site.estoque');
+        $xml = new XmlController();
+        $array = $xml->index()->getData();
+        $newXml = $array['array']['veiculo'];
 
+        return view('site.estoque', compact('newXml'));
     }
 
     public function xmlToArray($xmlstring){
