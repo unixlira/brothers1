@@ -39,13 +39,13 @@
                         <!-- RD Navbar Top Panel Toggle-->
                         <button class="rd-navbar-right-buttons-toggle" data-rd-navbar-toggle=".rd-navbar, .rd-navbar-right-buttons"><span></span></button>
                         <!--Navbar Brand-->
-                        <div class="rd-navbar-brand"><a href="../index.html"><img width='135' height='55' src='{{ asset('images/logo_big.png') }}' alt='Smart Veículos'/></a></div>
+                        <div class="rd-navbar-brand"><a href="/"><img width='135' height='55' src='{{ asset('images/logo_big.png') }}' alt='Smart Veículos'/></a></div>
                     </div>
                     <div class="rd-navbar-menu-wrap">
                         <div class="rd-navbar-nav-wrap">
                             <div class="rd-navbar-mobile-scroll">
                                 <!--Navbar Brand Mobile-->
-                                <div class="rd-navbar-mobile-brand"><a href="../index.html"><img width='218' height='35' src='{{ asset('images/logo_big.png') }}' alt=''/></a></div>
+                                <div class="rd-navbar-mobile-brand"><a href="/"><img width='218' height='35' src='{{ asset('images/logo_big.png') }}' alt=''/></a></div>
                                 <!-- RD Navbar Nav-->
                                 <ul class="rd-navbar-nav">
                                     <li><a href="{{url('analise')}}"><span>Análise de Crédito</span></a>
@@ -109,27 +109,27 @@
         </div>
         <div class="container mt-5">
             <div class="row">
-                @foreach($newXml as $node)
-                        <div class="col-sm-4 mb-5">
+                @foreach($busca as $node)
+                <div class="col-sm-4 mb-5">
                             <div class="card">
-                                @foreach($node['fotos'] as $foto)
-                                    <img class="card-img-top" src="{{$foto[0]['url']}}" alt="">
+                                @foreach($node['fotos'] as $url)
+                                    <img class="card-img-top" src="{{$url[0]['url']}}" alt="">
                                 <div class="text-bold text-right" style="margin-top: -33px;">
                                     <span style="background-color: #eb232c;color: white;padding: 10px;">{{$node['preco']}}</span>
                                 </div>
 
-                                @endforeach
                                 <div class="card-body text-left text-bold">
-                                    <h6 class="card-title">{{ $node['marca'] . ' ' . $node['modelo'] . ' ' . substr($node['versao'], 0,  219) }} ...</h6>
+                                    <h6 class="card-title">{{ $node['marca'] . ' ' . $node['modelo'] . ' ' . substr($node['versao'], 0,  19) }} ...</h6>
                                     <hr style="background-color: #1a202c;margin: auto; border-color: #6c757d">
                                     <p class="container font-weight-bold" >
                                         <cite class="text-normal row offset-2">
-                                            <i class="novi-icon fa fa-road mr-3"> {{$node['quilometragem']}} </i>
-                                            <i class="novi-icon fa fa-cog mr-3"> {{$node['cambio']}}&nbsp; </i>
-                                            <i class="novi-icon fa fa-adjust mr-3"> {{$node['cor']}}&nbsp; </i>
+                                            <i class="novi-icon fa fa-road mr-3">&nbsp;{{ $node['quilometragem']}} </i>
+                                            <i class="novi-icon fa fa-cog mr-3">&nbsp;{{$node['cambio']}} </i>
+                                            <i class="novi-icon fa fa-adjust mr-3">&nbsp;{{$node['cor']}}</i>
                                         </cite>
                                     </p>
                                 </div>
+                                @endforeach
                             </div>
                         </div>
                 @endforeach

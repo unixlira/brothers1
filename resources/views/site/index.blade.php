@@ -98,14 +98,14 @@
                         </li>
                     </ul>
                     <div class="tab-content clearfix">
-                        <form action="busca">
+                        <form action="{{ route('buscar') }}" method="GET">
                             <div class="tab-pane active" id="1b">
                                 <div class="row">
                                 <div class="col-sm-5">
                                         <select name="marca">
                                             <option value="">Marca</option>
                                             @foreach($newXml as $node)
-                                                <option value="">{{ $node['marca'] }}</option>
+                                                <option value="{{ $node['marca'] }}">{{ $node['marca'] }}</option>
                                             @endforeach
                                         </select>
                                     </div>
@@ -113,7 +113,7 @@
                                         <select name="modelo">
                                             <option value="">Modelo</option>
                                             @foreach($newXml as $node)
-                                                <option value="">{{ $node['modelo'] }}</option>
+                                                <option value="{{ $node['modelo'] }}">{{ $node['modelo'] }}</option>
                                             @endforeach
                                         </select>
                                     </div>
@@ -141,14 +141,14 @@
                                         <q><img class="card-img-top" src="{{ $node['fotos']['foto'][0]['url'] }}" alt="" width="250" height="250"></q>
                                     </p>
                                     <p class="container font-weight-bold" >
-                                        <cite class="text-normal">{{ $node['marca'] . ' ' . $node['modelo'] . ' ' . substr($node['versao'], 0,  219) }} ...</cite>
+                                        <cite class="text-normal">{{ $node['marca'] . ' ' . $node['modelo'] . ' ' . substr($node['versao'], 0,  29) }} ...</cite>
                                     </p>
                                     <hr style="border: 1px solid black" />
                                     <p class="container font-weight-bold" >
                                         <cite class="text-normal row offset-2">
-                                            <i class="novi-icon fa fa-road mr-3"> {{$node['quilometragem']}} </i>
-                                            <i class="novi-icon fa fa-cog mr-3"> {{$node['cambio']}}&nbsp; </i>
-                                            <i class="novi-icon fa fa-adjust mr-3"> {{$node['cor']}}&nbsp; </i>
+                                            <i class="novi-icon fa fa-road mr-3">&nbsp; {{$node['quilometragem']}} </i>
+                                            <i class="novi-icon fa fa-cog mr-3">&nbsp;{{$node['cambio']}}&nbsp; </i>
+                                            <i class="novi-icon fa fa-adjust mr-3">&nbsp; {{$node['cor']}}&nbsp; </i>
                                         </cite>
                                     </p>
                                 </div>

@@ -13,7 +13,8 @@
         "laravel/tinker": "^2.5",
         "ext-simplexml": "*",
         "ext-json": "*",
-        "ext-libxml": "*"
+        "ext-libxml": "*",
+      "ext-dom": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use DOMDocument;
+use DOMElement;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
-use App\Http\Controllers\XmlController;
 
 class SiteController extends Controller
 {
@@ -49,6 +50,43 @@ class SiteController extends Controller
         $newXml = $array['array']['veiculo'];
 
         return view('site.estoque', compact('newXml'));
+    }
+
+    public function buscar(Request $request)
+    {
+        $response = Http::get(env('INTEGRATOR_URL'));
+        $xml = $response->body();
+        $array = $this->xmlToArray($xml);
+        $newXml = $array['veiculo'];
+        $busca = [];
+
+        if($request->marca){
+            foreach($newXml as $key => $arr){
+                if($arr['marca'] == $request->marca){
+                    $busca[]=$newXml[$key];
+                }
+            }
+        }
+
+        if($request->modelo){
+            foreach($newXml as $key => $arr){
+                if($arr['modelo'] == $request->modelo){
+                    $busca[]=$newXml[$key];
+                }
+            }
+        }
+
+        if($request->marca && $request->modelo){
+            foreach($newXml as $key => $arr){
+                if($arr['marca'] == $request->marca && $arr['modelo'] == $request->modelo){
+                    $busca[]=$newXml[$key];
+                }
+            }
+        }
+
+
+        return view('site.buscar',compact('newXml','busca'));
+
     }
 
     public function xmlToArray($xmlstring){
