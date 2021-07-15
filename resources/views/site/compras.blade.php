@@ -124,47 +124,56 @@
             </div>
         </footer>
         <!-- Sobre a Smart Veículos-->
-        <section class=" backgroud-color:white section-98 section-md-110" data-preset='{"title":"Content block 1","category":"content","reload":true,"id":"content-block-1"}'>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9 col-xl-6 col-xl-pull-6 text-left offset-top-66 offset-xl-top-0 inset-xl-rigth-50">
-                        <h2 class="text-xl-rigth text-black">Sobre a Smart Veículos</h2>
-                        <hr class="divider bg-white text-black hr-xl-left-0">
-                        <p>Atuando no mercado de carros seminovos na cidade de Sorocaba há mais de 25 anos. Mais do que comprar visamos sempre o melhor negócio para os clientes. Seriedade, agilidade e pagamento na hora.</p>
+        <div class="container" style="display: flex; background-color: white;">
+            <section class=" backgroud-color:white section-98 section-md-110">
+                <div class="container">
+                    <div>
+                        <div class="col-md-9 col-xl-6 order-xl-6">
+                            <img src='{{ asset('images/venda.jpg') }}' width="570" height="380" alt="">
+                        </div>
                     </div>
-                    <div class="col-md-9 col-xl-6 order-xl-6"><img class="img-fluid mx-auto d-block" src='{{ asset('images/venda.jpg') }}' width="570" height="380" alt=""></div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+            <section class="backgroud-color:white section-98 section-md-110">
+                <div class="row col-md-9 col-xl-6 col-xl-pull-6 text-left offset-top-66 offset-xl-top-0 inset-xl-rigth-50 .text-truncate text-nowrap bd-highlight" style="width: 8rem;">
+                    <p>
+                    <h4>Sobre a <span style="color: red">Smart Veículos</span></h4>
+                    </p>
+                </div>
+                <p><small>Atuando no mercado de carros seminovos na cidade de Sorocaba há mais de 25 anos. Mais do que comprar visamos sempre o melhor negócio para os clientes. Seriedade, agilidade e pagamento na hora.</small></p>
+                </p>
+            </section>
+        </div>
         <!-- Instrução venda-->
         <section class="section novi-background section-66" style="overflow: hidden; background-color:#191919">
             <h1 class="font-weight-bold text-white text-md-center">Como funciona?</h1>
             <div class="container">
                 <div class="row justify-content-sm-center">
-                    <div class="col-md-8 col-xl-3 offset-top-60 offset-lg-top-0">
+                    <div class="col-md-8 col-xl-4 offset-top-60 offset-lg-top-0">
                         <div class="unit unit-sm flex-md-row text-md-center ">
                             <div class="unit-body text-center text-white">
-                                <p class="font-weight ffset-md-top-60 text-white">Icone</p>
+                                <p class="font-weight ffset-md-top-60 text-white"><img src='{{ asset('images/icone-agende.png') }}'></p>
                                 <h6 class="text-white">Agende uma avaliação</h6>
-                                <p>Eu sou um bloco de texto. Clique no botão Editar (Lápis) para alterar o conteúdo deste elemento.</p>
+                                <p><small>Eu sou um bloco de texto. Clique no botão Editar (Lápis) para alterar o conteúdo deste elemento.</small></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-8 col-xl-3 offset-top-60 offset-lg-top-0">
+                    <div class="col-md-8 col-xl-4 offset-top-60 offset-lg-top-0">
                         <div class="unit unit-sm flex-md-row text-md-center">
                             <div class="unit-body text-center text-white">
-                                <p class="font-weight offset-md-top-24 text-white">Icone 2</p>
+                                <p class="font-weight ffset-md-top-60 text-white"><img src='{{ asset('images/icone-enviaremos.png') }}'></p>
                                 <h6 class="text-white">Enviaremos a melhor proposta</h6>
-                                <p>Após a vistoria, já te informaremos o melhor valor do mercado.</p>
+                                <p><small>Após a vistoria, já te informaremos o melhor valor do mercado.</small></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-8 col-xl-3 offset-top-60 offset-lg-top-0">
+                    <div class="col-md-8 col-xl-4 offset-top-60 offset-lg-top-0">
                         <div class="unit unit-sm flex-md-row text-md-center">
                             <div class="unit-body text-center text-white">
-                                <div class="font-weight-bold text-uppercase offset-md-top-24 text-white">Icone</div>
+                                <p class="font-weight ffset-md-top-60 text-white"><img src='{{ asset('images/icone-pagamento.png') }}'></p>
                                 <h6 class="text-white">Pagamento à vista, sem burocracia</h6>
-                                <p>Aprovado o valor, o pagamento é à vista e a documentação é por nossa conta, sem dor de cabeça.</p>
+                                <p><small>Aprovado o valor, o pagamento é à vista e a documentação é por nossa conta, sem dor de cabeça.</small></p>
                             </div>
                         </div>
                     </div>
@@ -172,6 +181,73 @@
             </div>
         </section>
 
+        <!-- Sobre a Smart Veículos-->
+        <section>
+            <div class="row " style="display: flex; background-color: white; border-top: 1px solid silver;">
+                <div class="container">
+                    <div style="padding-left : 2%; margin-top : 2%; background-color: white; padding-top: 2%;">
+                        <h3>Porque vender o seu carro para a Smart <br>Veículos?</h3>
+                    </div>
+
+                    <div style="display: flex; align-items: center; padding-left : 2%; background-color: white;">
+                        <div id="accordion" style="width: 600px;">
+                            <div style="border-bottom : 1px solid silver;">
+                                <div id="headingOne" style="padding: 1%;">
+                                    <h5 class="mb-0">
+                                        <span style="font-size: 16px; color: black;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Venda em segurança
+                                        </span>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Cuidamos de toda a negociação, pagamento e documentação de transferência do veículo. Receba direto na sua conta, à vista!
+                                    </div>
+                                </div>
+                            </div>
+                            <div style=" border-bottom : 1px solid silver;">
+                                <div id="headingTwo" style="padding: 1%;">
+                                    <h5 class="mb-0">
+                                        <span style="font-size: 16px; color: black;" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Independência
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Negocie sem intermediários e receba 100% do valor da venda.
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="border-bottom : 1px solid silver;">
+                                <div id="headingThree" style="padding: 1%;">
+                                    <h5 class="mb-0">
+                                        <span style="font-size: 16px; color: black;" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Tranquilidade
+                                        </span>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Após a venda de seu veículo para a loja, ele passará por uma rigorosa revisão para venda ao seu novo proprietário.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex;">
+                        </div>
+                        <div class="col-md-9 col-xl-6 order-xl-6">
+                            <img src='{{ asset('images/venda2.jpg') }}' width="570" height="380" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </section>
         <!-- Default footer-->
         <section class="section novi-background section-66" style="overflow: hidden; background-color:#1a202c">
             <div class="container">
