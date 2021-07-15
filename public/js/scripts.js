@@ -941,13 +941,14 @@ $document.ready( function () {
 
 $('#marca').change(function() {
     $("#showModelo").empty();
+    console.log($('#showModelo option:selected'))
     $("#showModelo option:first").attr('selected','selected');
     if(!$('#showModelo option:selected')){
         let x = document.getElementById("showModelo");
         let option = document.createElement("option");
         option.text = "Modelo";
         option.value = false;
-        x.add(option);
+        x.add(option.text[0]);
         $("#select2").show();
         $("#modelo").remove();
     }else{

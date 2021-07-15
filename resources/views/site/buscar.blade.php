@@ -102,7 +102,7 @@
                             </div>
                             <div class="col-sm-5" id="select2" style="display: none;">
                                 <select name ="modelo" id="showModelo">
-                                    <option value="false">Modelo</option>
+                                    <option >Modelo</option>
                                 </select>
                             </div>
                             <div class="col-sm">
