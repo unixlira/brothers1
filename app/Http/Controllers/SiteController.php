@@ -11,13 +11,13 @@ class SiteController extends Controller
 {
     public function index()
     {
-        $response = Http::get(env('INTEGRATOR_URL'));
-        $xml = $response->body();
-        $array = $this->xmlToArray($xml);
-        $newXml = $array['veiculo'];
+        $xml = new XmlController();
+        $array = $xml->index()->getData();
+        $newXml = $array['array']['veiculo'];
+        $selectMarca = super_unique($array['array'],'marca');
+        $selectModelo = super_unique($array['array'],'modelo');
 
-        return view('site.index', compact('newXml'));
-
+        return view('site.index', compact('newXml','selectMarca', 'selectModelo'));
     }
 
     public function analise()
@@ -37,30 +37,28 @@ class SiteController extends Controller
 
     }
 
-    public function veiculos()
-    {
-        return view('site.veiculos');
-
-    }
-
     public function estoque()
     {
         $xml = new XmlController();
         $array = $xml->index()->getData();
         $newXml = $array['array']['veiculo'];
+        $selectMarca = super_unique($array['array'],'marca');
+        $selectModelo = super_unique($array['array'],'modelo');
 
-        return view('site.estoque', compact('newXml'));
+        return view('site.veiculos', compact('newXml','selectMarca', 'selectModelo'));
     }
+
 
     public function buscar(Request $request)
     {
-        $response = Http::get(env('INTEGRATOR_URL'));
-        $xml = $response->body();
-        $array = $this->xmlToArray($xml);
-        $newXml = $array['veiculo'];
+        $xml = new XmlController();
+        $array = $xml->index()->getData();
+        $newXml = $array['array']['veiculo'];
+        $selectMarca = super_unique($array['array'],'marca');
+        $selectModelo = super_unique($array['array'],'modelo');
         $busca = [];
 
-        if($request->marca){
+        if($request->marca && $request->modelo == 0){
             foreach($newXml as $key => $arr){
                 if($arr['marca'] == $request->marca){
                     $busca[]=$newXml[$key];
@@ -68,7 +66,7 @@ class SiteController extends Controller
             }
         }
 
-        if($request->modelo){
+        if($request->modelo && $request->marca == 0){
             foreach($newXml as $key => $arr){
                 if($arr['modelo'] == $request->modelo){
                     $busca[]=$newXml[$key];
@@ -76,23 +74,11 @@ class SiteController extends Controller
             }
         }
 
-        if($request->marca && $request->modelo){
-            foreach($newXml as $key => $arr){
-                if($arr['marca'] == $request->marca && $arr['modelo'] == $request->modelo){
-                    $busca[]=$newXml[$key];
-                }
-            }
-        }
 
 
-        return view('site.buscar',compact('newXml','busca'));
+
+        return view('site.buscar',compact('newXml','busca','selectMarca', 'selectModelo'));
 
     }
 
-    public function xmlToArray($xmlstring){
-
-        $xml = simplexml_load_string($xmlstring, "SimpleXMLElement", LIBXML_NOCDATA);
-        return json_decode(json_encode($xml), true);
-
-    }
 }

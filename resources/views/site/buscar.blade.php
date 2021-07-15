@@ -80,31 +80,38 @@
             <hr class="divider divider-lg bg-danger">
         </div>
         <div class="container">
-            <form action="{{ route('buscar') }}" method="GET">
-                <div class="tab-pane active" id="1b">
-                    <div class="row">
-                        <div class="col-sm-5">
-                            <select name="marca">
-                                <option>Marca</option>
-                                @foreach($newXml as $node)
-                                    <option value="{{$node['marca']}}">{{ $node['marca'] }}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                        <div class="col-sm-5">
-                            <select name="modelo">
-                                <option>Modelo</option>
-                                @foreach($newXml as $node)
-                                    <option value="{{$node['modelo']}}">{{ $node['modelo'] }}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                        <div class="col-sm">
-                            <button type="submit" class="btn btn-danger"><i class="novi-icon fa fa-search"></i> Buscar</button>
+            <div class="tab-content clearfix">
+                <form action="{{ route('buscar') }}" method="GET">
+                    <div class="tab-pane active" id="1b">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <select id="marca" name="marca">
+                                    <option selected="selected" value="false">Marca</option>
+                                    @foreach($selectMarca as $node)
+                                        <option value="{{ $node['marca'] }}">{{ $node['marca'] }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="col-sm-5" id="modelo">
+                                <select name="modelo">
+                                    <option selected="selected" value="false">Modelo</option>
+                                    @foreach($selectModelo as $node)
+                                        <option value="{{ $node['modelo'] }}">{{ $node['modelo'] }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="col-sm-5" id="select2" style="display: none;">
+                                <select name ="modelo" id="showModelo">
+                                    <option value="false">Modelo</option>
+                                </select>
+                            </div>
+                            <div class="col-sm">
+                                <button type="submit" class="btn btn-danger"><i class="novi-icon fa fa-search"></i> Buscar</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
             <hr class="mt-5">
         </div>
         <div class="container mt-5">

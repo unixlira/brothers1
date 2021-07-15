@@ -936,7 +936,63 @@ $document.ready( function () {
     if ( !isNoviBuilder && plugins.lightDynamicGalleryItem.length ) {
         for ( var i = 0; i < plugins.lightDynamicGalleryItem.length; i++ ) initDynamicLightGallery( plugins.lightDynamicGalleryItem[ i ] );
     }
-    
+
 } );
+
+$('#marca').change(function() {
+    $("#showModelo").empty();
+    $("#showModelo option:first").attr('selected','selected');
+    if(!$('#showModelo option:selected')){
+        let x = document.getElementById("showModelo");
+        let option = document.createElement("option");
+        option.text = "Modelo";
+        option.value = false;
+        x.add(option);
+        $("#select2").show();
+        $("#modelo").remove();
+    }else{
+        let marca = $('#marca').find(":selected").text();
+
+        $.ajax({
+            type: "GET",
+            url: "https://sistema.autocerto.com/xml/Anuncios?idcliente=1334&cnpj=20595366000168&chave=aut@cert@",
+            dataType: "xml",
+            success: function (xml) {
+                let arrayModelos = [];
+                $(xml).find('veiculo').each(function(){
+                    arrayModelos.push(
+                        {
+                            'modelo' : $(this).find('modelo').text(),
+                            'marca'   : $(this).find('marca').text()
+                        }
+                    );
+                });
+                for(let i=0; i < arrayModelos.length; i++){
+                    if(arrayModelos[i].marca === marca){
+                        let x = document.getElementById("showModelo");
+                        let option = document.createElement("option");
+                        option.text = arrayModelos[i].modelo;
+                        option.value = arrayModelos[i].modelo;
+                        x.add(option);
+                        $("#select2").show();
+                        $("#modelo").remove();
+                        $('#marca').val(false);
+                    }
+                }
+            },
+            error: function () {
+                console.log("Ocorreu um erro inesperado durante o processamento do modelo do veículo.");
+            }
+        });
+    }
+
+});
+$('#modelo').change(function() {
+    $("#select2").remove();
+});
+
+$('#showModelo').change(function() {
+    $('#marca').val(false);
+});
 
 

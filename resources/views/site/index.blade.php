@@ -102,19 +102,24 @@
                             <div class="tab-pane active" id="1b">
                                 <div class="row">
                                 <div class="col-sm-5">
-                                        <select name="marca">
+                                        <select id="marca" name="marca">
                                             <option value="">Marca</option>
-                                            @foreach($newXml as $node)
+                                            @foreach($selectMarca as $node)
                                                 <option value="{{ $node['marca'] }}">{{ $node['marca'] }}</option>
                                             @endforeach
                                         </select>
                                     </div>
-                                    <div class="col-sm-5">
+                                    <div class="col-sm-5" id="modelo">
                                         <select name="modelo">
                                             <option value="">Modelo</option>
-                                            @foreach($newXml as $node)
+                                            @foreach($selectModelo as $node)
                                                 <option value="{{ $node['modelo'] }}">{{ $node['modelo'] }}</option>
                                             @endforeach
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-5" id="select2" style="display: none;">
+                                        <select name ="modelo" id="showModelo">
+                                            <option value="false">Modelo</option>
                                         </select>
                                     </div>
                                     <div class="col-sm">
