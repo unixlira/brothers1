@@ -45,7 +45,7 @@
                         <div class="rd-navbar-nav-wrap">
                             <div class="rd-navbar-mobile-scroll">
                                 <!--Navbar Brand Mobile-->
-                                <div class="rd-navbar-mobile-brand"><a href="/><img width='218' height='35' src='{{ asset('images/logo_big.png') }}' alt=''/></a></div>
+                                <div class="rd-navbar-mobile-brand"><a href="/"><img width='218' height='35' src='{{ asset('images/logo_big.png') }}' alt=''/></a></div>
                                 <!-- RD Navbar Nav-->
                                 <ul class="rd-navbar-nav">
                                     <li><a href="{{url('analise')}}"><span>Análise de Crédito</span></a>
@@ -65,11 +65,11 @@
                                         <h5 class="text-white" style="margin-top: -20px;margin-left: -50px;"><b>11 99990 0909</b></h5>
                                         </p>
                                     </li>
-                                    </ul>
-                                </div>
+                                </ul>
                             </div>
                         </div>
                     </div>
+                </div>
             </nav>
         </div>
         <div class="section-254 parallax-container" data-parallax-img="{{ asset('images/banner-estoque2.jpg') }}"></div>
@@ -86,7 +86,7 @@
                         <div class="row">
                             <div class="col-sm-5">
                                 <select id="marca" name="marca">
-                                    <option value="">Marca</option>
+                                    <option value="" selected="selected">Marca</option>
                                     @foreach($selectMarca as $node)
                                         <option value="{{ $node['marca'] }}">{{ $node['marca'] }}</option>
                                     @endforeach
@@ -94,7 +94,7 @@
                             </div>
                             <div class="col-sm-5" id="modelo">
                                 <select name="modelo">
-                                    <option value="">Modelo</option>
+                                    <option value="" selected="selected">Modelo</option>
                                     @foreach($selectModelo as $node)
                                         <option value="{{ $node['modelo'] }}">{{ $node['modelo'] }}</option>
                                     @endforeach
@@ -120,17 +120,16 @@
                     <div class="col-sm-4 mb-5">
                         <div class="card">
                             @foreach($node['fotos'] as $foto)
-                                <img class="card-img-top" src="{{$foto[0]['url']}}" alt="">
+                                <a href="/veiculos/{{$node['idveiculo']}}"><img class="card-img-top" src="{{$foto[0]['url']}}" alt=""></a>
                                 <div class="text-bold text-right" style="margin-top: -33px;">
                                     <span style="background-color: #eb232c;color: white;padding: 10px;">{{$node['preco']}}</span>
                                 </div>
-
                             @endforeach
                             <div class="card-body text-left text-bold">
                                 <h6 class="card-title">{{ $node['marca'] . ' ' . $node['modelo'] . ' ' . substr($node['versao'], 0,  219) }} ...</h6>
                                 <hr style="background-color: #1a202c;margin: auto; border-color: #6c757d">
                                 <p class="container font-weight-bold" >
-                                    <cite class="text-normal row offset-2">
+                                    <cite class="text-normal row offset-1">
                                         <i class="novi-icon fa fa-road mr-3"> {{$node['quilometragem']}} </i>
                                         <i class="novi-icon fa fa-cog mr-3"> {{$node['cambio']}}&nbsp; </i>
                                         <i class="novi-icon fa fa-adjust mr-3"> {{$node['cor']}}&nbsp; </i>

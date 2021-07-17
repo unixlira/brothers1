@@ -74,11 +74,24 @@ class SiteController extends Controller
             }
         }
 
-
-
-
         return view('site.buscar',compact('newXml','busca','selectMarca', 'selectModelo'));
 
+    }
+
+    public function veiculo($id)
+    {
+        $xml = new XmlController();
+        $array = $xml->index()->getData();
+        $newXml = $array['array']['veiculo'];
+        $busca = [];
+
+        foreach($newXml as $key => $arr){
+            if($arr['idveiculo'] == $id){
+                $busca[]=$newXml[$key];
+            }
+        }
+
+        return view('site.veiculo',compact('busca'));
     }
 
 }

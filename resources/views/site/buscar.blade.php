@@ -84,29 +84,30 @@
                 <form action="{{ route('buscar') }}" method="GET">
                     <div class="tab-pane active" id="1b">
                         <div class="row">
-                            <div class="col-sm-5">
+                            <div class="col-sm-4">
                                 <select id="marca" name="marca">
-                                    <option selected="selected" value="false">Marca</option>
+                                    <option value="false" selected="selected" >Marca</option>
                                     @foreach($selectMarca as $node)
                                         <option value="{{ $node['marca'] }}">{{ $node['marca'] }}</option>
                                     @endforeach
                                 </select>
                             </div>
-                            <div class="col-sm-5" id="modelo">
-                                <select name="modelo">
-                                    <option selected="selected" value="false">Modelo</option>
+                            <div class="col-sm-4" id="modelo">
+                                <select name="modelo" id="modelo">
+                                    <option value="false" selected="selected" >Modelo</option>
                                     @foreach($selectModelo as $node)
                                         <option value="{{ $node['modelo'] }}">{{ $node['modelo'] }}</option>
                                     @endforeach
                                 </select>
                             </div>
-                            <div class="col-sm-5" id="select2" style="display: none;">
+                            <div class="col-sm-4" id="select2" style="display: none;">
                                 <select name ="modelo" id="showModelo">
-                                    <option >Modelo</option>
+                                    <option value="false">Modelo</option>
                                 </select>
                             </div>
                             <div class="col-sm">
                                 <button type="submit" class="btn btn-danger"><i class="novi-icon fa fa-search"></i> Buscar</button>
+                                <a href="{{ route('veiculos')}}"  class="btn btn-dark"><i class="novi-icon fa fa-search"></i> Todos Veículos</a>
                             </div>
                         </div>
                     </div>
@@ -120,7 +121,7 @@
                 <div class="col-sm-4 mb-5">
                             <div class="card">
                                 @foreach($node['fotos'] as $url)
-                                    <img class="card-img-top" src="{{$url[0]['url']}}" alt="">
+                                    <a href="/veiculos/{{$node['idveiculo']}}"><img class="card-img-top" src="{{$url[0]['url']}}" alt=""></a>
                                 <div class="text-bold text-right" style="margin-top: -33px;">
                                     <span style="background-color: #eb232c;color: white;padding: 10px;">{{$node['preco']}}</span>
                                 </div>

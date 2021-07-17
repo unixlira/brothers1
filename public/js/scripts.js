@@ -939,61 +939,87 @@ $document.ready( function () {
 
 } );
 
+
 $('#marca').change(function() {
     $("#showModelo").empty();
-    console.log($('#showModelo option:selected'))
-    $("#showModelo option:first").attr('selected','selected');
-    if(!$('#showModelo option:selected')){
-        let x = document.getElementById("showModelo");
-        let option = document.createElement("option");
-        option.text = "Modelo";
-        option.value = false;
-        x.add(option.text[0]);
-        $("#select2").show();
-        $("#modelo").remove();
-    }else{
-        let marca = $('#marca').find(":selected").text();
-
-        $.ajax({
-            type: "GET",
-            url: "https://sistema.autocerto.com/xml/Anuncios?idcliente=1334&cnpj=20595366000168&chave=aut@cert@",
-            dataType: "xml",
-            success: function (xml) {
-                let arrayModelos = [];
-                $(xml).find('veiculo').each(function(){
-                    arrayModelos.push(
-                        {
-                            'modelo' : $(this).find('modelo').text(),
-                            'marca'   : $(this).find('marca').text()
-                        }
-                    );
-                });
-                for(let i=0; i < arrayModelos.length; i++){
-                    if(arrayModelos[i].marca === marca){
-                        let x = document.getElementById("showModelo");
-                        let option = document.createElement("option");
-                        option.text = arrayModelos[i].modelo;
-                        option.value = arrayModelos[i].modelo;
-                        x.add(option);
-                        $("#select2").show();
-                        $("#modelo").remove();
-                        $('#marca').val(false);
+    $('#showModelo').append('<option value="false">Modelo</option>').first();
+    let marca = $('#marca').find(":selected").text();
+    $.ajax({
+        type: "GET",
+        url: "https://sistema.autocerto.com/xml/Anuncios?idcliente=1334&cnpj=20595366000168&chave=aut@cert@",
+        dataType: "xml",
+        success: function (xml) {
+            
+            let arrayModelos = [];
+            $(xml).find('veiculo').each(function(){
+                arrayModelos.push(
+                    {
+                        'modelo' :  $(this).find('modelo').text(),
+                        'marca'   : $(this).find('marca').text()
                     }
-                }
-            },
-            error: function () {
-                console.log("Ocorreu um erro inesperado durante o processamento do modelo do veículo.");
-            }
-        });
-    }
+                );
+            });
 
+            
+            for(let i=0; i < arrayModelos.length; i++){
+                if(arrayModelos[i].marca === marca){
+                
+                    let x = document.getElementById("showModelo");
+                    let option = document.createElement("option");
+                    option.text = arrayModelos[i].modelo;
+                    option.value = arrayModelos[i].modelo;
+                 
+                    let biroska = 0;
+                    for(let m = 0; m < x.length; m++){
+                        if(x[m].value === arrayModelos[i].modelo){
+                            biroska = 1;
+                            
+                        }
+                    }                    
+                    if(biroska == 0){
+                        x.add(option);
+                    }
+                    $("#select2").show();
+                    $("#modelo").remove();
+                }
+
+            }
+        },
+        error: function () {
+            console.log("Ocorreu um erro inesperado durante o processamento do modelo do veículo.");
+        }
+    });
 });
+
 $('#modelo').change(function() {
     $("#select2").remove();
 });
 
+
 $('#showModelo').change(function() {
-    $('#marca').val(false);
+    $('#marca').val("false");
 });
 
+jQuery(document).ready(function($) {
 
+    $('#myCarousel').carousel({
+        interval: 5000
+    });
+
+    $('#carousel-text').html($('#slide-content-0').html());
+
+    //Handles the carousel thumbnails
+    $('[id^=carousel-selector-]').click( function(){
+        var id_selector = $(this).attr("id");
+        var id = id_selector.substr(id_selector.length -1);
+        var id = parseInt(id);
+        $('#myCarousel').carousel(id);
+    });
+
+
+    // When the carousel slides, auto update the text
+    $('#myCarousel').on('slid', function (e) {
+        var id = $('.item.active').data('slide-number');
+        $('#carousel-text').html($('#slide-content-'+id).html());
+    });
+});
