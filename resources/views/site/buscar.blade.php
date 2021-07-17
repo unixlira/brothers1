@@ -144,8 +144,6 @@
             </div>
         </div>
     </section>
-
-
     <section class="section novi-background section-66" style="overflow: hidden;background-color: #1a202c">
         <div class="container">
             <div class="row justify-content-sm-center">

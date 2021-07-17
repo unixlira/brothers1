@@ -143,7 +143,7 @@
                             <div class="unit-body text-left" style="background-color: white;padding: 25px;border-radius: 10px;">
                                 <div>
                                     <p>
-                                        <q><img class="card-img-top" src="{{ $node['fotos']['foto'][0]['url'] }}" alt="" width="250" height="250"></q>
+                                        <q><a href="{{'/veiculos/'.$node['idveiculo']}}"><img class="card-img-top" src="{{ $node['fotos']['foto'][0]['url'] }}" alt="" width="250" height="250"></q></a>
                                     </p>
                                     <p class="container font-weight-bold" >
                                         <cite class="text-normal">{{ $node['marca'] . ' ' . $node['modelo'] . ' ' . substr($node['versao'], 0,  29) }} ...</cite>
@@ -305,7 +305,7 @@
                             <div class="unit-body text-left" style="background-color: white;padding: 25px;border-radius: 10px;">
                                 <div>
                                     <p>
-                                        <q><img class="card-img-top" src="{{ $node['fotos']['foto'][0]['url'] }}" alt="" width="130" height="200"></q>
+                                        <q><a href="{{'/veiculos/'.$node['idveiculo']}}"><img class="card-img-top" src="{{ $node['fotos']['foto'][0]['url'] }}" alt="" width="130" height="200"></a></q>
                                     </p>
                                     <p class="container font-weight-bold" >
                                         <cite class="text-normal">{{ $node['marca'] . ' ' . $node['modelo'] . ' ' . substr($node['versao'], 0,  30) }} ...</cite>

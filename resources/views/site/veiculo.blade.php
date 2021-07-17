@@ -74,33 +74,104 @@
         </div>
         <div class="section-110 parallax-container" data-parallax-img="{{ asset('images/bg-carros.jpg') }}"></div>
     </header>
-    <section class="container">
-        <div class="w-75 pull-base">
+    <section class="aside">
+        <div>
+            <h2>Employee Photo</h2>
+            <img src="http://placehold.it/350x150" />
+        </div>
+    </section>
+    <section class="container mb-5">
+
+        <div class="w-75 pull-base thum">
             <div class="mt-5 mb-5">
                 <h3 class="text-left">{{ $busca[0]['marca'] .' '. $busca[0]['modelo']}}<br> {{$busca[0]['versao']}}</h3>
                 <div class="text-bold text-right" style="margin-top: -76px;">
                     <span style="background-color: #eb232c;color: white;padding: 10px;font-size: 30px">{{$busca[0]['preco']}}</span>
                 </div>
             </div>
-            <img class="w-100" src="{{$busca[0]['fotos']['foto'][0]['url']}}">
-            <hr class="mt-5">
-            <div class="offset-top-50 offset-md-top-66">
-                <!-- owl carousel-->
-                <div class="owl-carousel owl-carousel-default owl-carousel-class-light" data-loop="false" data-items="1" data-md-items="2" data-dots="true" data-mouse-drag="false" data-lg-items="4" data-nav="false" data-xs-margin="30px">
-                    @foreach($busca as $node)
-                        @foreach($node['fotos']['foto'] as $foto)
-                            <div><a class="thumbnail-classic" href="" target="_self">
-                                    <figure><img width="90" height="90" src="{{$foto['url']}}" alt=""/>
-                                    </figure>
-                                </a>
-                            </div>
-                        @endforeach
+            @foreach($busca as $node)
+                @foreach($node['fotos']['foto'] as $foto)
+                    <div class="mySlides">
+                        <img src="{{$foto['url']}}" style="width:100%">
+                    </div>
+                @endforeach
+            @endforeach
+
+{{--            <a class="prev" onclick="plusSlides(-1)">❮</a>--}}
+{{--            <a class="next" onclick="plusSlides(1)">❯</a>--}}
+        </div>
+
+        <div class="w-75 pull-base mt-2">
+            <div class="owl-carousel owl-carousel-default owl-carousel-class-light" data-loop="true" data-items="1" data-md-items="2" data-dots="true" data-mouse-drag="false" data-lg-items="5" data-nav="false" data-xs-margin="30px" data-autoplay="true">
+                @foreach($busca as $node)
+                    @foreach($node['fotos']['foto'] as $foto)
+                        <div class="mr-5">
+                            <figure><img width="174" height="140" src="{{$foto['url']}}" alt="{{$node['modelo']}}" onclick="currentSlide({{$foto['ordem']}})"/>
+                            </figure>
+                        </div>
                     @endforeach
+                @endforeach
+            </div>
+        </div>
+        <br><br>
+        <div class="w-75 pull-base" style="margin-top: -30px;">
+            <hr>
+            <h5 class="text-left">Informações</h5>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <i class="novi-icon fa fa-road mr-3" style="color: #888888"> Kilometragem </i>
+                         {{$busca[0]['quilometragem']}}&nbsp;
+                    </div>
+                    <div class="col-sm">
+                        <i class="novi-icon mdi mdi-gas-station mr-3" style="color: #888888"> Combustível&nbsp; </i>
+                        {{$busca[0]['combustivel']}}
+                    </div>
+                    <div class="col-sm">
+                        <i class="novi-icon fa fa-cog mr-3" style="color: #888888"> Transmissão&nbsp; </i>
+                        {{$busca[0]['cambio']}}
+                    </div>
+                    <div class="col-sm">
+                        <i class="novi-icon fa fa-adjust mr-3" style="color: #888888"> Cor Exterior</i>
+                        {{$busca[0]['cor']}}&nbsp;
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+        <br><br>
+        <div class="w-75 pull-base" style="margin-top: -30px;">
+            <hr>
+            <h5 class="text-left">Adicionais</h5>
+            <div class="container">
+                <div class="row">
+                    @foreach($busca as $node)
+                        @foreach($node['opcionais']['opcional'] as $opcional)
+                            <div class="col-sm-4 text-left">
+                                <i class="novi-icon fa fa-check-circle mr-3 text-red"></i>
+                                <span>{{$opcional}}&nbsp;</span>
+                            </div>
+                        @endforeach
+                    @endforeach
 
+                </div>
+            </div>
+        </div>
+        <br><br>
+        @if(!empty($busca[0]['observacoes']))
+        <div class="w-75 pull-base" style="margin-top: -30px;">
+            <hr>
+            <h5 class="text-left">Detalhes</h5>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-left">
+                        <i class="novi-icon fa fa-check-circle mr-3 text-red"></i>
+                        <span>{{$busca[0]['observacoes']}}&nbsp;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @endif
+    </section>
 
 
 
@@ -171,5 +242,37 @@
 <!-- Java script-->
 <script type="text/javascript"  src="{{ asset("js/core.min.js") }}"></script>
 <script type="text/javascript"  src="{{ asset("js/scripts.js") }}"></script>
+<script>
+    let slideIndexCar = 1;
+    showSlides(slideIndexCar);
+
+    function plusSlides(n) {
+        showSlides(slideIndexCar += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndexCar = n);
+    }
+
+    function showSlides(n) {
+
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+
+        if (n > slides.length) {slideIndexCar = 1}
+        if (n < 1) {slideIndexCar = slides.length}
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndexCar-1].style.display = "block";
+        dots[slideIndexCar-1].className += " active";
+
+    }
+</script>
 </body>
 </html>

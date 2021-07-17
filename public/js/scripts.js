@@ -949,7 +949,6 @@ $('#marca').change(function() {
         url: "https://sistema.autocerto.com/xml/Anuncios?idcliente=1334&cnpj=20595366000168&chave=aut@cert@",
         dataType: "xml",
         success: function (xml) {
-            
             let arrayModelos = [];
             $(xml).find('veiculo').each(function(){
                 arrayModelos.push(
@@ -959,30 +958,25 @@ $('#marca').change(function() {
                     }
                 );
             });
-
-            
             for(let i=0; i < arrayModelos.length; i++){
                 if(arrayModelos[i].marca === marca){
-                
                     let x = document.getElementById("showModelo");
                     let option = document.createElement("option");
                     option.text = arrayModelos[i].modelo;
                     option.value = arrayModelos[i].modelo;
-                 
                     let biroska = 0;
                     for(let m = 0; m < x.length; m++){
                         if(x[m].value === arrayModelos[i].modelo){
                             biroska = 1;
-                            
+
                         }
-                    }                    
+                    }
                     if(biroska == 0){
                         x.add(option);
                     }
                     $("#select2").show();
                     $("#modelo").remove();
                 }
-
             }
         },
         error: function () {
@@ -1000,26 +994,23 @@ $('#showModelo').change(function() {
     $('#marca').val("false");
 });
 
-jQuery(document).ready(function($) {
+$('#myCarousel').carousel({
+    interval: 5000
+});
 
-    $('#myCarousel').carousel({
-        interval: 5000
-    });
+$('#carousel-text').html($('#slide-content-0').html());
 
-    $('#carousel-text').html($('#slide-content-0').html());
-
-    //Handles the carousel thumbnails
-    $('[id^=carousel-selector-]').click( function(){
-        var id_selector = $(this).attr("id");
-        var id = id_selector.substr(id_selector.length -1);
-        var id = parseInt(id);
-        $('#myCarousel').carousel(id);
-    });
+//Handles the carousel thumbnails
+$('[id^=carousel-selector-]').click( function(){
+    var id_selector = $(this).attr("id");
+    var id = id_selector.substr(id_selector.length -1);
+    var id = parseInt(id);
+    $('#myCarousel').carousel(id);
+});
 
 
-    // When the carousel slides, auto update the text
-    $('#myCarousel').on('slid', function (e) {
-        var id = $('.item.active').data('slide-number');
-        $('#carousel-text').html($('#slide-content-'+id).html());
-    });
+// When the carousel slides, auto update the text
+$('#myCarousel').on('slid', function (e) {
+    var id = $('.item.active').data('slide-number');
+    $('#carousel-text').html($('#slide-content-'+id).html());
 });
