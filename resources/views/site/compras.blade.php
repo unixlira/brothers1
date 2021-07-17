@@ -124,8 +124,9 @@
             </div>
         </footer>
         <!-- Sobre a Smart Veículos-->
-        <div class="container" style="display: flex; background-color: white;">
-            <section class=" backgroud-color:white section-98 section-md-110">
+        <div style="display: flex; background-color: white; width: 100%;">
+
+            <section style="margin-top: 40px; margin-bottom: 80px; margin-left: 90px;">
                 <div class="container">
                     <div>
                         <div class="col-md-9 col-xl-6 order-xl-6">
@@ -136,14 +137,19 @@
             </section>
 
             <section class="backgroud-color:white section-98 section-md-110">
-                <div class="row col-md-9 col-xl-6 col-xl-pull-6 text-left offset-top-66 offset-xl-top-0 inset-xl-rigth-50 .text-truncate text-nowrap bd-highlight" style="width: 8rem;">
+                <div class="row col-md-9 col-xl-6 col-xl-pull-6 text-left offset-top-66 offset-xl-top-0 inset-xl-rigth-50 .text-truncate text-nowrap bd-highlight">
                     <p>
                     <h4>Sobre a <span style="color: red">Smart Veículos</span></h4>
                     </p>
+
+                    <span><small>Atuando no mercado de carros seminovos na cidade de Sorocaba há mais de 25 <br>
+                            anos. Mais do que comprar visamos sempre o melhor negócio para os clientes.<br>
+                            Seriedade, agilidade e pagamento na hora.</small>
+                    </span>
                 </div>
-                <p><small>Atuando no mercado de carros seminovos na cidade de Sorocaba há mais de 25 anos. Mais do que comprar visamos sempre o melhor negócio para os clientes. Seriedade, agilidade e pagamento na hora.</small></p>
-                </p>
+
             </section>
+
         </div>
         <!-- Instrução venda-->
         <section class="section novi-background section-66" style="overflow: hidden; background-color:#191919">
@@ -183,21 +189,25 @@
 
         <!-- Sobre a Smart Veículos-->
         <section>
-            <div class="row " style="display: flex; background-color: white; border-top: 1px solid silver;">
-                <div class="container">
+            <div style="display: flex; background-color: white; border-top: 1px solid silver; padding-bottom: 5%;">
+                <div style="padding: 5%;">
                     <div style="padding-left : 2%; margin-top : 2%; background-color: white; padding-top: 2%;">
-                        <h3>Porque vender o seu carro para a Smart <br>Veículos?</h3>
+                        <h4><strong>Porque vender o seu carro para a Smart Veículos?</strong></h4>
+                        <br>
                     </div>
 
                     <div style="display: flex; align-items: center; padding-left : 2%; background-color: white;">
+
                         <div id="accordion" style="width: 600px;">
                             <div style="border-bottom : 1px solid silver;">
-                                <div id="headingOne" style="padding: 1%;">
+                                <div id="headingOne" style="padding: 1%; border-top: 1px solid silver;">
                                     <h5 class="mb-0">
+
                                         <span style="font-size: 16px; color: black;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Venda em segurança
+                                            Venda em segurança<i style="margin-left: 300px;" class="text-rigth novi-icon fa fa-angle-down"></i>
                                         </span>
                                     </h5>
+
                                 </div>
 
                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
@@ -208,9 +218,10 @@
                             </div>
                             <div style=" border-bottom : 1px solid silver;">
                                 <div id="headingTwo" style="padding: 1%;">
+
                                     <h5 class="mb-0">
                                         <span style="font-size: 16px; color: black;" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Independência
+                                            Independência<i style="margin-left: 348px;" class="text-rigth novi-icon fa fa-angle-down"></i>
                                         </span>
                                     </h5>
                                 </div>
@@ -224,7 +235,7 @@
                                 <div id="headingThree" style="padding: 1%;">
                                     <h5 class="mb-0">
                                         <span style="font-size: 16px; color: black;" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Tranquilidade
+                                            Tranquilidade<i style="margin-left: 353px;" class="text-rigth novi-icon fa fa-angle-down"></i>
                                         </span>
                                     </h5>
                                 </div>
@@ -235,17 +246,11 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div style="display: flex;">
-                        </div>
-                        <div class="col-md-9 col-xl-6 order-xl-6">
-                            <img src='{{ asset('images/venda2.jpg') }}' width="570" height="380" alt="">
-                        </div>
                     </div>
                 </div>
-            </div>
-            </div>
-            </div>
+                <div class="col-md-9 col-xl-6 order-xl-6" style="padding-top: 8%;">
+                    <img src='{{ asset('images/venda2.jpg') }}' width="570" height="380" alt="">
+                </div>
             </div>
         </section>
         <!-- Default footer-->
