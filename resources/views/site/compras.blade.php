@@ -127,12 +127,13 @@
         <section class="bg-white section-top-66 section-bottom-34">
             <div class="container">
                 <div class="row" >
-                    <div class="col-sm"-6>
+                    <div class="col-sm-6">
                         <img src='{{ asset('images/venda.jpg') }}' width="570" height="380" alt="">
                     </div>
                     <div class="col-sm-6 m-auto">
                         <p><h4>Sobre a <span style="color: red">Smart Veículos</span></h4></p>
                         <p><small>Atuando no mercado de carros seminovos na cidade de Sorocaba há mais de 25 anos. Mais do que comprar visamos sempre o melhor negócio para os clientes. Seriedade, agilidade e pagamento na hora.</small></p>                       </p>
+
                     </div>
                 </div>
             </div>
@@ -173,6 +174,7 @@
             </div>
         </section>
 
+
         <!-- Sobre a Smart Veículos-->
         <section class="section-66 section-md-top-110 section-bottom-45 bg-white">
             <div class="container">
@@ -183,10 +185,23 @@
                                 <!-- Bootstrap Accordion-->
                                 <div class="accordion offset-top-0 bg-white" role="tablist" aria-multiselectable="true" id="accordion-1">
                                     <div class="card card-accordion"><a class="card-header collapsed" href="#" data-toggle="collapse" data-target="#accordion-1--card-0-content" id="accordion-1--card-0-header" aria-expanded="false" aria-controls="accordion-1--card-0-content">Venda com segurança</a>
+
+        <!-- Bootstrap Accordion-->
+        <div style="display: flex; background-color: white; width: 100%;">
+            <div class="container">
+                <section>
+                    <div style="display: flex justify-content; background-color: white; width: 100%; border-top: 1px solid silver; padding-bottom: 5%;">
+                        <div style="padding: 5%;">
+                            <div style="padding-left : 2%; margin-top : 2%; background-color: white; padding-top: 2%;">
+                                <h4><strong>Porque vender o seu carro para a Smart <br>Veículos?</strong></h4>
+                                <br>
+                                <div class="accordion offset-top-0" role="tablist" aria-multiselectable="true" id="accordion-1">
+                                    <div class="card card-accordion"><a class="card-header collapsed" href="#" data-toggle="collapse" data-target="#accordion-1--card-0-content" id="accordion-1--card-0-header" aria-expanded="false" aria-controls="accordion-1--card-0-content">Venda em segurança<i style="margin-left: 300px;" class="text-rigth novi-icon fa fa-angle-down"></i></a>
                                         <div class="collapse" id="accordion-1--card-0-content" aria-labelledby="accordion-1--card-0-header" data-parent="#accordion-1">
                                             <div class="card-body">Cuidamos de toda a negociação, pagamento e documentação de transferência do veículo. Receba direto na sua conta, à vista!</div>
                                         </div>
                                     </div>
+
                                     <div class="card card-accordion"><a class="card-header collapsed" href="#" data-toggle="collapse" data-target="#accordion-1--card-1-content" id="accordion-1--card-1-header" aria-expanded="false" aria-controls="accordion-1--card-1-content">Independência</a>
                                         <div class="collapse" id="accordion-1--card-1-content" aria-labelledby="accordion-1--card-1-header" data-parent="#accordion-1">
                                             <div class="card-body">Negocie sem intermediários e receba 100% do valor da venda.</div>
@@ -196,6 +211,17 @@
                                         <div class="collapse" id="accordion-1--card-2-content" aria-labelledby="accordion-1--card-2-header" data-parent="#accordion-1">
                                             <div class="card-body">Após a venda de seu veículo para a loja, ele passará por uma rigorosa revisão para venda ao seu novo proprietário.</div>
                                         </div>
+
+                                </div>
+                                <div class="card card-accordion"><a class="card-header collapsed" href="#" data-toggle="collapse" data-target="#accordion-1--card-1-content" id="accordion-1--card-1-header" aria-expanded="false" aria-controls="accordion-1--card-1-content"> Independência<i style="margin-left: 350px;" class="text-rigth novi-icon fa fa-angle-down"></i></a>
+                                    <div class="collapse" id="accordion-1--card-1-content" aria-labelledby="accordion-1--card-1-header" data-parent="#accordion-1">
+                                        <div class="card-body">Negocie sem intermediários e receba 100% do valor da venda.</div>
+                                    </div>
+                                </div>
+                                <div class="card card-accordion"><a class="card-header collapsed" href="#" data-toggle="collapse" data-target="#accordion-1--card-2-content" id="accordion-1--card-2-header" aria-expanded="false" aria-controls="accordion-1--card-2-content">Tranquilidade<i style="margin-left: 350px;" class="text-rigth novi-icon fa fa-angle-down"></i></a>
+                                    <div class="collapse" id="accordion-1--card-2-content" aria-labelledby="accordion-1--card-2-header" data-parent="#accordion-1">
+                                        <div class="card-body">Após a venda de seu veículo para a loja, ele passará por uma rigorosa revisão para venda ao seu novo proprietário.</div>
+
                                     </div>
                                 </div>
                             </div>
@@ -203,9 +229,20 @@
                     <div class="col-md-6">
                         <img class="d-none d-xl-inline-block" src="{{ asset('images/venda2.jpg') }}" width="570" height="380" alt="">
                     </div>
+
                 </div>
+
+                </section>
+
             </div>
-        </section>
+            <section>
+                <div class="col-md-9 col-xl-6 order-xl-6" style=" padding-left : 10%; margin-block-end : 6%; padding-top: 8%;">
+                    <div class="container">
+                        <img src='{{ asset('images/venda2.jpg') }}' width="570" height="380" alt="">
+                    </div>
+                </div>
+            </section>
+        </div>
         <!-- Default footer-->
         <section class="section novi-background section-66" style="overflow: hidden; background-color:#1a202c">
             <div class="container">

@@ -57,22 +57,22 @@
                                 <!-- RD Navbar Top Panel Toggle-->
                                 <button class="rd-navbar-right-buttons-toggle" data-rd-navbar-toggle=".rd-navbar, .rd-navbar-right-buttons"><span></span></button>
                                 <!--Navbar Brand-->
-                                <div class="rd-navbar-brand"><a href="../index.html"><img width='135' height='55' src='{{ asset('images/logo_big.png') }}' alt='Smart Veículos' /></a></div>
+                                <div class="rd-navbar-brand"><a href="/"><img width='135' height='55' src='{{ asset('images/logo_big.png') }}' alt='Smart Veículos' /></a></div>
                             </div>
                             <div class="rd-navbar-menu-wrap">
                                 <div class="rd-navbar-nav-wrap">
                                     <div class="rd-navbar-mobile-scroll">
                                         <!--Navbar Brand Mobile-->
-                                        <div class="rd-navbar-mobile-brand"><a href="../index.html"><img width='218' height='35' src='{{ asset('images/logo_big.png') }}' alt='' /></a></div>
+                                        <div class="rd-navbar-mobile-brand"><a href="/"><img width='218' height='35' src='{{ asset('images/logo_big.png') }}' alt='' /></a></div>
                                         <!-- RD Navbar Nav-->
                                         <ul class="rd-navbar-nav">
                                             <li><a href="{{url('analise')}}"><span>Análise de Crédito</span></a>
                                             </li>
                                             <li><a href="{{url('contato')}}"><span>Contato</span></a>
                                             </li>
-                                            <li><a href="{{url('compras')}}" style="border-radius: 55px;background-color: #eb232c;padding: 12px;top: -10px;"><span>Venda seu Carro</span></a>
+                                            <li><a href="{{url('compras')}}" style="border: 2px solid #eb232c;border-radius: 25px;padding: 10px;top: -10px;"><span>Venda seu Carro</span></a>
                                             </li>
-                                            <li><a href="{{url('veiculos')}}" style="border: 2px solid #eb232c;border-radius: 25px;padding: 10px;top: -10px;"><span>Nossos Veículos</span></a>
+                                            <li><a href="{{url('veiculos')}}" style="border-radius: 55px;background-color: #eb232c;padding: 12px;top: -10px;"><span>Nossos Veículos</span></a>
                                             </li>
                                             <li><a href="{{url('https://api.whatsapp.com/send?phone=11990253050')}}" style="top:-10px;margin-right: -2px" target="_blank">
                                                     <span><img src="{{ asset('images/whatsapp3-36x36.png') }}"></span>
@@ -91,6 +91,7 @@
                         </div>
                     </nav>
                 </div>
+
                 <div class="parallax-container" data-parallax-img="images/venda.jpg">
                     <div class="parallax-content">
                         <div class="container section-98 section-md-254">
@@ -174,83 +175,166 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Sobre a Smart Veículos-->
-        <section>
-            <div class="row " style="display: flex; background-color: white; border-top: 1px solid silver;">
+                <div class="section-254 parallax-container" data-parallax-img="{{ asset('images/venda.jpg') }}"></div>
+            </header>
+            <!-- Contact Us-->
+            <section class="section section-98 section-md-110 text-xl-left mt-30" style="padding-block-start: 4%; padding-inline-end: 4%;    background-color:#ecf1f8">
+                <div class="text-center">
+                    <h2 class="text font-weight-bold mt-2" style="color: #191919 !important">Financie On-line com as melhores taxas</h2>
+
+                </div>
                 <div class="container">
-                    <div style="padding-left : 2%; margin-top : 2%; background-color: white; padding-top: 2%;">
-                        <h3>Porque vender o seu carro para a Smart <br>Veículos?</h3>
+                    <div class="col-md-8 offset-top-66" style="display: flex justify-content; background-color:#ffffff; margin-left: 200px; padding:35px; box-shadow: 0 0 1em #a9a9a9;">
+                        <!-- RD Mailform-->
+                        <form>
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-7">
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <div class="form-group">
+                                                            <div class="contact-us-label">Nome Completo*</div>
+                                                            <p> <span class="wpcf7-form-control-wrap nome"><input type="text" name="nome" value="" size="40" class="form-control" id="contact-us-message" name="message" style="background:#ecf1f8" placeholder="Digite seu nome" /></span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <div class="form-group">
+                                                            <div class="contact-us-label">Data de Nascimento</div>
+                                                            <p> <span class="wpcf7-form-control-wrap data-nasc"><input type="text" name="data-nasc" value="" size="40" class="form-control" id="contact-us-message" name="message" style="background:#ecf1f8" placeholder="Data de Nascimento" /></span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <div class="form-group">
+                                                            <div class="contact-us-label">RG*</div>
+                                                            <p> <span class="wpcf7-form-control-wrap rg"><input type="number" name="rg" value="" class="form-control" id="contact-us-message" name="message" style="background:#ecf1f8" placeholder="RG" /></span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <div class="form-group">
+                                                            <div class="contact-us-label">CPF</div>
+                                                            <p> <span class="wpcf7-form-control-wrap cpf"><input type="text" name="cpf" value="" size="40" class="form-control" id="contact-us-message" name="message" style="background:#ecf1f8" placeholder="CPF" /></span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <div class="form-group">
+                                                            <div class="contact-us-label">Nome da Mãe</div>
+                                                            <p> <span class="wpcf7-form-control-wrap nome-mae"><input type="text" name="nome-mae" value="" size="40" class="form-control" id="contact-us-message" name="message" style="background:#ecf1f8" placeholder="Nome da Mãe" /></span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <div class="form-group">
+                                                            <div class="contact-us-label">Endereço*</div>
+                                                            <p> <span class="wpcf7-form-control-wrap endereco"><input type="text" name="endereco" value="" size="40" class="form-control" id="contact-us-message" name="message" style="background:#ecf1f8" placeholder="Endereço" /></span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <div class="form-group">
+                                                            <div class="contact-us-label">Cidade</div>
+                                                            <p> <span class="wpcf7-form-control-wrap cidade"><input type="text" name="cidade" value="" size="40" class="form-control" id="contact-us-message" name="message" style="background:#ecf1f8" placeholder="Cidade" /></span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <div class="form-group">
+                                                            <div class="contact-us-label">Telefone</div>
+                                                            <p> <span class="wpcf7-form-control-wrap telefone"><input type="text" name="telefone" value="" size="40" class="form-control" id="contact-us-message" name="message" style="background:#ecf1f8" placeholder="Telefone" /></span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <div class="form-group">
+                                                            <div class="contact-us-label">Celular</div>
+                                                            <p> <span class="wpcf7-form-control-wrap celular"><input type="text" name="celular" value="" size="40" class="form-control" id="contact-us-message" name="message" style="background:#ecf1f8" placeholder="Celular" /></span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <div class="form-group">
+                                                            <div class="contact-us-label">Celular</div>
+                                                            <p> <span class="wpcf7-form-control-wrap celular"><input type="text" name="celular" value="" size="40" class="form-control" id="contact-us-message" name="message" style="background:#ecf1f8" placeholder="Celular" /></span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-7">
+                                                    <h3>Dados do Trabalho</h3>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-6">
+                                                            <div class="form-group">
+                                                                <div class="contact-us-label">Nome da empresa</div>
+                                                                <p> <span class="wpcf7-form-control-wrap nome-empresa"><input type="text" name="nome-empresa" value="" size="40" class="form-control" id="contact-us-message" name="message" style="background:#ecf1f8" placeholder="Nome da empresa" /></span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-6">
+                                                            <div class="form-group">
+                                                                <div class="contact-us-label">Cargo</div>
+                                                                <p> <span class="wpcf7-form-control-wrap cargo"><input type="text" name="cargo" value="" size="40" class="form-control" id="contact-us-message" name="message" style="background:#ecf1f8" placeholder="Cargo" /></span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-6">
+                                                            <div class="form-group">
+                                                                <div class="contact-us-label">Renda</div>
+                                                                <p> <span class="wpcf7-form-control-wrap renda"><input type="text" name="renda" value="" size="40" class="form-control" id="contact-us-message" name="message" style="background:#ecf1f8" placeholder="Renda" /></span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-6">
+                                                            <div class="form-group">
+                                                                <div class="contact-us-label">Tempo de Empresa</div>
+                                                                <p> <span class="wpcf7-form-control-wrap tempo-empresa"><input type="text" name="tempo-empresa" value="" size="40" class="form-control" id="contact-us-message" name="message" style="background:#ecf1f8" placeholder="Tempo de Empresa" /></span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-sm-6">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="wpcf7-response-output" aria-hidden="true"></div>
+                        </form>
+                        <div class="col-xl-12 offset-top-20">
+                            <div class="form-group">
+                                <textarea class="form-control" id="contact-us-message" name="message" style="background:#ecf1f8" placeholder="Deixe sua mensagem e retornaremos..."></textarea>
+                            </div>
+                        </div>
                     </div>
-
-                    <div style="display: flex; align-items: center; padding-left : 2%; background-color: white;">
-
-                        <div id="accordion" style="width: 600px;">
-                            <div style="border-bottom : 1px solid silver;">
-                                <div id="headingOne" style="padding: 1%;">
-                                    <h5 class="mb-0">
-
-                                        <span style="font-size: 16px; color: black;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Venda em segurança<i style="margin-left: 300px;" class="text-rigth novi-icon fa fa-angle-down"></i>
-                                        </span>
-                                    </h5>
-
-                                </div>
-
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                                    <div class="card-body">
-                                        Cuidamos de toda a negociação, pagamento e documentação de transferência do veículo. Receba direto na sua conta, à vista!
-                                    </div>
-                                </div>
-                            </div>
-                            <div style=" border-bottom : 1px solid silver;">
-                                <div id="headingTwo" style="padding: 1%;">
-
-                                    <h5 class="mb-0">
-                                        <span style="font-size: 16px; color: black;" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Independência<i style="margin-left: 347px;" class="text-rigth novi-icon fa fa-angle-down"></i>
-                                        </span>
-                                    </h5>
-                                </div>
-                                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
-                                    <div class="card-body">
-                                        Negocie sem intermediários e receba 100% do valor da venda.
-                                    </div>
-                                </div>
-                            </div>
-                            <div style="border-bottom : 1px solid silver;">
-                                <div id="headingThree" style="padding: 1%;">
-                                    <h5 class="mb-0">
-                                        <span style="font-size: 16px; color: black;" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Tranquilidade<i style="margin-left: 354px;" class="text-rigth novi-icon fa fa-angle-down"></i>
-                                        </span>
-                                    </h5>
-                                </div>
-                                <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
-                                    <div class="card-body">
-                                        Após a venda de seu veículo para a loja, ele passará por uma rigorosa revisão para venda ao seu novo proprietário.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div style="display: flex;">
-                        </div>
-                        <div class="col-md-9 col-xl-6 order-xl-6">
-                            <img src='{{ asset('images/venda2.jpg') }}' width="570" height="380" alt="">
-                        </div>
+                    <div class="group-sm text-center text-xl-left offset-top-30">
+                        <button class="btn btn-red" type="submit">Enviar</button>
                     </div>
+                    </form>
                 </div>
-            </div>
-            </div>
-            </div>
-            </div>
+        </div>
+        </div>
         </section>
+        <!-- Page Footer-->
         <!-- Default footer-->
-        <section class="section novi-background section-66" style="overflow: hidden; background-color:#1a202c">
+        <section class="section novi-background section-66" style="overflow: hidden;background-color: #1a202c">
             <div class="container">
                 <div class="row justify-content-sm-center">
                     <div class="col-md-10 col-xl-4">
