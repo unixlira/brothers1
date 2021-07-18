@@ -6,6 +6,7 @@ use DOMDocument;
 use DOMElement;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Mail;
 
 class SiteController extends Controller
 {
@@ -91,7 +92,19 @@ class SiteController extends Controller
             }
         }
 
-        return view('site.veiculo',compact('busca'));
+        return view('site.veiculo',compact('busca','newXml'));
+    }
+
+    public function contatoVeiculo(Request $request)
+    {
+        $user = [
+            'nome' => $request->nome,
+            'email'=> $request->email,
+            'telefone'=> $request->telefone,
+            'endereco'=> $request->endereco,
+            'mensagem'=> $request->mensagem
+        ];
+        Mail::to($request->email)->send(new SendMailUser($user));
     }
 
 }

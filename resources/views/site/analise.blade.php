@@ -107,7 +107,7 @@
         </div>
         </header>
         <!-- Compramos seu carro-->
-        <footer class="section-relative section-top-66 section-bottom-34 page-footer bg-red novi-background" data-preset='{"title":"Footer","category":"footer","reload":true,"id":"footer"}'>
+        <section class="section-relative section-top-66 section-bottom-34 page-footer bg-red novi-background" data-preset='{"title":"Footer","category":"footer","reload":true,"id":"footer"}'>
             <div class="container">
                 <div class="row justify-content-sm-center">
                     <div class="col-md-6 col-xl-4">
@@ -122,29 +122,26 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </section>
         <!-- Sobre a Smart Veículos-->
-        <div class="container text-color: white section-100" style="display: flex; margin-left: 60px; background-color: white;">
-            <section class=" backgroud-color:white section-98 section-md-110">
-                <div class="container">
-                    <div>
-                        <div class="col-md-9 col-xl-6 order-xl-6">
-                            <img src='{{ asset('images/venda.jpg') }}' width="570" height="380" alt="">
-                        </div>
+        <section class="bg-white section-top-66 section-bottom-34">
+            <div class="container">
+                <div class="row" >
+                    <div class="col-sm"-6>
+                        <img src='{{ asset('images/venda.jpg') }}' width="570" height="380" alt="">
+                    </div>
+                    <div class="col-sm-6">
+                        <p>
+                        <h4>Sobre a <span style="color: red">Smart Veículos</span></h4>
+                        </p>
+
+                    <p><small>Atuando no mercado de carros seminovos na cidade de Sorocaba há mais de 25 anos. Mais do que comprar visamos sempre o melhor negócio para os clientes. Seriedade, agilidade e pagamento na hora.</small></p>
+                    </p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="backgroud-color:white section-98 section-md-110">
-                          <div class="row col-md-9 col-xl-6 col-xl-pull-6 text-left offset-top-66 offset-xl-top-0 inset-xl-rigth-50 .text-truncate text-nowrap bd-highlight" style="width: 8rem;">
-                    <p>
-                    <h4>Sobre a <span style="color: red">Smart Veículos</span></h4>
-                    </p>
-                </div>
-                <p><small>Atuando no mercado de carros seminovos na cidade de Sorocaba há mais de 25 anos. Mais do que comprar visamos sempre o melhor negócio para os clientes. Seriedade, agilidade e pagamento na hora.</small></p>
-                </p>
-              </section>
-        </div>
         <!-- Instrução venda-->
         <section class="section novi-background section-66" style="overflow: hidden; background-color:#191919">
             <h1 class="font-weight-bold text-white text-md-center">Como funciona?</h1>

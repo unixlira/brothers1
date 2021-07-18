@@ -4338,8 +4338,6 @@ input[type="button"].btn-block {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(25, 25, 25, 0.125);
-    border-radius: 5px;
 }
 
 .card > hr {
@@ -4386,7 +4384,7 @@ input[type="button"].btn-block {
 .card-header {
     padding: 0.75rem 1.25rem;
     margin-bottom: 0;
-    background-color: rgba(25, 25, 25, 0.03);
+    border-top: 1px solid rgba(25, 25, 25, 0.125);
     border-bottom: 1px solid rgba(25, 25, 25, 0.125);
 }
 
@@ -29529,7 +29527,7 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
 }
 
 .card-accordion .card-header::after {
-    content: '\f465';
+    content: '\02C4';
     position: absolute;
     top: 24px;
     right: 10px;
@@ -29538,10 +29536,11 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
     font-size: 21px;
     font-weight: 400;
     color: #7a7a7a;
+    border-top: 0;
 }
 
 .card-accordion .card-header.collapsed::after {
-    content: '\f504';
+    content: '\02C5';
 }
 
 .card-classic {
@@ -29571,10 +29570,11 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
     font-size: 21px;
     font-weight: 400;
     color: inherit;
+
 }
 
 .card-classic .card-header.collapsed {
-    color: #7a7a7a;
+    color: #FFFFFF;
 }
 
 .card-classic .card-header.collapsed::after {
@@ -29585,6 +29585,9 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
     color: inherit;
 }
 
+.card-body {
+    border-bottom: 1px solid rgba(25, 25, 25, 0.125);
+}
 .card-classic .card-body {
     padding-top: 3px;
     padding-left: 0;
