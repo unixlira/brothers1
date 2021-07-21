@@ -12,23 +12,50 @@ class SendMail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $user;
+
+    /**
+     * Create a new message instance.
+     *
+     * @return void
+     */
+    public function __construct($user)
+    {
+        $this->user = $user;
+    }
 
     /**
      * Build the message.
      *
      * @return $this
      */
-    public function build(Request $request)
+    public function build()
     {
-        return $this->from('joserobertolira@gmail.com')
-                    ->view('view.email.template')
-                    ->subject('Mensagem do Site Smart Veiculos')
-                    ->with([
-                        'nome' => $request->nome,
-                        'email'=> $request->email,
-                        'telefone'=> $request->telefone,
-                        'endereco'=> $request->endereco,
-                        'mensagem'=> $request->mensagem,
-                    ]);
+
+        if($this->user['tipo'] == 'veiculos'){
+            return $this->from('vendas.websmartveiculos@gmail.com', 'Smart veículos')
+                ->view('email.template-veiculos')
+                ->subject('Contato de cliente do Site Smart Veiculos')
+                ->with([
+                    'user' => $this->user
+                ]);
+        }
+        if($this->user['tipo'] == 'analise'){
+            return $this->from('vendas.websmartveiculos@gmail.com', 'Smart veículos')
+                ->view('email.template-analise')
+                ->subject('Proposta para analise de crédito do Site Smart Veiculos')
+                ->with([
+                    'user' => $this->user
+                ]);
+        }
+        if($this->user['tipo'] == 'contato'){
+            return $this->from('vendas.websmartveiculos@gmail.com', 'Smart veículos')
+                ->view('email.template-contato')
+                ->subject('Contato de cliente do Site Smart Veiculos')
+                ->with([
+                    'user' => $this->user
+                ]);
+        }
+
     }
 }

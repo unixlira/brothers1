@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="keywords" content="intense web design multipurpose template">
     <meta name="date" content="Dec 26">
-    <link rel="icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('images/144x144-logo-smart.png') }}" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,700italic">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
@@ -62,7 +62,7 @@
                                     </li>
                                     <li><p href="" style="margin-top: -15px;margin-left: -50px !important;">
                                             <span class="rd-navbar-nav" style="color: #0EFFC0;">Consultor OnLine</span>
-                                        <h5 class="text-white" style="margin-top: -20px;margin-left: -50px;"><b>11 99990 0909</b></h5>
+                                        <h5 class="text-white" style="margin-top: -20px;margin-left: -50px;"><b>15 99712-1257</b></h5>
                                         </p>
                                     </li>
                                 </ul>

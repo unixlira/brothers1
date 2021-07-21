@@ -1014,3 +1014,10 @@ $('#myCarousel').on('slid', function (e) {
     var id = $('.item.active').data('slide-number');
     $('#carousel-text').html($('#slide-content-'+id).html());
 });
+
+let message = document.getElementById("mensagem");
+
+if(message.value == 'enviada') {
+
+    alert('Mensagem Enviada!');
+}

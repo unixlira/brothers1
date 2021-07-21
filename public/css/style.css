@@ -23418,7 +23418,7 @@ a.thumbnail:hover {
     }
     .thumbnail-apollo img {
         opacity: 1;
-        transition: opacity 0.35s, transform 0.35s;
+        transition: brightness(50%), transform 0.35s;
         -webkit-transform: scale3d(1.05, 1.05, 1);
         transform: scale3d(1.05, 1.05, 1);
     }
@@ -23438,7 +23438,7 @@ a.thumbnail:hover {
         z-index: 1;
         width: 100%;
         height: 100%;
-        background: rgba(255, 255, 255, 0.5);
+        background: rgba(49, 49, 49, 0.5);
         content: '';
         transition: transform 0.6s;
         -webkit-transform: scale3d(2, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -110%, 0);
@@ -23454,12 +23454,12 @@ a.thumbnail:hover {
 
 @media (min-width: 768px) {
     .thumbnail-apollo:hover img {
-        opacity: 0.5;
+        opacity: brightness(50%);
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
     }
     .thumbnail-apollo:hover figcaption {
-        opacity: 1;
+        opacity: brightness(50%);
     }
     .thumbnail-apollo:hover:before {
         -webkit-transform: scale3d(2, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 110%, 0);
@@ -23513,7 +23513,7 @@ a.thumbnail:hover {
 }
 
 .tablet .thumbnail-apollo, .tablet .thumbnail-apollo figure {
-    background: transparent;
+    background: brightness(50%);
 }
 
 .thumbnail-terry:before {
@@ -29733,7 +29733,7 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
 [data-x-mode] .rd-navbar-static .rd-navbar-nav > .rd-navbar--has-dropdown > .rd-navbar-submenu-toggle:hover,
 [data-x-mode] .rd-navbar-static .rd-navbar-nav > .rd-navbar--has-megamenu > .rd-navbar-submenu-toggle:hover {
     cursor: pointer;
-    color: #eb232c;
+
 }
 
 [data-x-mode] .rd-navbar-fullwidth .rd-navbar-nav > .rd-navbar--has-dropdown.opened > .rd-navbar-submenu-toggle,
@@ -30665,7 +30665,6 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
     width: 0;
     height: 2px;
     margin-top: 4px;
-    background: #eb232c;
     transition: .3s all ease;
 }
 
@@ -43703,8 +43702,16 @@ aside {
     position: fixed;
 }
 
+/* 
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+    -webkit-transition: .2s all;
+}
 
-
+.image img:hover {
+    -webkit-filter: brightness(50%);
+} */
 
 
 

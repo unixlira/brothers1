@@ -10,7 +10,8 @@ class XmlController extends Controller
 {
     public function index()
     {
-        $response = Http::get(env('INTEGRATOR_URL'));
+        $url = "https://sistema.autocerto.com/xml/Anuncios?idcliente=1334&cnpj=20595366000168&chave=aut@cert@";
+        $response = Http::get($url,null);
         $xml = $response->body();
         $array = $this->xmlToArray($xml);
 

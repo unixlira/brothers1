@@ -9,7 +9,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="keywords" content="intense web design multipurpose template">
         <meta name="date" content="Dec 26">
-        <link rel="icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon">
+        <link rel="icon" href="{{ asset('images/144x144-logo-smart.png') }}" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,700italic">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         <style>
@@ -81,7 +81,7 @@
                                             <li>
                                                 <p href="" style="margin-top: -15px;margin-left: -50px !important;">
                                                     <span class="rd-navbar-nav" style="color: #0EFFC0;">Consultor OnLine</span>
-                                                <h5 class="text-white" style="margin-top: -20px;margin-left: -50px;"><b>11 99990 0909</b></h5>
+                                                <h5 class="text-white" style="margin-top: -20px;margin-left: -50px;"><b>15 99712-1257</b></h5>
                                                 </p>
                                             </li>
                                         </ul>
@@ -113,12 +113,15 @@
                     </div>
                     <div class="col-md-8 offset-top-66" style="background-color:#ffffff; padding:45px; box-shadow: 0 0 1em #a9a9a9;">
                         <!-- RD Mailform-->
-                        <form>
+                        <form action="{{route('contatoSite')}}" method="POST">
+                            @csrf
+                            <input type="hidden" name="tipo" value="contato">
+                            <input type="hidden" id="mensagem" name="mensagem" value="{{$mensagem}}">
                             <div class="row">
                                 <div class="col-xl-12">
                                     <div class="form-group">
                                         <label class="form-label form-label-outside" for="contact-us-name">Nome*</label>
-                                        <input class="form-control" id="contact-us-name" type="text" name="name" style="background:#ecf1f8" placeholder="Digite seu nome">
+                                        <input class="form-control" id="contact-us-name" type="text" name="nome" style="background:#ecf1f8" placeholder="Digite seu nome">
                                         <br>
                                     </div>
                                     <div class="form-group">
@@ -133,13 +136,13 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="form-label form-label-outside" for="contact-us-email">Cidade:</label>
-                                        <input class="form-control" id="contact-us-cidade" type="text" name="email" style="background:#ecf1f8" placeholder="Cidade">
+                                        <input class="form-control" id="contact-us-cidade" type="text" name="cidade" style="background:#ecf1f8" placeholder="Cidade">
                                         <br>
                                     </div>
                                 </div>
                                 <div class="col-xl-12 offset-top-20">
                                     <div class="form-group">
-                                        <textarea class="form-control" id="contact-us-message" name="message" style="background:#ecf1f8" placeholder="Deixe sua mensagem e retornaremos..."></textarea>
+                                        <textarea class="form-control" id="contact-us-message" name="mensagem" style="background:#ecf1f8" placeholder="Deixe sua mensagem e retornaremos..."></textarea>
                                     </div>
                                 </div>
                             </div>

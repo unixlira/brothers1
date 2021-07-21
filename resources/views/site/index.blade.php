@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="keywords" content="intense web design multipurpose template">
     <meta name="date" content="Dec 26">
-    <link rel="icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('images/144x144-logo-smart.png') }}" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,700italic">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
@@ -37,7 +37,6 @@
                         <!-- RD Navbar Toggle-->
                         <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap"><span></span></button>
                         <!-- RD Navbar Top Panel Toggle-->
-                        <button class="rd-navbar-right-buttons-toggle" data-rd-navbar-toggle=".rd-navbar, .rd-navbar-right-buttons"><span></span></button>
                         <!--Navbar Brand-->
                         <div class="rd-navbar-brand"><a href="/"><img width='135' height='55' src='{{ asset('images/logo_big.png') }}' alt='Smart Veículos'/></a></div>
                     </div>
@@ -62,7 +61,7 @@
                                     </li>
                                     <li><p href="" style="margin-top: -15px;margin-left: -50px !important;">
                                             <span class="rd-navbar-nav" style="color: #0EFFC0;">Consultor OnLine</span>
-                                            <h5 class="text-white" style="margin-top: -20px;margin-left: -50px;"><b>11 99990 0909</b></h5>
+                                            <h5 class="text-white" style="margin-top: -20px;margin-left: -50px;"><b>15 99712-1257</b></h5>
                                         </p>
                                     </li>
                                 </ul>
@@ -82,13 +81,13 @@
             {{--                </ol>--}}
             <div class="carousel-inner" role="listbox" style="height: 700px;">
                 <!-- Slide One - Set the background image for this slide in the line below -->
-                <div class="carousel-item active" style="background-image: url('{{ asset("images/background1.jpg") }}')"> </div>
+                <img class="carousel-item active img-responsive" src="{{ asset("images/background1.jpg") }}" />
                 <!-- Slide Two - Set the background image for this slide in the line below -->
-                <div class="carousel-item" style="background-image: url('{{ asset("images/background2.jpg") }}')"></div>
+                <img class="carousel-item img-responsive" src="{{ asset("images/background2.jpg") }}" />
             </div>
         </div>
     </section>
-    <section class="" style="background: #ecf1f8 url('{{ asset("images/sectionGrid.png") }}') ;background-repeat: no-repeat;background-size: 100% 100%;height: 1000px;">
+    <section class="img-responsive" style="background: #ecf1f8 url('{{ asset("images/sectionGrid.png") }}') ;background-repeat: no-repeat;background-size: 100% 100%;height: 1000px;">
         <div class="container">
             <div class="sectionSearch ">
                 <div id="tabSearch">
@@ -167,15 +166,13 @@
     <section class="section-98 section-md-110  novi-background" data-preset='{"title":"Blog 1","category":"content, blog","reload":true,"id":"blog-1"}' >
         <div class="container">
             <div class="row justify-content-sm-center" style="margin-top: -200px;">
-                <div class="col-md-9 col-lg-6">
-                    <article class="post post-modern">
-                        <header class="post-media novi-excluded"><img class="img-fluid img-cover" width="570" height="321" src="{{ asset("images/compramos.jpg") }}" alt=""/>
-                    </article>
+                <div class="col-md-9 col-lg-6 mse">
+                    <a class="thumbnail-apollo" href="single-project.html">
+                        <figure><img  src="{{ asset("images/compramos.jpg") }}" alt="Compramos seu veículo"/></figure></a>
                 </div>
-                <div class="col-md-9 col-lg-6 offset-top-30 offset-lg-top-0">
-                    <article class="post post-modern">
-                        <header class="post-media novi-excluded"><img class="img-fluid img-cover" width="570" height="321" src="{{ asset("images/financia.jpg") }}" alt=""/>
-                    </article>
+                <div class="col-md-9 col-lg-6  mse">
+                    <a class="thumbnail-apollo" href="single-project.html">   
+                        <figure><img src="{{ asset("images/financia.jpg") }}" alt="Analise de crédito"/></figure></a>
                 </div>
             </div>
         </div>

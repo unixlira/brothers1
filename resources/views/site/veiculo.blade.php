@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="keywords" content="intense web design multipurpose template">
     <meta name="date" content="Dec 26">
-    <link rel="icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('images/144x144-logo-smart.png') }}" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,700italic">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <style>
@@ -81,7 +81,7 @@
                                         <li>
                                             <p href="" style="margin-top: -15px;margin-left: -50px !important;">
                                                 <span class="rd-navbar-nav" style="color: #0EFFC0;">Consultor OnLine</span>
-                                            <h5 class="text-white" style="margin-top: -20px;margin-left: -50px;"><b>11 99990 0909</b></h5>
+                                            <h5 class="text-white" style="margin-top: -20px;margin-left: -50px;"><b>15 99712-1257</b></h5>
                                             </p>
                                         </li>
                                     </ul>
@@ -195,7 +195,10 @@
                     </div>
                     <div style="padding: 15px; background-color: #153e4d;">
                         <h5 class="text-white">Entre em contato EM CONTATO</h5>
-                        <form method="POST" action="/contatoVeiculo">
+                        <form method="POST" action="{{route('contatoVeiculo')}}">
+                            @csrf
+                            <input type="hidden" name="idveiculo" value="{{$busca[0]['idveiculo']}}">
+                            <input type="hidden" name="tipo" value="veiculos">
                             <div class="form-group">
                                 <textarea type="text" class="form-control text-center" name="mensagem">Olá, tenho interesse no veículo, gostaria de mais informações sobre o mesmo!</textarea>
                             </div>
@@ -212,7 +215,14 @@
                                 <input type="text" name="telefone" class="form-control" id="exampleInputPassword1" placeholder="Telefone">
                             </div>
                             <br>
-                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            @if($status!='enviada')
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            @endif
+                            @if($status=='enviada')
+                                <div class="text-white text-bold">
+                                    <p>{{$mensagem}}</p>
+                                </div>
+                            @endif
                         </form>
                     </div>
                     <div class="mt-5">
@@ -223,7 +233,7 @@
                     <div class="container mt-2">
                         <div class="row">
                             <div class="col-md-5 text-left">
-                                <a href="/veiculo/{{$newXml[1]['idveiculo']}}"><img width="106" height="100" src="{{$newXml[1]['fotos']['foto'][0]['url']}}" alt=""></a>
+                                <a href="/veiculos/{{$newXml[1]['idveiculo']}}"><img width="106" height="100" src="{{$newXml[1]['fotos']['foto'][0]['url']}}" alt=""></a>
                             </div>
                             <div class="col-md-7 text-left">
                                 <span style="font-size: 11px;font-weight: bold">{{ $newXml[1]['marca'] .' '. $newXml[1]['modelo']}}<br> {{$newXml[1]['versao']}}</span>
@@ -244,7 +254,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-5 text-left">
-                                <a href="/veiculo/{{$newXml[5]['idveiculo']}}"><img width="106" height="100" src="{{$newXml[5]['fotos']['foto'][0]['url']}}" alt=""></a>
+                                <a href="/veiculos/{{$newXml[5]['idveiculo']}}"><img width="106" height="100" src="{{$newXml[5]['fotos']['foto'][0]['url']}}" alt=""></a>
                             </div>
                             <div class="col-md-7 text-left">
                                 <span style="font-size: 11px;font-weight: bold;margin-top: -10px !important;">{{ $newXml[5]['marca'] .' '. $newXml[5]['modelo']}}<br> {{$newXml[5]['versao']}}</span>
@@ -265,7 +275,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-5 text-left">
-                                <a href="/veiculo/{{$newXml[7]['idveiculo']}}"><img width="106" height="100" src="{{$newXml[7]['fotos']['foto'][0]['url']}}" alt=""></a>
+                                <a href="/veiculos/{{$newXml[7]['idveiculo']}}"><img width="106" height="100" src="{{$newXml[7]['fotos']['foto'][0]['url']}}" alt=""></a>
                             </div>
                             <div class="col-md-7 text-left">
                                 <span style="font-size: 11px;font-weight: bold;margin-top: -10px !important;">{{ $newXml[7]['marca'] .' '. $newXml[7]['modelo']}}<br> {{$newXml[7]['versao']}}</span>
@@ -287,7 +297,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5 text-left">
-                                    <a href="/veiculo/{{$newXml[11]['idveiculo']}}"><img width="106" height="100" src="{{$newXml[11]['fotos']['foto'][0]['url']}}" alt=""></a>
+                                    <a href="/veiculos/{{$newXml[11]['idveiculo']}}"><img width="106" height="100" src="{{$newXml[11]['fotos']['foto'][0]['url']}}" alt=""></a>
                                 </div>
                                 <div class="col-md-7 text-left">
                                     <span style="font-size: 11px;font-weight: bold;margin-top: -10px !important;">{{ $newXml[11]['marca'] .' '. $newXml[11]['modelo']}}<br> {{$newXml[11]['versao']}}</span>
