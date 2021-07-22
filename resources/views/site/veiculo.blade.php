@@ -201,19 +201,19 @@
                             <input type="hidden" name="idveiculo" value="{{$busca[0]['idveiculo']}}">
                             <input type="hidden" name="tipo" value="veiculos">
                             <div class="form-group">
-                                <textarea type="text" class="form-control text-center" name="mensagem">Olá, tenho interesse no veículo, gostaria de mais informações sobre o mesmo!</textarea>
+                                <textarea type="text" class="form-control text-center" style="background:#ecf1f8" name="mensagem">Olá, tenho interesse no veículo, gostaria de mais informações sobre o mesmo!</textarea>
                             </div>
                             <div class="form-group">
-                                <input type="text" name="nome" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome completo*" required oninvalid="this.setCustomValidity('Campo requerido')">
+                                <input type="text" name="nome" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="background:#ecf1f8" placeholder="Nome completo*" required oninvalid="this.setCustomValidity('Campo requerido')">
                             </div>
                             <div class="form-group">
-                                <input type="text" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email*" required oninvalid="this.setCustomValidity('Campo requerido')">
+                                <input type="text" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="background:#ecf1f8" placeholder="Seu email*" required oninvalid="this.setCustomValidity('Campo requerido')">
                             </div>
                             <div class="form-group">
-                                <input type="text" name="endereco" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Endereço*" required oninvalid="this.setCustomValidity('Campo requerido')">
+                                <input type="text" name="endereco" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="background:#ecf1f8" placeholder="Endereço*" required oninvalid="this.setCustomValidity('Campo requerido')">
                             </div>
                             <div class="form-group">
-                                <input type="text" name="telefone" class="form-control" id="exampleInputPassword1" placeholder="Telefone">
+                                <input type="text" name="telefone" class="form-control" id="exampleInputPassword1" style="background:#ecf1f8" placeholder="Telefone">
                             </div>
                             
                             @if($status!='enviada')
