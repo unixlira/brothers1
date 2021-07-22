@@ -28,11 +28,9 @@ class SiteController extends Controller
     }
     public function contato(Request $request)
     {
-        $status = $request->mensagem;
+        $mensagem = $request->mensagem;
 
-        $mensagem = "Sua mensagem foi enviada!";
-
-        return view('site.contato', compact('mensagem', 'status'));
+        return view('site.contato', compact('mensagem'));
 
     }
 
@@ -64,7 +62,7 @@ class SiteController extends Controller
         $selectModelo = super_unique($array['array'],'modelo');
         $busca = [];
 
-        if($request->marca && $request->modelo == 0){
+        if($request->marca && $request->modelo == "false"){
             foreach($newXml as $key => $arr){
                 if($arr['marca'] == $request->marca){
                     $busca[]=$newXml[$key];
@@ -72,12 +70,16 @@ class SiteController extends Controller
             }
         }
 
-        if($request->modelo && $request->marca == 0){
+        if($request->modelo && $request->marca == "false"){
             foreach($newXml as $key => $arr){
                 if($arr['modelo'] == $request->modelo){
                     $busca[]=$newXml[$key];
                 }
             }
+        }
+
+        if($request->modelo == "false" && $request->marca == "false"){
+            $busca=$newXml;
         }
 
         return view('site.buscar',compact('newXml','busca','selectMarca', 'selectModelo'));
@@ -97,7 +99,7 @@ class SiteController extends Controller
                 $busca[]=$newXml[$key];
             }
         }
-        $mensagem = "Sua mensagem foi enviada!";
+        $mensagem = "Mensagem enviada!";
 
         return view('site.veiculo',compact('busca','newXml', 'status', 'mensagem'));
     }

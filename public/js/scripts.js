@@ -1015,9 +1015,19 @@ $('#myCarousel').on('slid', function (e) {
     $('#carousel-text').html($('#slide-content-'+id).html());
 });
 
-let message = document.getElementById("mensagem");
 
-if(message.value == 'enviada') {
+$(document).ready(function(){
 
-    alert('Mensagem Enviada!');
-}
+    let message = '';
+
+    if(message != ''){
+        message = document.getElementById("mensagem");
+    
+        if(message.value == 'enviada' ) {
+            alert('Mensagem Enviada!');
+            window.location.href = "https://smartveiculosmultimarcas.com.br/";
+        }
+    }
+    
+});
+
