@@ -18,13 +18,13 @@
 <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
 <!-- Page-->
 <div class="page text-center">
-    <div class="page-loader page-loader-variant-1">
+    <!-- <div class="page-loader page-loader-variant-1">
         <div><img class='img-responsive' style='margin-top: -20px;margin-left: -5px;' width='135' height='55' src='images/logo_big.png' alt=''/>
             <div class="offset-top-41 text-center">
                 <div class="spinner"></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Page Head-->
     <header class="page-head slider-menu-position" data-preset='{"title":"Header 1","category":"header, parallax","reload":true,"id":"header-1"}'>
         <!-- - RD Navbar-->
@@ -73,17 +73,17 @@
         </div>
     </header>
     <!--Carrousel-->
-    <section>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <section >
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
             {{--                <ol class="carousel-indicators">--}}
             {{--                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>--}}
             {{--                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>--}}
             {{--                </ol>--}}
             <div class="carousel-inner" role="listbox" style="height: 700px;">
                 <!-- Slide One - Set the background image for this slide in the line below -->
-                <img class="carousel-item active img-responsive" src="{{ asset("images/background1.jpg") }}" />
+                <img class="carousel-item active" width="570" src="{{ asset("images/background1.jpg") }}" />
                 <!-- Slide Two - Set the background image for this slide in the line below -->
-                <img class="carousel-item img-responsive" src="{{ asset("images/background2.jpg") }}" />
+                <img class="carousel-item" src="{{ asset("images/background2.jpg") }}" />
             </div>
         </div>
     </section>
@@ -168,11 +168,11 @@
         <div class="container">
             <div class="row justify-content-sm-center" style="margin-top: -200px;">
                 <div class="col-md-9 col-lg-6 mse">
-                    <a class="thumbnail-apollo" href="single-project.html">
+                    <a class="thumbnail-apollo" href="/compras">
                         <figure><img  src="{{ asset("images/compramos.jpg") }}" alt="Compramos seu veículo"/></figure></a>
                 </div>
                 <div class="col-md-9 col-lg-6  mse">
-                    <a class="thumbnail-apollo" href="single-project.html">   
+                    <a class="thumbnail-apollo" href="/analise">   
                         <figure><img src="{{ asset("images/financia.jpg") }}" alt="Analise de crédito"/></figure></a>
                 </div>
             </div>

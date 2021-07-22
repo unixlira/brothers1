@@ -62,7 +62,7 @@ class SiteController extends Controller
         $selectModelo = super_unique($array['array'],'modelo');
         $busca = [];
 
-        if($request->marca && $request->modelo == "false"){
+        if($request->marca && $request->modelo == 0){
             foreach($newXml as $key => $arr){
                 if($arr['marca'] == $request->marca){
                     $busca[]=$newXml[$key];
@@ -70,7 +70,7 @@ class SiteController extends Controller
             }
         }
 
-        if($request->modelo && $request->marca == "false"){
+        if($request->modelo && $request->marca == 0){
             foreach($newXml as $key => $arr){
                 if($arr['modelo'] == $request->modelo){
                     $busca[]=$newXml[$key];
@@ -78,7 +78,7 @@ class SiteController extends Controller
             }
         }
 
-        if($request->modelo == "false" && $request->marca == "false"){
+        if($request->modelo == 0 && $request->marca == 0){
             $busca=$newXml;
         }
 

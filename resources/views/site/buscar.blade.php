@@ -18,13 +18,13 @@
 <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
 <!-- Page-->
 <div class="page text-center">
-    <div class="page-loader page-loader-variant-1">
+    <!-- <div class="page-loader page-loader-variant-1">
         <div><img class='img-responsive' style='margin-top: -20px;margin-left: -5px;' width='135' height='55' src='images/logo_big.png' alt=''/>
             <div class="offset-top-41 text-center">
                 <div class="spinner"></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Page Head-->
     <header class="page-head slider-menu-position" data-preset='{"title":"Header 1","category":"header, parallax","reload":true,"id":"header-1"}'>
         <!-- - RD Navbar-->
