@@ -164,14 +164,14 @@
             </div>
         </div>
     </section>
-    <section class="section-98 section-md-110  novi-background" data-preset='{"title":"Blog 1","category":"content, blog","reload":true,"id":"blog-1"}' >
-        <div class="container">
-            <div class="row justify-content-sm-center" style="margin-top: -200px;">
-                <div class="col-md-9 col-lg-6 mse">
+    <section  class="section-98 section-md-110  novi-background" data-preset='{"title":"Blog 1","category":"content, blog","reload":true,"id":"blog-1"}' >
+        <div class="container twoPictures" >
+            <div class="row justify-content-sm-center" >
+                <div class="col-md-6 col-lg-6 mb-2">
                     <a class="thumbnail-apollo" href="/compras">
                         <figure><img  src="{{ asset("images/compramos.jpg") }}" alt="Compramos seu veículo"/></figure></a>
                 </div>
-                <div class="col-md-9 col-lg-6  mse">
+                <div class="col-md-6 col-lg-6  mb-2">
                     <a class="thumbnail-apollo" href="/analise">   
                         <figure><img src="{{ asset("images/financia.jpg") }}" alt="Analise de crédito"/></figure></a>
                 </div>
