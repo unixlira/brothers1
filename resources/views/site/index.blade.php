@@ -36,7 +36,6 @@
                     <div class="rd-navbar-panel">
                         <!-- RD Navbar Toggle-->
                         <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap"><span></span></button>
-                        <!-- RD Navbar Top Panel Toggle-->
                         <!--Navbar Brand-->
                         <div class="rd-navbar-brand"><a href="/"><img width='135' height='55' src='{{ asset('images/logo_big.png') }}' alt='Smart Veículos'/></a></div>
                     </div>
