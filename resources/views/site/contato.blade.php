@@ -7,7 +7,7 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta name="keywords" content="intense web design multipurpose template">
+        <meta name="keywords" content="Smart Veículos">
         <meta name="date" content="Dec 26">
         <link rel="icon" href="{{ asset('images/144x144-logo-smart.png') }}" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,700italic">
