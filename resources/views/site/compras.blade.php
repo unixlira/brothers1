@@ -7,11 +7,11 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta name="keywords" content="Smart Veículos">
+        <meta name="keywords" content="intense web design multipurpose template">
         <meta name="date" content="Dec 26">
-        <link rel="icon" href="{{ asset('images/144x144-logo-smart.png') }}" type="image/x-icon">
+        <link rel="icon" href="https://smartveiculosmultimarcas.com.br/images/144x144-logo-smart.png" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,700italic">
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="https://smartveiculosmultimarcas.com.br/css/style.css">
         <style>
             .ie-panel {
                 display: none;
@@ -46,6 +46,7 @@
             <!-- Page Head-->
             <header class="page-head slider-menu-position" data-preset='{"title":"Header 1","category":"header, parallax","reload":true,"id":"header-1"}'>
                 <!-- - RD Navbar-->
+                <!-- RD Navbar Transparent-->
                 <div class="rd-navbar-wrap">
                     <nav class="rd-navbar container rd-navbar-floated rd-navbar-dark rd-navbar-dark-transparent" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-lg-auto-height="true" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-stick-up="true">
                         <div class="rd-navbar-inner">
@@ -54,28 +55,32 @@
                                 <!-- RD Navbar Toggle-->
                                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap"><span></span></button>
                                 <!--Navbar Brand-->
-                                <div class="rd-navbar-brand"><a href="/"><img width='135' height='55' src='{{ asset('images/logo_big.png') }}' alt='Smart Veículos'/></a></div>
+                                <div class="rd-navbar-brand"><a href="/"><img width='135' height='55' src='https://smartveiculosmultimarcas.com.br/images/logo_big.png' alt='Smart Veículos' /></a></div>
                             </div>
                             <div class="rd-navbar-menu-wrap">
                                 <div class="rd-navbar-nav-wrap">
                                     <div class="rd-navbar-mobile-scroll">
                                         <!--Navbar Brand Mobile-->
-                                        <div class="rd-navbar-mobile-brand"><a href="/"><img width='218' height='35' src='{{ asset('images/logo_big.png') }}' alt=''/></a></div>
+                                        <div class="rd-navbar-mobile-brand"><a href="/"><img width='218' height='35' src='https://smartveiculosmultimarcas.com.br/images/logo_big.png' alt='' /></a></div>
                                         <!-- RD Navbar Nav-->
                                         <ul class="rd-navbar-nav">
-                                            <li><a href="{{url('analise')}}"><span>Análise de Crédito</span></a>
+                                            <li><a href="https://smartveiculosmultimarcas.com.br/analise"><span>Análise de Crédito</span></a>
                                             </li>
-                                            <li><a href="{{url('empresa')}}"><span>Empresa</span></a>
+                                            <li><a href="https://smartveiculosmultimarcas.com.br/contato"><span>Contato</span></a>
                                             </li>
-                                            <li><a href="{{url('contato')}}"><span>Contato</span></a>
+                                            <li><a href="https://smartveiculosmultimarcas.com.br/compras" style="border-radius: 55px;background-color: #eb232c;padding: 12px;top: -10px;"><span>Venda seu Carro</span></a>
                                             </li>
-                                            <li><a href="{{url('compras')}}" ><span>Venda seu Carro</span></a>
+                                            <li><a href="https://smartveiculosmultimarcas.com.br/veiculos" style="border: 2px solid #eb232c;border-radius: 25px;padding: 10px;top: -10px;"><span>Nossos Veículos</span></a>
                                             </li>
-                                            <li><a href="{{url('veiculos')}}"><span>Nossos Veículos</span></a>
-                                            </li>
-                                            <li><a href="{{url('https://api.whatsapp.com/send?phone=5515997121257&text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Smart%20Ve%C3%ADculos%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.')}}" target="_blank">
-                                                    <h6 class="text-white text-bold"><img src="{{ asset('images/whatsapp3-36x36.png') }}"> 15 99712-1257</h6>
+                                            <li><a href="https://api.whatsapp.com/send?phone=11990253050" style="top:-10px;margin-right: -2px" target="_blank">
+                                                    <span><img src="https://smartveiculosmultimarcas.com.br/images/whatsapp3-36x36.png"></span>
                                                 </a>
+                                            </li>
+                                            <li>
+                                                <p href="" style="margin-top: -15px;margin-left: -50px !important;">
+                                                    <span class="rd-navbar-nav" style="color: #0EFFC0;">Consultor OnLine</span>
+                                                <h5 class="text-white" style="margin-top: -20px;margin-left: -50px;"><b>15 99712-1257</b></h5>
+                                                </p>
                                             </li>
                                         </ul>
                                     </div>
@@ -97,10 +102,11 @@
                         </div>
                     </div>
                 </div>
+        </div>
         </header>
         <!-- Compramos seu carro-->
         <footer class="section-relative section-top-66 section-bottom-34 page-footer bg-red novi-background" data-preset='{"title":"Footer","category":"footer","reload":true,"id":"footer"}'>
-            <div class="container text-center">
+            <div class="container">
                 <div class="row justify-content-sm-center">
                     <div class="col-md-6 col-xl-4">
                         <div class="unit unit-sm flex-md-row text-md-center">
@@ -120,7 +126,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <img src='{{ asset('images/venda.jpg') }}' width="570" height="380" alt="">
+                        <img src='https://smartveiculosmultimarcas.com.br/images/venda.jpg' width="570" height="380" alt="">
                     </div>
                     <div class="col-sm-6 m-auto">
                         <p>
@@ -128,6 +134,7 @@
                         </p>
                         <p><small>Atuando no mercado de carros seminovos na cidade de Sorocaba há mais de 25 anos. Mais do que comprar visamos sempre o melhor negócio para os clientes. Seriedade, agilidade e pagamento na hora.</small></p>
                         </p>
+
                     </div>
                 </div>
             </div>
@@ -140,7 +147,7 @@
                     <div class="col-md-8 col-xl-4 offset-top-60 offset-lg-top-0">
                         <div class="unit unit-sm flex-md-row text-md-center ">
                             <div class="unit-body text-center text-white">
-                                <p class="font-weight ffset-md-top-60 text-white"><img src='{{ asset('images/icone-agende.png') }}'></p>
+                                <p class="font-weight ffset-md-top-60 text-white"><img src='https://smartveiculosmultimarcas.com.br/images/icone-agende.png'></p>
                                 <h6 class="text-white">Agende uma avaliação</h6>
                                 <p><small>Eu sou um bloco de texto. Clique no botão Editar (Lápis) para alterar o conteúdo deste elemento.</small></p>
                             </div>
@@ -149,7 +156,7 @@
                     <div class="col-md-8 col-xl-4 offset-top-60 offset-lg-top-0">
                         <div class="unit unit-sm flex-md-row text-md-center">
                             <div class="unit-body text-center text-white">
-                                <p class="font-weight ffset-md-top-60 text-white"><img src='{{ asset('images/icone-enviaremos.png') }}'></p>
+                                <p class="font-weight ffset-md-top-60 text-white"><img src='https://smartveiculosmultimarcas.com.br/images/icone-enviaremos.png'></p>
                                 <h6 class="text-white">Enviaremos a melhor proposta</h6>
                                 <p><small>Após a vistoria, já te informaremos o melhor valor do mercado.</small></p>
                             </div>
@@ -158,7 +165,7 @@
                     <div class="col-md-8 col-xl-4 offset-top-60 offset-lg-top-0">
                         <div class="unit unit-sm flex-md-row text-md-center">
                             <div class="unit-body text-center text-white">
-                                <p class="font-weight ffset-md-top-60 text-white"><img src='{{ asset('images/icone-pagamento.png') }}'></p>
+                                <p class="font-weight ffset-md-top-60 text-white"><img src='https://smartveiculosmultimarcas.com.br/images/icone-pagamento.png'></p>
                                 <h6 class="text-white">Pagamento à vista, sem burocracia</h6>
                                 <p><small>Aprovado o valor, o pagamento é à vista e a documentação é por nossa conta, sem dor de cabeça.</small></p>
                             </div>
@@ -167,8 +174,10 @@
                 </div>
             </div>
         </section>
+
+
         <section class="bg-white section-top-66 section-bottom-34">
-            <div class="container text-center">
+            <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <h4><strong>Porque vender o seu carro para a Smart <br>Veículos?</strong></h4>
@@ -179,6 +188,7 @@
                                     <div class="card-body">Cuidamos de toda a negociação, pagamento e documentação de transferência do veículo. Receba direto na sua conta, à vista!</div>
                                 </div>
                             </div>
+
                             <div class="card card-accordion"><a class="card-header collapsed" href="#" data-toggle="collapse" data-target="#accordion-1--card-1-content" id="accordion-1--card-1-header" aria-expanded="false" aria-controls="accordion-1--card-1-content">Independência</a>
                                 <div class="collapse" id="accordion-1--card-1-content" aria-labelledby="accordion-1--card-1-header" data-parent="#accordion-1">
                                     <div class="card-body">Negocie sem intermediários e receba 100% do valor da venda.</div>
@@ -188,18 +198,20 @@
                                 <div class="collapse" id="accordion-1--card-2-content" aria-labelledby="accordion-1--card-2-header" data-parent="#accordion-1">
                                     <div class="card-body">Após a venda de seu veículo para a loja, ele passará por uma rigorosa revisão para venda ao seu novo proprietário.</div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img class="d-none d-xl-inline-block" src="{{ asset('images/venda2.jpg') }}" width="570" height="380" alt="">
+                        <img class="d-none d-xl-inline-block" src="https://smartveiculosmultimarcas.com.br/images/venda2.jpg" width="570" height="380" alt="">
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- Default footer-->
         <section class="section novi-background section-66" style="overflow: hidden;background-color: #1a202c">
-        <div class="container text-center">
+        <div class="container">
             <div class="row justify-content-sm-center">
                 <div class="col-md-10 col-xl-4">
                     <div class="unit unit-sm flex-md-row text-md-left ">
@@ -314,4 +326,3 @@
     </body>
 
     </html>
-
