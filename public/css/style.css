@@ -1,5 +1,22 @@
 @charset "UTF-8";
+.sectionSearch{
+    margin-top: -100px !important;
+    position: relative;
 
+}
+#tabSearch .nav-pills > li > h5 {
+    border-radius: 10px 10px 0 0 ;
+    background-color: white;
+    padding: 20px ;
+    margin-bottom: -10px;
+}
+
+#tabSearch .tab-content {
+
+    background-color: white;
+    border-radius: 0 10px 10px 10px ;
+    padding: 60px;
+}
 @media print {
     *,
     *::before,
@@ -43601,7 +43618,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
     background-attachment: fixed;
 }
 .carousel-item {
-    height: 100vh;
+
     min-height: 350px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
@@ -43686,41 +43703,68 @@ aside {
     position: fixed;
 }
 
+/*
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+    -webkit-transition: .2s all;
+}
 
-@media (min-width: 360) {
+.image img:hover {
+    -webkit-filter: brightness(50%);
+} */
 
 
-
-
+@media (min-width: 260px) {
+    .sectionSlideCar1{
+        height: 1220px !important;
+    }
+    .twoPictures{
+        margin-top: -150px !important;
+    }
 }
 
 @media (min-width: 480px) {
+    .sectionSlideCar1{
+        height: 1150px !important;
+    }
+    .twoPictures{
+        margin-top: -150px !important;
+    }
+}
 
-    #twoPictures{
-        margin: auto  !important;
+@media (min-width: 768px) {
+    .sectionSlideCar1{
+        height: 1150px !important;
+    }
+    .twoPictures{
+        margin-top: -190px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .sectionSlideCar1{
+        height: 1050px !important;
+    }
+    .twoPictures{
+        margin-top: -230px !important;
     }
 
-
+    .carrousselIndex{
+        width: 2000px !important;
+    }
 }
-
-@media (max-width: 768px) {
-
-}
-
-@media (max-width: 992px) {
-
-}
-
 
 @media (min-width: 1200px) {
-    #twoPictures{
-        margin-top: -200px;
+    .sectionSlideCar1{
+        height: 1050px !important;
+    }
+    .twoPictures{
+        margin-top: -230px !important;
+    }
+
+
+    #tamanhoSection {
+        height: 700px !important;
     }
 }
-
-
-
-
-
-
-
