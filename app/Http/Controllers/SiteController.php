@@ -26,11 +26,19 @@ class SiteController extends Controller
         return view('site.analise', compact('mensagem'));
 
     }
+
     public function contato(Request $request)
     {
         $mensagem = $request->mensagem;
 
         return view('site.contato', compact('mensagem'));
+
+    }
+
+    public function empresa()
+    {
+
+        return view('site.empresa');
 
     }
 

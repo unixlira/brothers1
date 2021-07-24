@@ -29731,7 +29731,7 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
 [data-x-mode] .rd-navbar-static .rd-navbar-nav > .rd-navbar--has-dropdown > .rd-navbar-submenu-toggle,
 [data-x-mode] .rd-navbar-static .rd-navbar-nav > .rd-navbar--has-megamenu > .rd-navbar-submenu-toggle {
     display: inline-block;
-    margin-left: 5px;
+
     font-size: 10px;
     line-height: 1;
     vertical-align: middle;

@@ -46,7 +46,6 @@
             <!-- Page Head-->
             <header class="page-head slider-menu-position" data-preset='{"title":"Header 1","category":"header, parallax","reload":true,"id":"header-1"}'>
                 <!-- - RD Navbar-->
-                <!-- RD Navbar Transparent-->
                 <div class="rd-navbar-wrap">
                     <nav class="rd-navbar container rd-navbar-floated rd-navbar-dark rd-navbar-dark-transparent" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-lg-auto-height="true" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-stick-up="true">
                         <div class="rd-navbar-inner">
@@ -55,32 +54,28 @@
                                 <!-- RD Navbar Toggle-->
                                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap"><span></span></button>
                                 <!--Navbar Brand-->
-                                <div class="rd-navbar-brand"><a href="/"><img width='135' height='55' src='{{ asset('images/logo_big.png') }}' alt='Smart Veículos' /></a></div>
+                                <div class="rd-navbar-brand"><a href="/"><img width='135' height='55' src='{{ asset('images/logo_big.png') }}' alt='Smart Veículos'/></a></div>
                             </div>
                             <div class="rd-navbar-menu-wrap">
                                 <div class="rd-navbar-nav-wrap">
                                     <div class="rd-navbar-mobile-scroll">
                                         <!--Navbar Brand Mobile-->
-                                        <div class="rd-navbar-mobile-brand"><a href="/"><img width='218' height='35' src='{{ asset('images/logo_big.png') }}' alt='' /></a></div>
+                                        <div class="rd-navbar-mobile-brand"><a href="/"><img width='218' height='35' src='{{ asset('images/logo_big.png') }}' alt=''/></a></div>
                                         <!-- RD Navbar Nav-->
                                         <ul class="rd-navbar-nav">
                                             <li><a href="{{url('analise')}}"><span>Análise de Crédito</span></a>
                                             </li>
+                                            <li><a href="{{url('empresa')}}"><span>Empresa</span></a>
+                                            </li>
                                             <li><a href="{{url('contato')}}"><span>Contato</span></a>
                                             </li>
-                                            <li><a href="{{url('compras')}}" style="border-radius: 55px;background-color: #eb232c;padding: 12px;top: -10px;"><span>Venda seu Carro</span></a>
+                                            <li><a href="{{url('compras')}}" ><span>Venda seu Carro</span></a>
                                             </li>
-                                            <li><a href="{{url('veiculos')}}" style="border: 2px solid #eb232c;border-radius: 25px;padding: 10px;top: -10px;"><span>Nossos Veículos</span></a>
+                                            <li><a href="{{url('veiculos')}}"><span>Nossos Veículos</span></a>
                                             </li>
-                                            <li><a href="{{url('https://api.whatsapp.com/send?phone=11990253050')}}" style="top:-10px;margin-right: -2px" target="_blank">
-                                                    <span><img src="{{ asset('images/whatsapp3-36x36.png') }}"></span>
+                                            <li><a href="{{url('https://api.whatsapp.com/send?phone=5515997121257&text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Smart%20Ve%C3%ADculos%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.')}}" target="_blank">
+                                                    <h6 class="text-white text-bold"><img src="{{ asset('images/whatsapp3-36x36.png') }}"> 15 99712-1257</h6>
                                                 </a>
-                                            </li>
-                                            <li>
-                                                <p href="" style="margin-top: -15px;margin-left: -50px !important;">
-                                                    <span class="rd-navbar-nav" style="color: #0EFFC0;">Consultor OnLine</span>
-                                                <h5 class="text-white" style="margin-top: -20px;margin-left: -50px;"><b>15 99712-1257</b></h5>
-                                                </p>
                                             </li>
                                         </ul>
                                     </div>
@@ -102,7 +97,6 @@
                         </div>
                     </div>
                 </div>
-        </div>
         </header>
         <!-- Compramos seu carro-->
         <footer class="section-relative section-top-66 section-bottom-34 page-footer bg-red novi-background" data-preset='{"title":"Footer","category":"footer","reload":true,"id":"footer"}'>
