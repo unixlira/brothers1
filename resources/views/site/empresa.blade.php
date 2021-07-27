@@ -90,24 +90,41 @@
                     </div>
                 </nav>
             </div>
-            <div class="section-254 parallax-container" data-parallax-img="{{ asset('images/venda.jpg') }}"></div>
+                      <div class="parallax-container" data-parallax-img="images/background1.jpg">
+                    <div class="parallax-content">
+                        <div class="container section-98 section-md-254">
+                            <div class="unit-body text-left text-white">
+                                <div class="text-extra-big text-white font-weight-bold">Seja bem-vindo à Smart Veículos</div>
+                                                               <div class="d-block d-xl-inline-block">
+                                    <div style="max-width: 120px; min-width: 120px; min-height: 150px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
         </header>
-        <!-- COPIEI a partir DAQUI Us-->
-        <section class="section-34" style="background-color:#ecf1f8">
-            <div class="text-center">
-            </section><section class="sobre_header" style="background-image: url"{{ asset('images/venda.jpg') }}">
-	<h1>Seja bem-vindo à Smart Veículos</h1>
-</section>
-<section class="sobre_text">
-	<div class="content">
-		<h2>Conheça a maior loja de veículos do interior paulista</h2>
-		<div class="editable-content">
-			Atuando no mercado de carros seminovos na cidade de Sorocaba há mais de 25 anos, a Auto 7 Class vem construindo com muito trabalho a sua história de sucesso. Mais do que comprar e vender automóveis, a Auto 7 Class é parceira das principais financeiras do país com as melhores taxas de juros do mercado, visando sempre o melhor negócio para seus clientes e amigos.
+        <!-- Copiei Us-->
+        <section class="bg-white section-top-66 section-bottom-34">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                    <h2><br>Conheça a maior loja<br>de veículos do interior paulista</h2>
+                    </div>
+                    <div class="col-sm-6 m-auto">
+                        <p>
+                        <h4>Sobre a <span>Smart Veículos</span></h4>
+                        </p>
+                        <p><small>Atuando no mercado de carros seminovos na cidade de Sorocaba há mais de 25 anos. Mais do que comprar visamos sempre o melhor negócio para os clientes. Seriedade, agilidade e pagamento na hora.
+            Os Melhores Veículos Semi novos estão na Smart Veículos. Reservamos o direito de eventuais erros de digitação na descrição, valores ou fotos.&nbsp;O valor descrito nos anúncios em nosso site, são para pagamentos à vista, para financiamento e troca, fale com um de nossos vendedores.</small></p>
+                        </p>
 
-
-Seriedade, agilidade, procedência, veículos de qualidade e satisfação do cliente. Seja na compra ou na venda, você entra com a sua expectativa e sai com a satisfação garantida. São mais de 4.000 m², dois pisos e um amplo showroom com estoque de mais de 500 veículos à sua escolha. De todas as marcas e modelos, nacionais e importados. Tudo para facilitar a sua vida na hora de trocar ou comprar seu automóvel.		</div>
-	</div>
-</section>
+                    </div>
+                </div>
+            </div>
+        </section>   
+      
+        
 <section class="sobre_galeria">
 	<div class="content">
 				<div class="item">
@@ -154,9 +171,16 @@ Seriedade, agilidade, procedência, veículos de qualidade e satisfação do cli
 		</div>
 			</div>
 </section>
+<br>
 <!-- <section class="sobre_tour">
 	<div class="editable-content">
 		<h2>Faça um tour virtual pela loja:</h2>	</div>
+</section> -->
+<!-- <section class="sobre_tour">
+	<div class="editable-content">
+		<h2>Faça um tour virtual pela loja:</h2>	</div>
+
+        
 </section> -->
 <section class="newsletter" style="background-image: url(website/img/temporario/footer/newsletter_br[1920x295].png);">
 	<div class="content">
@@ -175,6 +199,10 @@ Seriedade, agilidade, procedência, veículos de qualidade e satisfação do cli
 	</div>
 </section>
 <footer>
+	<div class="footer_content">
+		<div class="left_content">
+			<a href="/" class="logo" style="background-image: url(main/uploads/2020_09/images/resized/logo-fundo-branco[170x75].png);"></a>
+           
     <!-- Page Footer-->
     <!-- Default footer-->
     <section class="section novi-background section-66" style="overflow: hidden;background-color: #1a202c">
