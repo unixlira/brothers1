@@ -51,39 +51,41 @@
         <!-- Page Head-->
         <header class="page-head slider-menu-position"
                 data-preset='{"title":"Header 1","category":"header, parallax","reload":true,"id":"header-1"}'>
-            <!-- - RD Navbar-->
+            <!-- RD Navbar Transparent-->
             <div class="rd-navbar-wrap">
-                <nav class="rd-navbar container rd-navbar-floated rd-navbar-dark rd-navbar-dark-transparent" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-lg-auto-height="true" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-stick-up="true">
+                <nav class="rd-navbar rd-navbar-floated rd-navbar-dark rd-navbar-dark-transparent"  data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-lg-auto-height="true" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-stick-up="true">
                     <div class="rd-navbar-inner">
-                        <!-- RD Navbar Panel-->
-                        <div class="rd-navbar-panel">
-                            <!-- RD Navbar Toggle-->
-                            <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap"><span></span></button>
-                            <!--Navbar Brand-->
-                            <div class="rd-navbar-brand"><a href="/"><img width='135' height='55' src='{{ asset('images/logo_big.png') }}' alt='Smart Veículos'/></a></div>
-                        </div>
-                        <div class="rd-navbar-menu-wrap">
-                            <div class="rd-navbar-nav-wrap">
-                                <div class="rd-navbar-mobile-scroll">
-                                    <!--Navbar Brand Mobile-->
-                                    <div class="rd-navbar-mobile-brand"><a href="/"><img width='218' height='35' src='{{ asset('images/logo_big.png') }}' alt=''/></a></div>
-                                    <!-- RD Navbar Nav-->
-                                    <ul class="rd-navbar-nav">
-                                        <li><a href="{{url('analise')}}"><span>Análise de Crédito</span></a>
-                                        </li>
-                                        <li><a href="{{url('empresa')}}"><span>Empresa</span></a>
-                                        </li>
-                                        <li><a href="{{url('contato')}}"><span>Contato</span></a>
-                                        </li>
-                                        <li><a href="{{url('compras')}}" ><span>Venda seu Carro</span></a>
-                                        </li>
-                                        <li><a href="{{url('veiculos')}}"><span>Nossos Veículos</span></a>
-                                        </li>
-                                        <li><a href="{{url('https://api.whatsapp.com/send?phone=5515997121257&text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Smart%20Ve%C3%ADculos%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.')}}" target="_blank">
-                                                <h6 class="text-white text-bold"><img src="{{ asset('images/whatsapp3-36x36.png') }}"> 15 99712-1257</h6>
-                                            </a>
-                                        </li>
-                                    </ul>
+                        <div class="container section-relative d-flex justify-content-between">
+                            <!-- RD Navbar Panel-->
+                            <div class="rd-navbar-panel">
+                                <!-- RD Navbar Toggle-->
+                                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap"><span></span></button>
+                                <!--Navbar Brand-->
+                                <div class="rd-navbar-brand"><a href="/"><img width='135' height='55' src='{{ asset('images/logo_big.png') }}' alt='Smart Veículos'/></a></div>
+                            </div>
+                            <div class="rd-navbar-menu-wrap">
+                                <div class="rd-navbar-nav-wrap">
+                                    <div class="rd-navbar-mobile-scroll hoverLink">
+                                        <!--Navbar Brand Mobile-->
+                                        <div class="rd-navbar-mobile-brand"><a href="/"><img width='218' height='35' src='{{ asset('images/logo_big.png') }}' alt=''/></a></div>
+                                        <!-- RD Navbar Nav-->
+                                        <ul class="rd-navbar-nav">
+                                            <li><a href="{{url('analise')}}"><span>Análise de Crédito</span></a>
+                                            </li>
+                                            <li><a href="{{url('empresa')}}"><span>Empresa</span></a>
+                                            </li>
+                                            <li><a href="{{url('contato')}}"><span>Contato</span></a>
+                                            </li>
+                                            <li><a href="{{url('compras')}}" ><span class="tagRed-outline">Venda seu Carro</span></a>
+                                            </li>
+                                            <li><a href="{{url('veiculos')}}"><span class="tagRed">Nossos Veículos</span></a>
+                                            </li>
+                                            <li><a href="{{url('https://api.whatsapp.com/send?phone=5515997121257&text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Smart%20Ve%C3%ADculos%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.')}}" target="_blank">
+                                                    <h6 class="text-white text-bold"><img src="{{ asset('images/whatsapp3-36x36.png') }}"> 15 99712-1257</h6>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -122,49 +124,49 @@
                     </div>
                 </div>
             </div>
-        </section>   
-      
-        
+        </section>
+
+
 <section class="sobre_galeria">
 	<div class="content">
 				<div class="item">
-						
+
 			<a href="main/uploads/2020_10/images/resized/dsc_8931[1920x1080].jpg" class='foto_galeria' title="galeria item" data-index="0" data-width="1623" data-height="1080"></a>
 			<div class="zoom"> <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m368 272h-224c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h224c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m256 384c-8.832031 0-16-7.167969-16-16v-224c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v224c0 8.832031-7.167969 16-16 16zm0 0"/><path d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-394.664062c0-32.363281 26.304688-58.667969 58.667969-58.667969h394.664062c32.363281 0 58.667969 26.304688 58.667969 58.667969v394.664062c0 32.363281-26.304688 58.667969-58.667969 58.667969zm-394.664062-480c-14.699219 0-26.667969 11.96875-26.667969 26.667969v394.664062c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-394.664062c0-14.699219-11.96875-26.667969-26.667969-26.667969zm0 0"/></svg> </div>
 			<img src="main/uploads/2020_10/images/resized/dsc_8931[1920x1080].jpg" alt="">
 		</div>
 				<div class="item">
-						
+
 			<a href="main/uploads/2020_10/images/resized/dsc_8794[1920x1080].jpg" class='foto_galeria' title="galeria item" data-index="1" data-width="1623" data-height="1080"></a>
 			<div class="zoom"> <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m368 272h-224c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h224c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m256 384c-8.832031 0-16-7.167969-16-16v-224c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v224c0 8.832031-7.167969 16-16 16zm0 0"/><path d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-394.664062c0-32.363281 26.304688-58.667969 58.667969-58.667969h394.664062c32.363281 0 58.667969 26.304688 58.667969 58.667969v394.664062c0 32.363281-26.304688 58.667969-58.667969 58.667969zm-394.664062-480c-14.699219 0-26.667969 11.96875-26.667969 26.667969v394.664062c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-394.664062c0-14.699219-11.96875-26.667969-26.667969-26.667969zm0 0"/></svg> </div>
 			<img src="main/uploads/2020_10/images/resized/dsc_8794[1920x1080].jpg" alt="">
 		</div>
 				<div class="item">
-						
+
 			<a href="main/uploads/2020_10/images/resized/dsc_8813[1920x1080].jpg" class='foto_galeria' title="galeria item" data-index="2" data-width="1623" data-height="1080"></a>
 			<div class="zoom"> <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m368 272h-224c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h224c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m256 384c-8.832031 0-16-7.167969-16-16v-224c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v224c0 8.832031-7.167969 16-16 16zm0 0"/><path d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-394.664062c0-32.363281 26.304688-58.667969 58.667969-58.667969h394.664062c32.363281 0 58.667969 26.304688 58.667969 58.667969v394.664062c0 32.363281-26.304688 58.667969-58.667969 58.667969zm-394.664062-480c-14.699219 0-26.667969 11.96875-26.667969 26.667969v394.664062c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-394.664062c0-14.699219-11.96875-26.667969-26.667969-26.667969zm0 0"/></svg> </div>
 			<img src="main/uploads/2020_10/images/resized/dsc_8813[1920x1080].jpg" alt="">
 		</div>
 				<div class="item">
-						
+
 			<a href="main/uploads/2020_10/images/resized/dsc_8815[1920x1080].jpg" class='foto_galeria' title="galeria item" data-index="3" data-width="1623" data-height="1080"></a>
 			<div class="zoom"> <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m368 272h-224c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h224c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m256 384c-8.832031 0-16-7.167969-16-16v-224c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v224c0 8.832031-7.167969 16-16 16zm0 0"/><path d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-394.664062c0-32.363281 26.304688-58.667969 58.667969-58.667969h394.664062c32.363281 0 58.667969 26.304688 58.667969 58.667969v394.664062c0 32.363281-26.304688 58.667969-58.667969 58.667969zm-394.664062-480c-14.699219 0-26.667969 11.96875-26.667969 26.667969v394.664062c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-394.664062c0-14.699219-11.96875-26.667969-26.667969-26.667969zm0 0"/></svg> </div>
 			<img src="main/uploads/2020_10/images/resized/dsc_8815[1920x1080].jpg" alt="">
 		</div>
 				<div class="item">
-						
+
 			<a href="main/uploads/2020_10/images/resized/untitled_panorama1-2(1)[1920x1080].jpg" class='foto_galeria' title="galeria item" data-index="4" data-width="1920" data-height="808"></a>
 			<div class="zoom"> <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m368 272h-224c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h224c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m256 384c-8.832031 0-16-7.167969-16-16v-224c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v224c0 8.832031-7.167969 16-16 16zm0 0"/><path d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-394.664062c0-32.363281 26.304688-58.667969 58.667969-58.667969h394.664062c32.363281 0 58.667969 26.304688 58.667969 58.667969v394.664062c0 32.363281-26.304688 58.667969-58.667969 58.667969zm-394.664062-480c-14.699219 0-26.667969 11.96875-26.667969 26.667969v394.664062c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-394.664062c0-14.699219-11.96875-26.667969-26.667969-26.667969zm0 0"/></svg> </div>
 			<img src="main/uploads/2020_10/images/resized/untitled_panorama1-2(1)[1920x1080].jpg" alt="">
 		</div>
 				<div class="item">
-						
+
 			<a href="main/uploads/2020_10/images/resized/dsc_8904[1920x1080].jpg" class='foto_galeria' title="galeria item" data-index="5" data-width="1623" data-height="1080"></a>
 			<div class="zoom"> <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m368 272h-224c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h224c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m256 384c-8.832031 0-16-7.167969-16-16v-224c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v224c0 8.832031-7.167969 16-16 16zm0 0"/><path d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-394.664062c0-32.363281 26.304688-58.667969 58.667969-58.667969h394.664062c32.363281 0 58.667969 26.304688 58.667969 58.667969v394.664062c0 32.363281-26.304688 58.667969-58.667969 58.667969zm-394.664062-480c-14.699219 0-26.667969 11.96875-26.667969 26.667969v394.664062c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-394.664062c0-14.699219-11.96875-26.667969-26.667969-26.667969zm0 0"/></svg> </div>
 			<img src="main/uploads/2020_10/images/resized/dsc_8904[1920x1080].jpg" alt="">
 		</div>
 				<div class="item">
-						
+
 			<a href="main/uploads/2020_10/images/resized/dsc_8907[1920x1080].jpg" class='foto_galeria' title="galeria item" data-index="6" data-width="1623" data-height="1080"></a>
 			<div class="zoom"> <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m368 272h-224c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h224c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m256 384c-8.832031 0-16-7.167969-16-16v-224c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v224c0 8.832031-7.167969 16-16 16zm0 0"/><path d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-394.664062c0-32.363281 26.304688-58.667969 58.667969-58.667969h394.664062c32.363281 0 58.667969 26.304688 58.667969 58.667969v394.664062c0 32.363281-26.304688 58.667969-58.667969 58.667969zm-394.664062-480c-14.699219 0-26.667969 11.96875-26.667969 26.667969v394.664062c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-394.664062c0-14.699219-11.96875-26.667969-26.667969-26.667969zm0 0"/></svg> </div>
 			<img src="main/uploads/2020_10/images/resized/dsc_8907[1920x1080].jpg" alt="">
@@ -180,7 +182,7 @@
 	<div class="editable-content">
 		<h2>Faça um tour virtual pela loja:</h2>	</div>
 
-        
+
 </section> -->
 <section class="newsletter" style="background-image: url(website/img/temporario/footer/newsletter_br[1920x295].png);">
 	<div class="content">
@@ -202,7 +204,7 @@
 	<div class="footer_content">
 		<div class="left_content">
 			<a href="/" class="logo" style="background-image: url(main/uploads/2020_09/images/resized/logo-fundo-branco[170x75].png);"></a>
-           
+
     <!-- Page Footer-->
     <!-- Default footer-->
     <section class="section novi-background section-66" style="overflow: hidden;background-color: #1a202c">

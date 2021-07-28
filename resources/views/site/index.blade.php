@@ -26,47 +26,48 @@
         </div>
     </div> -->
     <!-- Page Head-->
-    <header class="page-head slider-menu-position" data-preset='{"title":"Header 1","category":"header, parallax","reload":true,"id":"header-1"}'>
-        <!-- - RD Navbar-->
+    <header class="page-head slider-menu-position">
+        <!-- RD Navbar Transparent-->
         <div class="rd-navbar-wrap">
-            <nav class="rd-navbar container rd-navbar-floated rd-navbar-dark rd-navbar-dark-transparent" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-lg-auto-height="true" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-stick-up="true">
+            <nav class="rd-navbar rd-navbar-floated rd-navbar-dark rd-navbar-dark-transparent"  data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-lg-auto-height="true" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-stick-up="true">
                 <div class="rd-navbar-inner">
-                    <!-- RD Navbar Panel-->
-                    <div class="rd-navbar-panel">
-                        <!-- RD Navbar Toggle-->
-                        <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap"><span></span></button>
-                        <!--Navbar Brand-->
-                        <div class="rd-navbar-brand"><a href="/"><img width='135' height='55' src='{{ asset('images/logo_big.png') }}' alt='Smart Veículos'/></a></div>
-                    </div>
-                    <div class="rd-navbar-menu-wrap">
-                        <div class="rd-navbar-nav-wrap">
-                            <div class="rd-navbar-mobile-scroll">
-                                <!--Navbar Brand Mobile-->
-                                <div class="rd-navbar-mobile-brand"><a href="/"><img width='218' height='35' src='{{ asset('images/logo_big.png') }}' alt=''/></a></div>
-                                <!-- RD Navbar Nav-->
-                                <ul class="rd-navbar-nav">
-                                    <li><a href="{{url('analise')}}"><span>Análise de Crédito</span></a>
-                                    </li>
-                                    <li><a href="{{url('empresa')}}"><span>Empresa</span></a>
-                                    </li>
-                                    <li><a href="{{url('contato')}}"><span>Contato</span></a>
-                                    </li>
-                                    <li><a href="{{url('compras')}}" ><span>Venda seu Carro</span></a>
-                                    </li>
-                                    <li><a href="{{url('veiculos')}}"><span>Nossos Veículos</span></a>
-                                    </li>
-                                    <li><a href="{{url('https://api.whatsapp.com/send?phone=5515997121257&text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Smart%20Ve%C3%ADculos%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.')}}" target="_blank">
-                                            <h6 class="text-white text-bold"><img src="{{ asset('images/whatsapp3-36x36.png') }}"> 15 99712-1257</h6>
-                                        </a>
-                                    </li>
-                                </ul>
+                    <div class="container section-relative d-flex justify-content-between">
+                        <!-- RD Navbar Panel-->
+                        <div class="rd-navbar-panel">
+                            <!-- RD Navbar Toggle-->
+                            <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap"><span></span></button>
+                            <!--Navbar Brand-->
+                            <div class="rd-navbar-brand"><a href="/"><img width='135' height='55' src='{{ asset('images/logo_big.png') }}' alt='Smart Veículos'/></a></div>
+                        </div>
+                        <div class="rd-navbar-menu-wrap">
+                            <div class="rd-navbar-nav-wrap">
+                                <div class="rd-navbar-mobile-scroll hoverLink">
+                                    <!--Navbar Brand Mobile-->
+                                    <div class="rd-navbar-mobile-brand"><a href="/"><img width='218' height='35' src='{{ asset('images/logo_big.png') }}' alt=''/></a></div>
+                                    <!-- RD Navbar Nav-->
+                                    <ul class="rd-navbar-nav">
+                                        <li><a href="{{url('analise')}}"><span>Análise de Crédito</span></a>
+                                        </li>
+                                        <li><a href="{{url('empresa')}}"><span>Empresa</span></a>
+                                        </li>
+                                        <li><a href="{{url('contato')}}"><span>Contato</span></a>
+                                        </li>
+                                        <li><a href="{{url('compras')}}" ><span class="tagRed-outline">Venda seu Carro</span></a>
+                                        </li>
+                                        <li><a href="{{url('veiculos')}}"><span class="tagRed">Nossos Veículos</span></a>
+                                        </li>
+                                        <li><a href="{{url('https://api.whatsapp.com/send?phone=5515997121257&text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Smart%20Ve%C3%ADculos%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.')}}" target="_blank">
+                                                <h6 class="text-white text-bold"><img src="{{ asset('images/whatsapp3-36x36.png') }}"> 15 99712-1257</h6>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </nav>
         </div>
-
     </header>
     <!--Carrousel-->
     <section class="carrousselIndex">
