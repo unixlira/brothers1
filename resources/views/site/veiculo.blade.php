@@ -222,11 +222,11 @@
                     <div class="container text-white bg-dark col-12 mt-4" >
                         <div class="text-center m-auto" style="padding: 10px;">
                             <span class="text-bold">Ligue ou fale pelo WhatsApp</span>
-                            <div class="text-bold text-left mt-1">
+                            <div class="text-bold text-center mt-1">
                                 <div class="icon-list-item"><a href="https://api.whatsapp.com/send?phone=5515997121257&text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Smart%20Ve%C3%ADculos%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">
                                 <i class="novi-icon fa fa-whatsapp"></i>  (15) 99712-1257</div></a>
                             </div>
-                            <div class="text-bold text-left">
+                            <div class="text-bold text-center">
                                 <div class="icon-list-item"><i class="novi-icon fa fa-phone"></i> (15) 3358-5545</div>
                             </div>
                             <br>
@@ -240,20 +240,20 @@
                     </div>
                     <div class="container mt-2">
                         <div class="row">
-                            <div class="col-md-5 text-left">
-                                <a href="/veiculos/{{$newXml[1]['idveiculo']}}"><img width="106" height="100" src="{{$newXml[1]['fotos']['foto'][0]['url']}}" alt=""></a>
+                            <div class="col-lg-6 col-md-5 col-sm-4">
+                                <a href="/veiculos/{{$newXml[1]['idveiculo']}}"><img width="120" height="100" src="{{$newXml[1]['fotos']['foto'][0]['url']}}" alt=""></a>
                             </div>
-                            <div class="col-md-7 text-left">
+                            <div class="col-lg-6 col-md-5 col-sm-4">
                                 <span style="font-size: 11px;font-weight: bold">{{ $newXml[1]['marca'] .' '. $newXml[1]['modelo']}}<br> {{$newXml[1]['versao']}}</span>
                             </div>
                         </div>
                         <br>
                         <div class="row" style="margin-top: -10px;">
-                            <div class="col-md-5 text-left mt-3">
+                            <div class="col-lg-6 col-md-5 col-sm-4 ">
                                 <i class="novi-icon fa fa-road"></i><span> {{$newXml[1]['quilometragem']}}</span>
                             </div>
-                            <div class="col-md-7 text-right text-bold">
-                                <span style="background-color: #eb232c;color: white;padding: 10px;font-size: 17px">{{$busca[0]['preco']}}</span>
+                            <div class="col-lg-6 col-md-5 col-sm-4 text-bold mt-2">
+                                <span style="background-color: #eb232c;color: white;padding: 10px;font-size: 13px">{{$busca[0]['preco']}}</span>
                             </div>
                         </div>
                     </div>
@@ -261,20 +261,20 @@
                     <hr>
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-5 text-left">
-                                <a href="/veiculos/{{$newXml[5]['idveiculo']}}"><img width="106" height="100" src="{{$newXml[5]['fotos']['foto'][0]['url']}}" alt=""></a>
+                            <div class="col-lg-6 col-md-5 col-sm-4">
+                                <a href="/veiculos/{{$newXml[5]['idveiculo']}}"><img width="120" height="100" src="{{$newXml[5]['fotos']['foto'][0]['url']}}" alt=""></a>
                             </div>
-                            <div class="col-md-7 text-left">
+                            <div class="col-lg-6 col-md-5 col-sm-4">
                                 <span style="font-size: 11px;font-weight: bold;margin-top: -10px !important;">{{ $newXml[5]['marca'] .' '. $newXml[5]['modelo']}}<br> {{$newXml[5]['versao']}}</span>
                             </div>
                         </div>
                         <br>
                         <div class="row" style="margin-top: -10px;">
-                            <div class="col-md-5 text-left mt-3">
+                            <div class="col-lg-6 col-md-5 col-sm-4 ">
                                 <i class="novi-icon fa fa-road"></i><span> {{$newXml[5]['quilometragem']}}</span>
                             </div>
-                            <div class="col-md-7 text-right text-bold">
-                                <span style="background-color: #eb232c;color: white;padding: 10px;font-size: 17px">{{$newXml[5]['preco']}}</span>
+                            <div class="col-lg-6 col-md-5 col-sm-4 text-bold mt-2">
+                                <span style="background-color: #eb232c;color: white;padding: 10px;font-size: 13px">{{$newXml[5]['preco']}}</span>
                             </div>
                         </div>
                     </div>
@@ -282,20 +282,20 @@
                     <hr>
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-5 text-left">
-                                <a href="/veiculos/{{$newXml[7]['idveiculo']}}"><img width="106" height="100" src="{{$newXml[7]['fotos']['foto'][0]['url']}}" alt=""></a>
+                            <div class="col-lg-6 col-md-5 col-sm-4">
+                                <a href="/veiculos/{{$newXml[7]['idveiculo']}}"><img width="120" height="100" src="{{$newXml[7]['fotos']['foto'][0]['url']}}" alt=""></a>
                             </div>
-                            <div class="col-md-7 text-left">
+                            <div class="col-lg-6 col-md-5 col-sm-4 ">
                                 <span style="font-size: 11px;font-weight: bold;margin-top: -10px !important;">{{ $newXml[7]['marca'] .' '. $newXml[7]['modelo']}}<br> {{$newXml[7]['versao']}}</span>
                             </div>
                         </div>
                         <br>
                         <div class="row" style="margin-top: -10px;">
-                            <div class="col-md-5 text-left mt-3">
+                            <div class="col-lg-6 col-md-5 col-sm-4 ">
                                 <i class="novi-icon fa fa-road"></i><span> {{$newXml[7]['quilometragem']}}</span>
                             </div>
-                            <div class="col-md-7 text-right text-bold">
-                                <span style="background-color: #eb232c;color: white;padding: 10px;font-size: 17px">{{$newXml[7]['preco']}}</span>
+                            <div class="col-lg-6 col-md-5 col-sm-4  text-bold mt-2">
+                                <span style="background-color: #eb232c;color: white;padding: 10px;font-size: 13px">{{$newXml[7]['preco']}}</span>
                             </div>
                         </div>
                     </div>
@@ -304,27 +304,28 @@
                     @if(!empty($busca[0]['observacoes']))
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-5 text-left">
-                                    <a href="/veiculos/{{$newXml[11]['idveiculo']}}"><img width="106" height="100" src="{{$newXml[11]['fotos']['foto'][0]['url']}}" alt=""></a>
+                                <div class="col-lg-6 col-md-5 col-sm-4">
+                                    <a href="/veiculos/{{$newXml[11]['idveiculo']}}"><img width="120" height="100" src="{{$newXml[11]['fotos']['foto'][0]['url']}}" alt=""></a>
                                 </div>
-                                <div class="col-md-7 text-left">
+                                <div class="col-lg-6 col-md-5 col-sm-4 ">
                                     <span style="font-size: 11px;font-weight: bold;margin-top: -10px !important;">{{ $newXml[11]['marca'] .' '. $newXml[11]['modelo']}}<br> {{$newXml[11]['versao']}}</span>
                                 </div>
                             </div>
                             <br>
                             <div class="row" style="margin-top: -10px;">
-                                <div class="col-md-5 text-left mt-3">
+                                <div class="col-lg-6 col-md-5 col-sm-4 ">
                                     <i class="novi-icon fa fa-road"></i><span> {{$newXml[11]['quilometragem']}}</span>
                                 </div>
-                                <div class="col-md-7 text-right text-bold">
-                                    <span style="background-color: #eb232c;color: white;padding: 10px;font-size: 17px">{{$newXml[11]['preco']}}</span>
+                                <div class="col-lg-6 col-md-5 col-sm-4 text-bold mt-2">
+                                    <span style="background-color: #eb232c;color: white;padding: 10px;font-size: 13px">{{$newXml[11]['preco']}}</span>
                                 </div>
                             </div>
                         </div>
                     @endif
                 </div>
             </div>
-
+            <br>
+            <br>
         </div>
 
         <section class="section novi-background section-66" style="overflow: hidden;background-color: #1a202c">

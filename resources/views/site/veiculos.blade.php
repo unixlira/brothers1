@@ -77,32 +77,33 @@
         </div>
         <div class="container">
             <div class="tab-content clearfix">
-                <form action="{{ route('buscar') }}" method="GET">
+            <form action="{{ route('buscar') }}" method="GET">
                     <div class="tab-pane active" id="1b">
                         <div class="row">
-                            <div class="col-sm-5">
+                            <div class="col-sm-4">
                                 <select id="marca" name="marca">
-                                    <option value="false" selected="selected">Marca</option>
+                                    <option value="false" selected="selected" >Marca</option>
                                     @foreach($selectMarca as $node)
                                         <option value="{{ $node['marca'] }}">{{ $node['marca'] }}</option>
                                     @endforeach
                                 </select>
                             </div>
-                            <div class="col-sm-5" id="modelo">
-                                <select name="modelo">
-                                    <option value="false" selected="selected">Modelo</option>
+                            <div class="col-sm-4" id="modelo">
+                                <select name="modelo" id="modelo">
+                                    <option value="false" selected="selected" >Modelo</option>
                                     @foreach($selectModelo as $node)
                                         <option value="{{ $node['modelo'] }}">{{ $node['modelo'] }}</option>
                                     @endforeach
                                 </select>
                             </div>
-                            <div class="col-sm-5" id="select2" style="display: none;">
+                            <div class="col-sm-4" id="select2" style="display: none;">
                                 <select name ="modelo" id="showModelo">
                                     <option value="false">Modelo</option>
                                 </select>
                             </div>
                             <div class="col-sm">
                                 <button type="submit" class="btn btn-danger"><i class="novi-icon fa fa-search"></i> Buscar</button>
+                                <a href="{{ route('veiculos')}}"  class="btn btn-dark"><i class="novi-icon fa fa-search"></i> Todos Veículos</a>
                             </div>
                         </div>
                     </div>

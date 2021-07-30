@@ -97,7 +97,7 @@
                         <form action="{{ route('buscar') }}" method="GET">
                             <div class="tab-pane active" id="1b">
                                 <div class="row col-12">
-                                <div class="col-sm-12 col-md-4 col-lg-4 mb-1">
+                                <div class="col-sm-12 col-md-5 col-lg-5 mb-1">
                                         <select id="marca" name="marca">
                                             <option value="false" selected="selected">Marca</option>
                                             @foreach($selectMarca as $node)
@@ -105,7 +105,7 @@
                                             @endforeach
                                         </select>
                                     </div>
-                                    <div class="col-sm-12 col-md-4 col-lg-4 mb-1" id="modelo">
+                                    <div class="col-sm-12 col-md-5 col-lg-5 mb-1" id="modelo">
                                         <select name="modelo" >
                                             <option value="false" selected="selected">Modelo</option>
                                             @foreach($selectModelo as $node)
@@ -113,12 +113,12 @@
                                             @endforeach
                                         </select>
                                     </div>
-                                    <div class="col-sm-12 col-md-4 col-lg-4 mb-1" id="select2" style="display: none;">
+                                    <div class="col-sm-12 col-md-5 col-lg-5 mb-1" id="select2" style="display: none;">
                                         <select name ="modelo" id="showModelo">
                                             <option value="false">Modelo</option>
                                         </select>
                                     </div>
-                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                    <div class="col-sm-12 col-md-2 col-lg-2">
                                         <button type="submit" class="btn btn-danger" id="sent"><i class="novi-icon fa fa-search"></i> Buscar</button>
                                     </div>
                                 </div>
@@ -186,7 +186,7 @@
                     <div class="unit-body text-left">
                         <div>
                             <p>
-                                <q><a href="/buscar?marca=CITROEN"><a href=""><img class="card-img-top" src="{{ asset("images/citroen-c3.jpg") }}" alt="" width="210" height="300"></a></a></q>
+                                <q><a href="/buscar?marca=CITROEN&modelo=false"><img class="card-img-top" src="{{ asset("images/citroen-c3.jpg") }}" alt="" width="210" height="300"></a></q>
                             </p>
                         </div>
                     </div>
@@ -196,7 +196,7 @@
                     <div class="unit-body text-left">
                         <div>
                             <p>
-                                <q><a href="/buscar?marca=RENAULT"><img class="card-img-top" src="{{ asset("images/duster.jpg") }}" alt="" width="210" height="300"></a></q>
+                                <q><a href="/buscar?marca=RENAULT&modelo=false"><img class="card-img-top" src="{{ asset("images/duster.jpg") }}" alt="" width="210" height="300"></a></q>
                             </p>
                         </div>
                     </div>
@@ -206,7 +206,7 @@
                     <div class="unit-body text-left">
                         <div>
                             <p>
-                                <q><a href="/buscar?marca=FORD"><img class="card-img-top" src="{{ asset("images/ford-ecosport.png") }}" alt="" width="210" height="300"></a></q>
+                                <q><a href="/buscar?marca=FORD&modelo=false"><img class="card-img-top" src="{{ asset("images/ford-ecosport.png") }}" alt="" width="210" height="300"></a></q>
                             </p>
                         </div>
                     </div>
@@ -216,7 +216,7 @@
                     <div class="unit-body text-left">
                         <div>
                             <p>
-                                <q><a href="/buscar?marca=HYUNDAY"><img class="card-img-top" src="{{ asset("images/hb20.jpg") }}" alt="" width="210" height="300"></a></q>
+                                <q><a href="/buscar?marca=HYUNDAI&modelo=false"><img class="card-img-top" src="{{ asset("images/hb20.jpg") }}" alt="" width="210" height="300"></a></q>
                             </p>
                         </div>
                     </div>
@@ -226,7 +226,7 @@
                     <div class="unit-body text-left">
                         <div>
                             <p>
-                                <q><a href="/buscar?marca=NISSAN"><img class="card-img-top" src="{{ asset("images/march.jpg") }}" alt="" width="210" height="300"></a></q>
+                                <q><a href="/buscar?marca=NISSAN&modelo=false"><img class="card-img-top" src="{{ asset("images/march.jpg") }}" alt="" width="210" height="300"></a></q>
                             </p>
                         </div>
                     </div>
@@ -236,7 +236,7 @@
                     <div class="unit-body text-left">
                         <div>
                             <p>
-                                <q><a href="/buscar?marca=FIAT"><img class="card-img-top" src="{{ asset("images/argo.png") }}" alt="" width="210" height="300"></a></q>
+                                <q><a href="/buscar?marca=FIAT&modelo=false"><img class="card-img-top" src="{{ asset("images/argo.png") }}" alt="" width="210" height="300"></a></q>
                             </p>
                         </div>
                     </div>
@@ -246,7 +246,7 @@
                     <div class="unit-body text-left">
                         <div>
                             <p>
-                                <q><a href="/buscar?marca=CHEVROLET"><img class="card-img-top" src="{{ asset("images/onix.jpg") }}" alt="" width="210" height="300"></a></q>
+                                <q><a href="/buscar?marca=CHEVROLET&modelo=false"><img class="card-img-top" src="{{ asset("images/onix.jpg") }}" alt="" width="210" height="300"></a></q>
                             </p>
                         </div>
                     </div>
@@ -256,7 +256,7 @@
                     <div class="unit-body text-left">
                         <div>
                             <p>
-                                <q><a href="/buscar?marca=VOLKSWAGEN"><img class="card-img-top" src="{{ asset("images/polo.png") }}" alt="" width="210" height="300"></a></q>
+                                <q><a href="/buscar?marca=VOLKSWAGEN&modelo=false"><img class="card-img-top" src="{{ asset("images/polo.png") }}" alt="" width="210" height="300"></a></q>
                             </p>
                         </div>
                     </div>
@@ -266,7 +266,7 @@
                     <div class="unit-body text-left">
                         <div>
                             <p>
-                                <q><a href="/buscar?marca=TOYOTA"><img class="card-img-top" src="{{ asset("images/toyota-corolla.jpg") }}" alt="" width="210" height="300"></a></q>
+                                <q><a href="/buscar?marca=TOYOTA&modelo=false"><img class="card-img-top" src="{{ asset("images/toyota-corolla.jpg") }}" alt="" width="210" height="300"></a></q>
                             </p>
                         </div>
                     </div>
@@ -276,7 +276,7 @@
                     <div class="unit-body text-left">
                         <div>
                             <p>
-                                <q><a href="/buscar?marca=HONDA"><img class="card-img-top" src="{{ asset("images/honda.png") }}" alt="" width="210" height="300"></a></q>
+                                <q><a href="/buscar?marca=HONDA&modelo=false"><img class="card-img-top" src="{{ asset("images/honda.png") }}" alt="" width="210" height="300"></a></q>
                             </p>
                         </div>
                     </div>
@@ -285,7 +285,7 @@
         </div>
         <div class="col-12 offset-top-66"><a class="btn btn-danger" href="/veiculos">Ver todas marcas</a></div>
     </section>
-    <section class="" style="background: #ecf1f8 url('{{ asset("images/bg-carros.jpg") }}') ;background-repeat: no-repeat;background-size: 100% 100%;height: 650px;">
+    <section class="" style="background: #ecf1f8 url('{{ asset("images/bg-carros.jpg") }}') ;background-repeat: no-repeat;background-size: 100% 100%;height: 680px;">
         <div class="container">
             <div class="mt-5 mb-5">
                 <br><br>

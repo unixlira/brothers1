@@ -68,7 +68,7 @@
                 </div>
             </nav>
         </div>
-        <div class="section-254 parallax-container" data-parallax-img="{{ asset('images/banner-estoque2.jpg') }}"></div>
+        <div class="section-254 parallax-container swiper-caption swiper-parallax" data-parallax-img="{{ asset('images/banner-estoque2.jpg') }}"></div>
     </header>
     <section>
         <div class="mt-5 mb-5">

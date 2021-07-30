@@ -9700,8 +9700,8 @@ mark,
 }
 
 .text-extra-big {
-    font-size: 38px;
-    line-height: 1.2;
+    font-size: 28px;
+    line-height: 0.2;
 }
 
 @media (min-width: 768px) {
@@ -43722,6 +43722,10 @@ aside {
     .twoPictures{
         margin-top: -150px !important;
     }
+    .section-254{
+        background-position: center !important;
+    }
+
 }
 
 @media (min-width: 480px) {
@@ -43731,6 +43735,12 @@ aside {
     .twoPictures{
         margin-top: -150px !important;
     }
+
+    .section-254{
+        background-position: center !important;
+    }
+
+
 }
 
 @media (min-width: 768px) {
@@ -43739,6 +43749,10 @@ aside {
     }
     .twoPictures{
         margin-top: -190px !important;
+    }
+
+    .section-254{
+        background-position: center !important;
     }
 }
 
@@ -43752,6 +43766,9 @@ aside {
 
     .carrousselIndex{
         width: 2000px !important;
+    }
+    .section-254{
+        background-position: center !important;
     }
 }
 
@@ -43767,7 +43784,11 @@ aside {
     #tamanhoSection {
         height: 700px !important;
     }
+    .section-254{
+        background-position: center !important;
+    }
 }
+
 
 
 .hoverLink > ul > li > a:hover {
@@ -43788,10 +43809,10 @@ aside {
 
 /*}*/
 
-.tagRed {
+/* .tagRed {
     border-radius: 55px;
     background-color: #eb232c;
     top: -10px;
     padding: 10px;
     margin-left:-15px;
-}
+} */

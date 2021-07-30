@@ -92,7 +92,7 @@
                     </div>
                 </nav>
             </div>
-            <div class="section-254 parallax-container" data-parallax-img="{{ asset('images/venda.jpg') }}"></div>
+            <div class="section-254 parallax-container " data-parallax-img="{{ asset('images/venda.jpg') }}"></div>
         </header>
         <!-- Contact Us-->
         <section class="section-34" style="background-color:#ecf1f8">
