@@ -91,8 +91,8 @@
                 <div class="parallax-container" data-parallax-img="images/background1.jpg">
                     <div class="parallax-content">
                         <div class="container section-98 section-md-254">
-                            <div class="unit-body text-left text-white">
-                                <div class="text-extra-big text-white font-weight-bold">COMPRAMOS O<br> SEU CARRO!</div>
+                            <div class="text-left text-white">
+                                <h1 class="text-white font-weight-bold">COMPRAMOS O<br> SEU CARRO!</h1>
                                 <h4 class="text-white"><small>Quer saber quanto pagamos nele?</small></h4>
                                 <div class="d-block d-xl-inline-block">
                                     <button class="btn btn-red element-fullwidth" type="button" style="max-width: 170px; min-width: 170px; min-height: 50px;"> EU QUERO  <a class="icon novi-icon icon-xxs icon-gray-outline icon-effect-1 fa fa-whatsapp" href="https://api.whatsapp.com/send?phone=5515997121257&text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Smart%20Ve%C3%ADculos%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"></a></button>

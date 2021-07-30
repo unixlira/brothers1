@@ -142,11 +142,11 @@
     </section>
 
 
-    <section class="section novi-background section-66" style="overflow: hidden;background-color: #1a202c">
+    <section class="section  section-66" style="overflow: hidden;background-color: #1a202c">
         <div class="container">
             <div class="row justify-content-sm-center">
                 <div class="col-md-10 col-xl-4">
-                    <div class="unit unit-sm flex-md-row text-md-left ">
+                    <div class="unit unit-sm flex-md-row  ">
                         <div class="unit-body text-center text-white">
                             <h4 class="font-weight-bold text-uppercase offset-md-top-24 text-white">Loja 1</h4>
                             <p>
@@ -158,7 +158,7 @@
                     </div>
                 </div>
                 <div class="col-md-10 col-xl-4 offset-top-50 offset-lg-top-0">
-                    <div class="unit unit-sm flex-md-row text-md-left">
+                    <div class="unit unit-sm flex-md-row ">
                         <div class="unit-body text-center text-white">
                             <h4 class="font-weight-bold text-uppercase offset-md-top-24 text-white">Loja 2</h4>
                             <p>Rua Sete de Setembro, 325 , Centro
@@ -169,7 +169,7 @@
                     </div>
                 </div>
                 <div class="col-md-10 col-xl-4 offset-top-50 offset-lg-top-0">
-                    <div class="unit unit-sm flex-md-row text-md-left">
+                    <div class="unit unit-sm flex-md-row ">
                         <div class="unit-body text-center text-white">
                             <h4 class="font-weight-bold text-uppercase offset-md-top-24 text-white">Loja 3</h4>
                             <p>RAv. General Osório, 1620 , Vl. Trujillo
@@ -183,13 +183,13 @@
         </div>
     </section>
     <hr style="background-color: #1a202c;margin: auto; border-color: #6c757d">
-    <section class="section novi-background section-66" style="overflow: hidden;background-color: #1a202c">
+    <section class="section section-66" style="overflow: hidden;background-color: #1a202c">
         <div class="container">
-            <div class="row justify-content-sm-left">
-                <div class="col-md-10 col-xl-12">
-                        <div class="unit unit-sm flex-md-row text-md-left ">
-                            <div class="unit-body row text-center text-justify offset-md-top-10 text-white">
-                                <p style="color: #718096">© 2021 <a href="/" style="color: #0E7EB5">Smart Veículos</a> | Os Melhores Veículos Semi novos estão na Smart Veículos. Reservamos o direito de eventuais erros de digitação na descrição, valores ou fotos. O valor descrito nos anúncios em nosso site, são para pagamentos à vista, para financiamento e troca, fale com um de nossos vendedores.</p>
+                <div class="row justify-content-sm-left">
+                    <div class="col-md-10 col-xl-12">
+                        <div class="unit unit-sm flex-md-row  ">
+                            <div class="text-center text-white">
+                                <p style="color: #718096">© 2021 <a href="/" style="color: #0E7EB5">Smart Veículos</a> | Os Melhores Veículos Semi novos estão na Smart Veículos. Reservamos o direito de eventuais erros de digitação na descrição, valores ou fotos.&nbsp;O valor descrito nos anúncios em nosso site, são para pagamentos à vista, para financiamento e troca, fale com um de nossos vendedores.</p>
                                 <br>
                             </div>
                         </div>
@@ -197,23 +197,23 @@
                 </div>
                 <div class="container text-center">
                     <div class="redes">
-                        <a href="mailto:vendas.websmartveiculos@gmail.com" class="email mr-5" target="_blank"> <svg id="mail" xmlns="http://www.w3.org/2000/svg" width="40.882" height="31.141" viewBox="0 0 40.882 31.141">
+                        <a href="mailto:vendas.websmartveiculos@gmail.com" class="email mr-3" target="_blank"> <svg id="mail" xmlns="http://www.w3.org/2000/svg" width="40.882" height="31.141" viewBox="0 0 40.882 31.141">
                                 <g id="Grupo_612" data-name="Grupo 612" transform="translate(0 0)">
                                     <path id="Caminho_926" data-name="Caminho 926" d="M37.289,61H3.593A3.6,3.6,0,0,0,0,64.593V88.547a3.6,3.6,0,0,0,3.593,3.593h33.7a3.6,3.6,0,0,0,3.593-3.593V64.593A3.6,3.6,0,0,0,37.289,61Zm-.5,2.4L20.517,79.671,4.1,63.4ZM2.4,88.051V65.078L13.932,76.515Zm1.694,1.694L15.633,78.2l4.045,4.01a1.2,1.2,0,0,0,1.69,0l3.944-3.944L36.793,89.745Zm34.4-1.694L27.005,76.57,38.487,65.089Z" transform="translate(0 -61)" />
                                 </g>
                             </svg>
                         </a>
-                        <a href="https://api.whatsapp.com/send?phone=5515997121257&text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Smart%20Ve%C3%ADculos%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="whatsapp mr-5" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="30.423" height="30.57" viewBox="0 0 30.423 30.57">
+                        <a href="https://api.whatsapp.com/send?phone=5515997121257&text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Smart%20Ve%C3%ADculos%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="whatsapp mr-3" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="30.423" height="30.57" viewBox="0 0 30.423 30.57">
                                 <path id="whatsapp" d="M26.241,4.443A15.152,15.152,0,0,0,2.4,22.72L.25,30.57l8.03-2.107a15.132,15.132,0,0,0,7.239,1.844h.006A15.155,15.155,0,0,0,26.241,4.443ZM15.525,27.749H15.52a12.575,12.575,0,0,1-6.408-1.755l-.46-.273-4.765,1.25,1.272-4.646-.3-.476a12.59,12.59,0,1,1,10.666,5.9Zm6.906-9.43c-.378-.19-2.239-1.1-2.586-1.231s-.6-.189-.851.19-.978,1.231-1.2,1.484-.441.284-.82.095a10.338,10.338,0,0,1-3.044-1.879,11.417,11.417,0,0,1-2.106-2.622c-.221-.379,0-.564.166-.772a10.707,10.707,0,0,0,.946-1.295.7.7,0,0,0-.032-.663c-.094-.189-.851-2.052-1.167-2.81-.307-.738-.619-.638-.852-.65s-.473-.013-.725-.013a1.39,1.39,0,0,0-1.009.474,4.245,4.245,0,0,0-1.325,3.158A7.363,7.363,0,0,0,9.374,15.7c.189.253,2.669,4.076,6.466,5.715a21.665,21.665,0,0,0,2.158.8,5.189,5.189,0,0,0,2.384.15,3.9,3.9,0,0,0,2.555-1.8,3.163,3.163,0,0,0,.221-1.8c-.094-.158-.347-.252-.725-.442Zm0,0" transform="translate(-0.25)" fill="#006b12" fill-rule="evenodd" />
                             </svg>
                         </a>
-                        <a href="https://www.facebook.com/SmartVeiculosSorocaba" class="facebook mr-5" target="_blank"> <svg id="facebook" xmlns="http://www.w3.org/2000/svg" width="30.63" height="30.63" viewBox="0 0 30.63 30.63">
+                        <a href="https://www.facebook.com/SmartVeiculosSorocaba" class="facebook mr-3" target="_blank"> <svg id="facebook" xmlns="http://www.w3.org/2000/svg" width="30.63" height="30.63" viewBox="0 0 30.63 30.63">
                                 <g id="Grupo_527" data-name="Grupo 527">
                                     <path id="Caminho_862" data-name="Caminho 862" d="M27.041,0H3.589A3.594,3.594,0,0,0,0,3.589V27.041A3.594,3.594,0,0,0,3.589,30.63H27.041a3.594,3.594,0,0,0,3.589-3.589V3.589A3.594,3.594,0,0,0,27.041,0Zm1.2,27.041a1.2,1.2,0,0,1-1.2,1.2h-6.82V18.486h3.7l.611-3.709H20.221V12.2a1.765,1.765,0,0,1,1.795-1.795h2.453V6.7H22.016a5.5,5.5,0,0,0-5.5,5.514v2.562H12.922v3.709h3.591v9.751H3.589a1.2,1.2,0,0,1-1.2-1.2V3.589a1.2,1.2,0,0,1,1.2-1.2H27.041a1.2,1.2,0,0,1,1.2,1.2Z" fill="#0052cc" />
                                 </g>
                             </svg>
                         </a>
-                        <a href=" https://www.instagram.com/smartveiculos/?hl=pt-br" class="instagram mr-5" target="_blank"> <svg id="instagram-sketched" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30.57" height="30.569" viewBox="0 0 30.57 30.569">
+                        <a href=" https://www.instagram.com/smartveiculos/?hl=pt-br" class="instagram mr-3" target="_blank"> <svg id="instagram-sketched" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30.57" height="30.569" viewBox="0 0 30.57 30.569">
                                 <defs>
                                     <linearGradient id="linear-gradient" x1="0.084" y1="0.916" x2="0.916" y2="0.084" gradientUnits="objectBoundingBox">
                                         <stop offset="0" stop-color="#ffd600" />
@@ -241,8 +241,7 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <footer class="section-relative ">
+        </section>        <footer class="section-relative ">
             <div style="background-color:#242323; height:74px">
                 <a href="https://www.conduzaweb.com.br/" target="_blank">
                     <img src="http://estudioaware.com/motors-teste/wp-content/uploads/2021/06/logo-branca-conduza.png" style="display: block;margin-left: auto;margin-right: auto;height: 60px;padding-top: 15px;">
