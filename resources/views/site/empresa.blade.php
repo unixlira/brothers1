@@ -142,8 +142,8 @@
             <div class="container">
                 <div class="row justify-content-center grid-group-md text-xl-left">
                     <div class="col-md-8 col-xl-6">
-                        <div class="inset-xl-right-20">
-                            <h1><span class="d-block font-accent big">Assine</span><span class="d-block offset-top-4 h3 text-light text-uppercase">nossa newsletter</span></h1>
+                        <div class="inset-xl-right-20 text-justify">
+                            <h1><span rel="stylesheet" class="text-nowrap bd-highlight d-block font-family big">Assine</span><span class="d-block offset-top-4 h3 text-light text-uppercase">nossa newsletter</span></h1>
                             <form action="/" method="get">
                                 <div class="row">
                                     <div class="col-md-9 mb-2">
@@ -153,7 +153,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-2">
-                                        <button class="btn btn-warning">Enviar</button>
+                                        <button class="btn btn-danger">Enviar</button>
                                     </div>
                                 </div>
                             </form>
