@@ -148,7 +148,7 @@
                                 <div class="row">
                                     <div class="col-md-9 mb-2">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="background:#ecf1f8" placeholder="Seu email">
 
                                         </div>
                                     </div>
