@@ -90,7 +90,7 @@
                 </div>
                 <div class="parallax-container" data-parallax-img="images/background1.jpg">
                     <div class="parallax-content">
-                        <div class="container section-98 section-md-254">
+                        <div class="container section-155">
                             <div class="text-left text-white">
                                 <h1 class="text-white font-weight-bold">COMPRAMOS O<br> SEU CARRO!</h1>
                                 <h4 class="text-white"><small>Quer saber quanto pagamos nele?</small></h4>
