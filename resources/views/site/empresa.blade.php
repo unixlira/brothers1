@@ -143,7 +143,6 @@
         <section class="bg-white section-top-66 section-bottom-34" data-preset='{"title":"Content block 1","category":"content","reload":true,"id":"content-block-1"}'>
             <div class="container">
                 <div class="row justify-content-center grid-group-md text-xl-left">
-
                      <div class="col-md-8 col-xl-6">
                         <div class="shadow-drop-xl">
                             <!-- Media Elements-->
