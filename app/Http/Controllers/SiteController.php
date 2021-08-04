@@ -35,10 +35,12 @@ class SiteController extends Controller
 
     }
 
-    public function empresa()
+    public function empresa(Request $request)
     {
+        
+        $mensagem = $request->mensagem;
 
-        return view('site.empresa');
+        return view('site.empresa',compact('mensagem'));
 
     }
 
@@ -170,6 +172,18 @@ class SiteController extends Controller
         Mail::to('vendas.websmartveiculos@gmail.com')->send(new SendMail($user));
 
         return redirect('/contato/?mensagem=enviada');
+    }
+
+    public function newsletter(Request $request)
+    {
+        $user = [
+            'tipo' => $request->tipo,
+            'email'=> $request->email
+        ];
+
+        Mail::to('vendas.websmartveiculos@gmail.com')->send(new SendMail($user));
+
+        return redirect('/empresa/?mensagem=enviada');
     }
 
 }

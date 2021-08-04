@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,700italic">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+    <script src="//code-sa1.jivosite.com/widget/zhp7E8bDRU" async></script>
 </head>
 <body>
 <!-- IE panel-->
@@ -127,7 +128,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-5 mb-5">
+            <div class="mt-5">
                 <h1>AS MELHORES NEGOCIAÇÕES ESTÃO AQUI</h1>
                 <hr class="divider divider-lg bg-danger">
             </div>
@@ -144,15 +145,26 @@
                                     <p class="container font-weight-bold" >
                                         <cite class="text-normal">{{ $node['marca'] . ' ' . $node['modelo'] . ' ' . substr($node['versao'], 0,  33) }}&nbsp; ...</cite>
                                     </p>
-                                    <hr style="border: 1px solid black" />
-                                    <p class="container font-weight-bold" >
-                                        <cite class="text-normal row">
-                                            <i class="novi-icon fa fa-road mr-1 ml-2"> {{$node['quilometragem']}}</i>
-                                            <i class="novi-icon fa fa-cog mr-1"> {{$node['cambio']}}</i>
-                                            <i class="novi-icon fa fa-adjust mr-1"> {{$node['cor']}}</i>
-                                            <i class="novi-icon fa fa-calendar-check-o mr-1"> {{$node['anomodelo']}}</i>
-                                        </cite>
-                                    </p>
+                                    <hr style="border: 1px solid black" />    
+                                    <div class="container  text-center">
+                                        <div class="row">
+                                            <div class="col-sm">
+                                                <i class="novi-icon fa fa-road ">{{$node['quilometragem']}}</i>
+                                            </div>
+                                            <div class="col-sm">
+                                                <i class="novi-icon fa fa-cog">{{($node['cambio']=='Automático'?"Auto":$node['cambio'])}}</i>
+                                            </div>
+                                            <div class="col-sm">
+                                                <i class="novi-icon fa fa-adjust">{{$node['cor']}}</i>
+                                            </div>
+                                            <div class="col-sm">
+                                                <i class="novi-icon fa fa-calendar-check-o"> {{$node['anomodelo']}}</i>
+                                            </div>
+                                            <div class="col-sm">
+                                                <i class="novi-icon fa fa-dollar ">{{str_replace('R$','',$node['preco'])}}</i>
+                                            </div>
+                                        </div>
+                                    </div>                               
                                 </div>
                             </div>
                         </blockquote>
@@ -285,14 +297,14 @@
         </div>
         <div class="col-12 offset-top-66"><a class="btn btn-danger" href="/veiculos">Ver todas marcas</a></div>
     </section>
-    <section class="" style="background: #ecf1f8 url('{{ asset("images/bg-carros.jpg") }}') ;background-repeat: no-repeat;background-size: 100% 100%;height: 680px;">
+    <section class="" style="background: #ecf1f8 url('{{ asset("images/bg-carros.jpg") }}') ;background-repeat: no-repeat;background-size: 100% 100%;height: 780px;">
         <div class="container">
             <div class="mt-5 mb-5">
                 <br><br>
                 <h1 class="text-white ">Novidades</h1>
                 <hr class="divider divider-lg bg-danger">
             </div>
-            <div class="owl-carousel owl-carousel-classic owl-carousel-class-light veil-owl-nav owl-carousel-testimonials-3 slide" data-items="1" data-md-items="2" data-lg-items="3" data-xl-items="3" data-nav="false" data-dots="true" data-margin="50px" data-autoplay="false">
+            <div class="owl-carousel owl-carousel-classic owl-carousel-class-light veil-owl-nav owl-carousel-testimonials-3 slide" data-items="1" data-md-items="2" data-lg-items="3" data-xl-items="3" data-nav="false" data-dots="true" data-margin="50px" data-autoplay="true" data-loop="true">
                 @foreach($newXml as $node)
                     <div>
                         <blockquote class="quote quote-slider-4 unit uni-spacing-sm flex-md-row">
@@ -300,20 +312,31 @@
                             <div class="unit-body text-left" style="background-color: white;padding: 25px;border-radius: 10px;">
                                 <div>
                                     <p>
-                                        <q><a href="{{'/veiculos/'.$node['idveiculo']}}"><img class="card-img-top" src="{{ $node['fotos']['foto'][0]['url'] }}" alt="" width="130" height="200"></a></q>
+                                        <q><a href="{{'/veiculos/'.$node['idveiculo']}}"><img class="card-img-top" src="{{ $node['fotos']['foto'][0]['url'] }}" alt="" width="250" height="250"></q></a>
                                     </p>
                                     <p class="container font-weight-bold" >
                                         <cite class="text-normal">{{ $node['marca'] . ' ' . $node['modelo'] . ' ' . substr($node['versao'], 0,  33) }}&nbsp; ...</cite>
                                     </p>
-                                    <hr style="border: 1px solid black" />
-                                    <p class="container font-weight-bold" >
-                                        <cite class="text-center row">
-                                            <i class="novi-icon fa fa-road mr-1 ml-2"> {{$node['quilometragem']}}</i>
-                                            <i class="novi-icon fa fa-cog mr-1"> {{$node['cambio']}}</i>
-                                            <i class="novi-icon fa fa-adjust mr-1"> {{$node['cor']}}</i>
-                                            <i class="novi-icon fa fa-calendar-check-o mr-1"> {{$node['anomodelo']}}</i>
-                                        </cite>
-                                    </p>
+                                    <hr style="border: 1px solid black" />    
+                                    <div class="container  text-center">
+                                        <div class="row">
+                                            <div class="col-sm">
+                                                <i class="novi-icon fa fa-road ">{{$node['quilometragem']}}</i>
+                                            </div>
+                                            <div class="col-sm">
+                                                <i class="novi-icon fa fa-cog">{{($node['cambio']=='Automático'?"Auto":$node['cambio'])}}</i>
+                                            </div>
+                                            <div class="col-sm">
+                                                <i class="novi-icon fa fa-adjust">{{$node['cor']}}</i>
+                                            </div>
+                                            <div class="col-sm">
+                                                <i class="novi-icon fa fa-calendar-check-o"> {{$node['anomodelo']}}</i>
+                                            </div>
+                                            <div class="col-sm">
+                                                <i class="novi-icon fa fa-dollar ">{{str_replace('R$','',$node['preco'])}}</i>
+                                            </div>
+                                        </div>
+                                    </div>                               
                                 </div>
                             </div>
                         </blockquote>

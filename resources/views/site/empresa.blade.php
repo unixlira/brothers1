@@ -29,6 +29,8 @@
                 display: block;
             }
         </style>
+        <script src="//code-sa1.jivosite.com/widget/zhp7E8bDRU" async></script>
+
     </head>
 
     <body>
@@ -116,21 +118,21 @@
                 </div>
             </div>
         </section>
-        <section class="section-top-66 section-bottom-34" style="background-color:#ecf1f8; margin-bottom: -30px;">
+        <section class="section-top-50 section-bottom-34" style="background-color:#1a202c; margin-bottom: -30px;">
             <div class="container">
                 <div class="row" data-lightgallery="group">
                     <div class="col-md-4 mb-5"><a class="" data-lightgallery="item" href="{{ asset('images/loja1.jpeg') }}">
-                            <figure><img width="285" height="160" src="{{ asset('images/loja1.jpeg') }}" alt="" />
+                            <figure><img width="370" height="230" src="{{ asset('images/loja1.jpeg') }}" alt="" />
                             </figure>
                         </a>
                     </div>
                     <div class="col-md-4 mb-5 "><a class="" data-lightgallery="item" href="{{ asset('images/loja2.jpeg') }}">
-                            <figure><img width="285" height="160" src="{{ asset('images/loja2.jpeg') }}" alt="" />
+                            <figure><img width="370" height="230" src="{{ asset('images/loja2.jpeg') }}" alt="" />
                             </figure>
                         </a>
                     </div>
                     <div class="col-md-4 mb-5 "><a class="" data-lightgallery="item" href="{{ asset('images/loja3.jpeg') }}">
-                            <figure><img width="285" height="160" src="{{ asset('images/loja3.jpeg') }}" alt="" />
+                            <figure><img width="370" height="230" src="{{ asset('images/loja3.jpeg') }}" alt="" />
                             </figure>
                         </a>
                     </div>
@@ -141,24 +143,15 @@
         <section class="bg-white section-top-66 section-bottom-34" data-preset='{"title":"Content block 1","category":"content","reload":true,"id":"content-block-1"}'>
             <div class="container">
                 <div class="row justify-content-center grid-group-md text-xl-left">
-                    <div class="col-md-8 col-xl-6">
-                        <div class="inset-xl-right-20">
-                            <h1><span class="d-block font-accent big">Assine</span><span class="d-block offset-top-4 h3 text-light text-uppercase">nossa newsletter</span></h1>
-                            <form action="/" method="get">
-                                <div class="row">
-                                    <div class="col-md-9 mb-2">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
 
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <button class="btn btn-warning">Enviar</button>
-                                    </div>
-                                </div>
-                            </form>
-                         </div>
-                     </div>
+                     <div class="col-md-8 col-xl-6">
+                        <div class="shadow-drop-xl">
+                            <!-- Media Elements-->
+                            <div class="embed-responsive embed-custom-16by9">
+                                <iframe width="1280" height="720" src="https://www.youtube.com/embed/EkYpXrZ100o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-8 col-xl-6">
                         <div class="shadow-drop-xl">
                             <!-- Media Elements-->
@@ -172,15 +165,35 @@
         </section>
 
         <!-- newsletter-->
-        <section class="newsletter" style="background-image: url(website/img/temporario/footer/newsletter_br[1920x295].png);">
-            <div class="content">
-                <div class="image" style="background-image: url(website/img/temporario/home/newsletter[345x350].png)"></div>
-                <div class="form_content">
-
-
+        <section class="section parallax-container hero" data-parallax-img="{{ asset('images/newsletter.png')}}">
+              <div class="parallax-content section-66 context-dark">
+                <div class="container text-center">
+                  <div class="row justify-content-sm-center justify-content-sm-center">
+                    <div class="col-md-8 col-lg-7 col-xl-6">
+                      <h2 class="text-uppercase font-weight-bold">Newsletter</h2>
+                      <hr class="divider bg-red">
+                      <p>Fique por dentro das promoções e novidades que temos por aqui!</p>                      
+                      <form  method="post" action="{{route('newsletter')}}">
+                            @csrf
+                            <input type="hidden" name="tipo" value="empresa">
+                            <input type="hidden" id="mensagem" name="mensagem" value="{{$mensagem}}">
+                        <div class="form-group">
+                          <div class="input-group input-group-sm">
+                          <span class="input-group-prepend">
+                          <span class="input-group-text input-group-icon input-group-addon-inverse"><span class="novi-icon mdi mdi-email"></span></span></span>
+                            <input class="form-control" placeholder="E-Mail" type="email" name="email" required>
+                            <span class="input-group-append">
+                              <button class="btn btn-sm btn-primary" type="submit">Enviar</button>
+                            </span>
+                          </div>
+                        </div>
+                      </form>
+                      <div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </section>
+              </div>
+            </section>
 
 
         <!-- Page Footer-->

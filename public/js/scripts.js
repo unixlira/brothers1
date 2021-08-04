@@ -1018,15 +1018,11 @@ $('#myCarousel').on('slid', function (e) {
 
 $(document).ready(function(){
 
-    let message = '';
-
-    if(message != ''){
-        message = document.getElementById("mensagem");
+    let message = document.getElementById("mensagem");
     
-        if(message.value == 'enviada' ) {
-            alert('Mensagem Enviada!');
-            window.location.href = "https://smartveiculosmultimarcas.com.br/";
-        }
+    if(message.value == 'enviada' ) {
+        alert('Mensagem Enviada!');
+        window.location.href = "https://smartveiculosmultimarcas.com.br/";
     }
     
 });

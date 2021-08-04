@@ -29,6 +29,8 @@
                 display: block;
             }
         </style>
+        <script src="//code-sa1.jivosite.com/widget/zhp7E8bDRU" async></script>
+
     </head>
 
     <body>
@@ -112,37 +114,37 @@
                             @csrf
                             <input type="hidden" name="tipo" value="contato">
                             <input type="hidden" id="mensagem" name="mensagem" value="{{$mensagem}}">
-                            <div class="row">
+                            <div class="text-left">
                                 <div class="col-xl-12">
                                     <div class="form-group">
-                                        <label class="form-label form-label-outside" for="contact-us-name">Nome*</label>
-                                        <input class="form-control" id="contact-us-name" type="text" name="nome" style="background:#ecf1f8" placeholder="Digite seu nome">
+                                        <label for="contact-us-name">Nome*</label>
+                                        <input class="form-control" id="contact-us-name" type="text" name="nome" style="background:#ecf1f8" placeholder="Digite seu nome completo" required>
                                         <br>
                                     </div>
                                     <div class="form-group">
-                                        <label class="form-label form-label-outside" for="contact-us-email">Email*</label>
-                                        <input class="form-control" id="contact-us-email" type="email" name="email" style="background:#ecf1f8" placeholder="Email">
+                                        <label for="contact-us-email">Email*</label>
+                                        <input class="form-control" id="contact-us-email" type="email" name="email" style="background:#ecf1f8" placeholder="Email" required>
                                         <br>
                                     </div>
                                     <div class="form-group">
-                                        <label class="form-label form-label-outside" for="contact-us-email">Telefone*</label>
-                                        <input class="form-control" id="contact-us-telefone" type="text" name="telefone" style="background:#ecf1f8" placeholder="Telefone">
+                                        <label for="contact-us-phone">Telefone*</label>
+                                        <input class="form-control" id="contact-us-telefone" type="text" name="telefone" style="background:#ecf1f8" placeholder="Telefone" required>
                                         <br>
                                     </div>
                                     <div class="form-group">
-                                        <label class="form-label form-label-outside" for="contact-us-email">Cidade:</label>
+                                        <label for="contact-us-city">Cidade:</label>
                                         <input class="form-control" id="contact-us-cidade" type="text" name="cidade" style="background:#ecf1f8" placeholder="Cidade">
                                         <br>
                                     </div>
                                 </div>
                                 <div class="col-xl-12 offset-top-20">
                                     <div class="form-group">
-                                        <textarea class="form-control" id="contact-us-message" name="mensagem" style="background:#ecf1f8" placeholder="Deixe sua mensagem e retornaremos..."></textarea>
+                                        <textarea class="form-control" id="contact-us-message" name="mensagem" style="background:#ecf1f8" placeholder="Deixe sua mensagem e retornaremos..." required></textarea>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="group-sm text-center text-xl-left offset-top-30">
-                                <button class="btn btn-red" type="submit">Enviar</button>
+                                <div class="col offset-top-30">
+                                    <button class="btn btn-red btn-block" type="submit">Enviar</button>
+                                </div>
                             </div>
                         </form>
                     </div>

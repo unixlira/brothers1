@@ -56,6 +56,14 @@ class SendMail extends Mailable
                     'user' => $this->user
                 ]);
         }
+        if($this->user['tipo'] == 'empresa'){
+            return $this->from('vendas.websmartveiculos@gmail.com', 'Smart veículos')
+                ->view('email.template-empresa')
+                ->subject('Email cliente "Newsletter" site Smart Veiculos')
+                ->with([
+                    'user' => $this->user
+                ]);
+        }
 
     }
 }

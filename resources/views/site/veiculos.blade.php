@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,700italic">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+    <script src="//code-sa1.jivosite.com/widget/zhp7E8bDRU" async></script>
 </head>
 <body>
 <!-- IE panel-->
@@ -125,14 +126,23 @@
                             <div class="card-body text-left text-bold">
                                 <h6 class="card-title">{{ $node['marca'] . ' ' . $node['modelo'] . ' ' . substr($node['versao'], 0,  33) }}&nbsp; ...</h6>
                                 <hr style="background-color: #1a202c;margin: auto; border-color: #6c757d">
-                                <p class="container font-weight-bold" >
-                                    <cite class="text-normal row offset-1">
-                                        <i class="novi-icon fa fa-road mr-1 ml-2"> {{$node['quilometragem']}}</i>
-                                        <i class="novi-icon fa fa-cog mr-1"> {{$node['cambio']}}</i>
-                                        <i class="novi-icon fa fa-adjust mr-1"> {{$node['cor']}}</i>
-                                        <i class="novi-icon fa fa-calendar-check-o mr-1"> {{$node['anomodelo']}}</i>
-                                    </cite>
-                                </p>
+                                <div class="container  text-center">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <i class="novi-icon fa fa-road ">{{(strlen($node['quilometragem'])<= 3 ? '000'.$node['quilometragem'] : $node['quilometragem'] )}}</i>
+                                        </div>
+                                        <div class="col-sm">
+                                            <i class="novi-icon fa fa-cog">{{($node['cambio']=='Automático'?"Auto":$node['cambio'])}}</i>
+                                        </div>
+                                        <div class="col-sm">
+                                            <i class="novi-icon fa fa-adjust">{{$node['cor']}}</i>
+                                        </div>
+                                        <div class="col-sm">
+                                            <i class="novi-icon fa fa-calendar-check-o">{{$node['anomodelo']}}</i>
+                                        </div>
+
+                                    </div>
+                                </div>   
                             </div>
                         </div>
                     </div>

@@ -13,4 +13,5 @@ Route::get('/buscar/', 'App\Http\Controllers\SiteController@buscar')->name('busc
 Route::get('/veiculos', 'App\Http\Controllers\SiteController@estoque')->name('veiculos');
 Route::post('/contatoVeiculo', 'App\Http\Controllers\SiteController@contatoVeiculo')->name('contatoVeiculo');
 Route::post('/contatoAnalise', 'App\Http\Controllers\SiteController@contatoAnalise')->name('contatoAnalise');
+Route::post('/newsletter', 'App\Http\Controllers\SiteController@newsletter')->name('newsletter');
 Route::post('/contatoSite', 'App\Http\Controllers\SiteController@contatoSite')->name('contatoSite');

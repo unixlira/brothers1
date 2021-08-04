@@ -43794,25 +43794,22 @@ aside {
 .hoverLink > ul > li > a:hover {
     border-radius: 55px;
     background-color: #eb232c;
-    top: -10px;
-    padding: 10px;
-    margin-left:-10px;
-    margin-right:-12px;
+    padding: 13px;
+    margin-left:-20px;
+    margin-right:-8px;
 }
 
-/*.tagRed-outline {*/
-/*    border: 2px solid #eb232c;*/
-/*    border-radius: 55px;*/
-/*    top: -10px;*/
-/*    padding: 10px;*/
-/*    margin-left:-15px;*/
+.tagRed-outline {
+ border: 2px solid #eb232c;
+ border-radius: 55px;
+ padding: 10px;
+ margin-left:-15px;
 
-/*}*/
+}
 
-/* .tagRed {
+.tagRed {
     border-radius: 55px;
     background-color: #eb232c;
-    top: -10px;
     padding: 10px;
     margin-left:-15px;
-} */
+}
