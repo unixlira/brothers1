@@ -85,6 +85,31 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="container">
+                <form>
+                    <h5 class="text-black text-left">Localize seu Veículo</h5>
+                    <div class="row">
+                            <div class="col-sm-12 col-md-4 col-lg-5 mb-1">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-5 mb-1">
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-2 mb-1">
+                                <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                                </div>
+                            </div>
+                    </div>
+                </form>            
+        </div>
+
+    </section>
     <section class="sectionSlideCar1" style="background: #ecf1f8 url('{{ asset("images/sectionGrid.png") }}') ;background-repeat: no-repeat;background-size: 100% 100%;">
         <div class="container">
             <div class="sectionSearch ">

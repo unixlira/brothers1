@@ -97,7 +97,9 @@
                                 <h1 class="text-white font-weight-bold">COMPRAMOS O<br> SEU CARRO!</h1>
                                 <h4 class="text-white"><small>Quer saber quanto pagamos nele?</small></h4>
                                 <div class="d-block d-xl-inline-block">
-                                    <button class="btn btn-red element-fullwidth" type="button" style="max-width: 170px; min-width: 170px; min-height: 50px;"> EU QUERO  <a class="icon novi-icon icon-xxs icon-gray-outline icon-effect-1 fa fa-whatsapp" href="https://api.whatsapp.com/send?phone=5515997121257&text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Smart%20Ve%C3%ADculos%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank"></a></button>
+                                  <a class="btn btn-red" href="{{url('https://api.whatsapp.com/send?phone=5515997121257&text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Smart%20Ve%C3%ADculos%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.')}}" target="_blank">
+                                  EU QUERO <img src="{{ asset('images/whatsapp3-36x36.png') }}" style="margin-top: -2px;width:19px;">
+                                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -106,28 +108,18 @@
 
         </header>
         <!-- Compramos seu carro-->
-        <footer class="section-relative section-top-66 section-bottom-34 page-footer bg-red novi-background" data-preset='{"title":"Footer","category":"footer","reload":true,"id":"footer"}'>
+        <section class="section section-top-50  section-bottom-50 bg-red">
             <div class="container">
-                <div class="row justify-content-sm-center">
-                    <div class="col-md-6 col-xl-4">
-                        <div class="unit unit-sm flex-md-row text-md-center">
-                            <div class="unit-body text-justify text-white">
-                                <h1 class="font-weight-bold text-white">+ 300 Carros</h1>
-                                <p class="row text-center text-justify offset-md-top-24 text-white">Negociados todos os meses! Fale com a gente!</p>
-                                <div class="section-8 mt-3 parallax-container">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <h1 class="font-weight-bold text-white">+ 300 Carros</h1>
+                <h5 class="text-center font-weight-bold text-white">Negociados todos os meses! Fale com a gente!</h5>
             </div>
-        </footer>
+        </section>
         <!-- Sobre a Smart Veículos-->
-        <section class="bg-white section-top-66 section-bottom-34">
+        <section class="bg-white section-top-110 section-bottom-110">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <img src='https://smartveiculosmultimarcas.com.br/images/venda.jpg' width="570" height="380" alt="">
+                        <img class="img-fluid" src='https://smartveiculosmultimarcas.com.br/images/venda.jpg' style="width:500px;height:270px;" alt="Compramos seu carro">
                     </div>
                     <div class="col-sm-6 m-auto">
                         <p>

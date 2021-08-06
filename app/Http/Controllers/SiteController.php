@@ -116,6 +116,7 @@ class SiteController extends Controller
 
     public function contatoVeiculo(Request $request)
     {
+
         $user = [
             'tipo' => $request->tipo,
             'nome' => $request->nome,
