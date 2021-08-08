@@ -67,15 +67,15 @@
                                             <div class="rd-navbar-mobile-brand"><a href="/"><img width='218' height='35' src='{{ asset('images/logo_big.png') }}' alt='' /></a></div>
                                             <!-- RD Navbar Nav-->
                                             <ul class="rd-navbar-nav">
-                                                <li><a href="{{url('analise')}}"><span>Análise de Crédito</span></a>
+                                                <li><a href="{{url('analise')}}"><span class="text-bold text-uppercase">Análise de Crédito</span></a>
                                                 </li>
-                                                <li><a href="{{url('empresa')}}"><span>Empresa</span></a>
+                                                <li><a href="{{url('empresa')}}"><span class="text-bold text-uppercase">Empresa</span></a>
                                                 </li>
-                                                <li><a href="{{url('contato')}}"><span>Contato</span></a>
+                                                <li><a href="{{url('contato')}}"><span class="text-bold text-uppercase">Contato</span></a>
                                                 </li>
-                                                <li><a href="{{url('compras')}}"><span class="tagRed-outline">Venda seu Carro</span></a>
+                                                <li><a href="{{url('compras')}}" ><span class="tagRed-outline text-bold text-uppercase">Venda seu Carro</span></a>
                                                 </li>
-                                                <li><a href="{{url('veiculos')}}"><span class="tagRed">Nossos Veículos</span></a>
+                                                <li><a href="{{url('veiculos')}}"><span class="tagRed text-bold text-uppercase">Nossos Veículos</span></a>
                                                 </li>
                                                 <li><a href="{{url('https://api.whatsapp.com/send?phone=5515997121257&text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Smart%20Ve%C3%ADculos%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.')}}" target="_blank">
                                                         <h6 class="text-white text-bold"><img src="{{ asset('images/whatsapp3-36x36.png') }}"> 15 99712-1257</h6>
@@ -89,7 +89,7 @@
                         </div>
                     </nav>
                 </div>
-                <div class="section-254 parallax-container" data-parallax-img="images/background1.jpg">
+                <div class="section-155 parallax-container" style="background-position: center !important;" data-parallax-img="images/background1.jpg">
                     <div class="parallax-content container">
                         <h1 class=" text-white">Seja bem-vindo à Smart Veículos</h1>
                     </div>
@@ -100,7 +100,7 @@
         <section class="bg-white section-top-66 section-bottom-34">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 mb-5">
                         <h2>Conheça a maior loja de veículos do interior paulista</h2>
                     </div>
                     <div class="col-md-3"></div>
@@ -122,17 +122,17 @@
             <div class="container">
                 <div class="row" data-lightgallery="group">
                     <div class="col-md-4 mb-5"><a class="" data-lightgallery="item" href="{{ asset('images/loja1.jpeg') }}">
-                            <figure><img width="370" height="230" src="{{ asset('images/loja1.jpeg') }}" alt="" />
+                            <figure><img class="img-fluid" src="{{ asset('images/loja1.jpeg') }}" alt="" />
                             </figure>
                         </a>
                     </div>
                     <div class="col-md-4 mb-5 "><a class="" data-lightgallery="item" href="{{ asset('images/loja2.jpeg') }}">
-                            <figure><img width="370" height="230" src="{{ asset('images/loja2.jpeg') }}" alt="" />
+                            <figure><img class="img-fluid" src="{{ asset('images/loja2.jpeg') }}" alt="" />
                             </figure>
                         </a>
                     </div>
                     <div class="col-md-4 mb-5 "><a class="" data-lightgallery="item" href="{{ asset('images/loja3.jpeg') }}">
-                            <figure><img width="370" height="230" src="{{ asset('images/loja3.jpeg') }}" alt="" />
+                            <figure><img class="img-fluid" src="{{ asset('images/loja3.jpeg') }}" alt="" />
                             </figure>
                         </a>
                     </div>
@@ -143,19 +143,11 @@
         <section class="bg-white section-top-66 section-bottom-34" data-preset='{"title":"Content block 1","category":"content","reload":true,"id":"content-block-1"}'>
             <div class="container">
                 <div class="row justify-content-center grid-group-md text-xl-left">
-                     <div class="col-md-8 col-xl-6">
+                     <div class="col-md-12 col-xl-12">
                         <div class="shadow-drop-xl">
                             <!-- Media Elements-->
                             <div class="embed-responsive embed-custom-16by9">
                                 <iframe width="1280" height="720" src="https://www.youtube.com/embed/EkYpXrZ100o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-xl-6">
-                        <div class="shadow-drop-xl">
-                            <!-- Media Elements-->
-                            <div class="embed-responsive embed-custom-16by9">
-                                    <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/wxw2_KhvBRc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>

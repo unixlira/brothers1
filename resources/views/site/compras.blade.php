@@ -68,15 +68,15 @@
                                             <div class="rd-navbar-mobile-brand"><a href="/"><img width='218' height='35' src='{{ asset('images/logo_big.png') }}' alt=''/></a></div>
                                             <!-- RD Navbar Nav-->
                                             <ul class="rd-navbar-nav">
-                                                <li><a href="{{url('analise')}}"><span>Análise de Crédito</span></a>
+                                                <li><a href="{{url('analise')}}"><span class="text-bold text-uppercase">Análise de Crédito</span></a>
                                                 </li>
-                                                <li><a href="{{url('empresa')}}"><span>Empresa</span></a>
+                                                <li><a href="{{url('empresa')}}"><span class="text-bold text-uppercase">Empresa</span></a>
                                                 </li>
-                                                <li><a href="{{url('contato')}}"><span>Contato</span></a>
+                                                <li><a href="{{url('contato')}}"><span class="text-bold text-uppercase">Contato</span></a>
                                                 </li>
-                                                <li><a href="{{url('compras')}}" ><span class="tagRed-outline">Venda seu Carro</span></a>
+                                                <li><a href="{{url('compras')}}" ><span class="tagRed-outline text-bold text-uppercase">Venda seu Carro</span></a>
                                                 </li>
-                                                <li><a href="{{url('veiculos')}}"><span class="tagRed">Nossos Veículos</span></a>
+                                                <li><a href="{{url('veiculos')}}"><span class="tagRed text-bold text-uppercase">Nossos Veículos</span></a>
                                                 </li>
                                                 <li><a href="{{url('https://api.whatsapp.com/send?phone=5515997121257&text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Smart%20Ve%C3%ADculos%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.')}}" target="_blank">
                                                         <h6 class="text-white text-bold"><img src="{{ asset('images/whatsapp3-36x36.png') }}"> 15 99712-1257</h6>
@@ -90,7 +90,7 @@
                         </div>
                     </nav>
                 </div>
-                <div class="parallax-container" data-parallax-img="images/background1.jpg">
+                <div class="parallax-container" class="img-fluid" style="background-position: center !important;" data-parallax-img="images/background1.jpg">
                     <div class="parallax-content">
                         <div class="container section-155">
                             <div class="text-left text-white">
@@ -119,7 +119,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <img class="img-fluid" src='https://smartveiculosmultimarcas.com.br/images/venda.jpg' style="width:500px;height:270px;" alt="Compramos seu carro">
+                        <img class="img-fluid" src='https://smartveiculosmultimarcas.com.br/images/venda.jpg'  alt="Compramos seu carro">
                     </div>
                     <div class="col-sm-6 m-auto">
                         <p>
@@ -196,7 +196,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img class="d-none d-xl-inline-block" src="https://smartveiculosmultimarcas.com.br/images/venda2.jpg" width="570" height="380" alt="">
+                        <img class="img-fluid" src="https://smartveiculosmultimarcas.com.br/images/venda2.jpg" width="570" height="380" alt="Sm">
                     </div>
                 </div>
             </div>

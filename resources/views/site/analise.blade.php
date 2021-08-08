@@ -72,15 +72,15 @@
                                         <div class="rd-navbar-mobile-brand"><a href="/"><img width='218' height='35' src='{{ asset('images/logo_big.png') }}' alt=''/></a></div>
                                         <!-- RD Navbar Nav-->
                                         <ul class="rd-navbar-nav">
-                                            <li><a href="{{url('analise')}}"><span>Análise de Crédito</span></a>
+                                            <li><a href="{{url('analise')}}"><span class="text-bold text-uppercase">Análise de Crédito</span></a>
                                             </li>
-                                            <li><a href="{{url('empresa')}}"><span>Empresa</span></a>
+                                            <li><a href="{{url('empresa')}}"><span class="text-bold text-uppercase">Empresa</span></a>
                                             </li>
-                                            <li><a href="{{url('contato')}}"><span>Contato</span></a>
+                                            <li><a href="{{url('contato')}}"><span class="text-bold text-uppercase">Contato</span></a>
                                             </li>
-                                            <li><a href="{{url('compras')}}" ><span class="tagRed-outline">Venda seu Carro</span></a>
+                                            <li><a href="{{url('compras')}}" ><span class="tagRed-outline text-bold text-uppercase">Venda seu Carro</span></a>
                                             </li>
-                                            <li><a href="{{url('veiculos')}}"><span class="tagRed">Nossos Veículos</span></a>
+                                            <li><a href="{{url('veiculos')}}"><span class="tagRed text-bold text-uppercase">Nossos Veículos</span></a>
                                             </li>
                                             <li><a href="{{url('https://api.whatsapp.com/send?phone=5515997121257&text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Smart%20Ve%C3%ADculos%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.')}}" target="_blank">
                                                     <h6 class="text-white text-bold"><img src="{{ asset('images/whatsapp3-36x36.png') }}"> 15 99712-1257</h6>
@@ -94,7 +94,7 @@
                     </div>
                 </nav>
             </div>
-            <div class="section-254 parallax-container " data-parallax-img="{{ asset('images/venda.jpg') }}"></div>
+            <div class="section-98 parallax-container " style="background-position: center !important;" data-parallax-img="{{ asset('images/banner-analise.png') }}"></div>
         </header>
         <!-- Contact Us-->
         <section class="section-34" style="background-color:#ecf1f8">

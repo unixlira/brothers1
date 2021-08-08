@@ -66,15 +66,15 @@
                                         <div class="rd-navbar-mobile-brand"><a href="/"><img width='218' height='35' src='{{ asset('images/logo_big.png') }}' alt=''/></a></div>
                                         <!-- RD Navbar Nav-->
                                         <ul class="rd-navbar-nav">
-                                            <li><a href="{{url('analise')}}"><span>Análise de Crédito</span></a>
+                                            <li><a href="{{url('analise')}}"><span class="text-bold text-uppercase">Análise de Crédito</span></a>
                                             </li>
-                                            <li><a href="{{url('empresa')}}"><span>Empresa</span></a>
+                                            <li><a href="{{url('empresa')}}"><span class="text-bold text-uppercase">Empresa</span></a>
                                             </li>
-                                            <li><a href="{{url('contato')}}"><span>Contato</span></a>
+                                            <li><a href="{{url('contato')}}"><span class="text-bold text-uppercase">Contato</span></a>
                                             </li>
-                                            <li><a href="{{url('compras')}}" ><span class="tagRed-outline">Venda seu Carro</span></a>
+                                            <li><a href="{{url('compras')}}" ><span class="tagRed-outline text-bold text-uppercase">Venda seu Carro</span></a>
                                             </li>
-                                            <li><a href="{{url('veiculos')}}"><span class="tagRed">Nossos Veículos</span></a>
+                                            <li><a href="{{url('veiculos')}}"><span class="tagRed text-bold text-uppercase">Nossos Veículos</span></a>
                                             </li>
                                             <li><a href="{{url('https://api.whatsapp.com/send?phone=5515997121257&text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Smart%20Ve%C3%ADculos%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.')}}" target="_blank">
                                                     <h6 class="text-white text-bold"><img src="{{ asset('images/whatsapp3-36x36.png') }}"> 15 99712-1257</h6>
@@ -253,9 +253,9 @@
                         <br>
                         <div class="row" style="margin-top: -10px;">
                             <div class="col-lg-6 col-md-5 col-sm-4 ">
-                                <i class="novi-icon fa fa-road"></i><span> {{$newXml[1]['quilometragem']}}</span>
+                                <i class="novi-icon fa fa-road">Kilometragem</i><span> {{$newXml[1]['quilometragem']}}</span>
                             </div>
-                            <div class="col-lg-6 col-md-5 col-sm-4 text-bold mt-2">
+                            <div class="col-lg-6 col-md-5 col-sm-4 text-bold mt-3">
                                 <span style="background-color: #eb232c;color: white;padding: 10px;font-size: 13px">{{$busca[0]['preco']}}</span>
                             </div>
                         </div>
@@ -274,9 +274,9 @@
                         <br>
                         <div class="row" style="margin-top: -10px;">
                             <div class="col-lg-6 col-md-5 col-sm-4 ">
-                                <i class="novi-icon fa fa-road"></i><span> {{$newXml[5]['quilometragem']}}</span>
+                                <i class="novi-icon fa fa-road">Kilometragem</i><span> {{$newXml[5]['quilometragem']}}</span>
                             </div>
-                            <div class="col-lg-6 col-md-5 col-sm-4 text-bold mt-2">
+                            <div class="col-lg-6 col-md-5 col-sm-4 text-bold mt-3">
                                 <span style="background-color: #eb232c;color: white;padding: 10px;font-size: 13px">{{$newXml[5]['preco']}}</span>
                             </div>
                         </div>
@@ -295,9 +295,9 @@
                         <br>
                         <div class="row" style="margin-top: -10px;">
                             <div class="col-lg-6 col-md-5 col-sm-4 ">
-                                <i class="novi-icon fa fa-road"></i><span> {{$newXml[7]['quilometragem']}}</span>
+                                <i class="novi-icon fa fa-road">Kilometragem</i><span> {{$newXml[7]['quilometragem']}}</span>
                             </div>
-                            <div class="col-lg-6 col-md-5 col-sm-4  text-bold mt-2">
+                            <div class="col-lg-6 col-md-5 col-sm-4  text-bold mt-3">
                                 <span style="background-color: #eb232c;color: white;padding: 10px;font-size: 13px">{{$newXml[7]['preco']}}</span>
                             </div>
                         </div>
@@ -317,9 +317,9 @@
                             <br>
                             <div class="row" style="margin-top: -10px;">
                                 <div class="col-lg-6 col-md-5 col-sm-4 ">
-                                    <i class="novi-icon fa fa-road"></i><span> {{$newXml[11]['quilometragem']}}</span>
+                                    <i class="novi-icon fa fa-road">Kilometragem</i><span> {{$newXml[11]['quilometragem']}}</span>
                                 </div>
-                                <div class="col-lg-6 col-md-5 col-sm-4 text-bold mt-2">
+                                <div class="col-lg-6 col-md-5 col-sm-4 text-bold mt-3">
                                     <span style="background-color: #eb232c;color: white;padding: 10px;font-size: 13px">{{$newXml[11]['preco']}}</span>
                                 </div>
                             </div>
