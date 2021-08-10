@@ -1,36 +1,18 @@
 <DOCTYPE html>
     <html class="wow-animation" lang="en">
-
     <head>
         <title>Smart Veículos</title>
         <meta charset="utf-8">
         <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta name="keywords" content="intense web design multipurpose template">
+        <meta name="keywords" content="Smart Veículos">
         <meta name="date" content="Dec 26">
-        <link rel="icon" href="https://smartveiculosmultimarcas.com.br/images/144x144-logo-smart.png" type="image/x-icon">
+        <link rel="icon" href="{{ asset('images/144x144-logo-smart.png') }}" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,700italic">
-        <link rel="stylesheet" href="https://smartveiculosmultimarcas.com.br/css/style.css">
-        <style>
-            .ie-panel {
-                display: none;
-                background: #212121;
-                padding: 10px 0;
-                box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
-                clear: both;
-                text-align: center;
-                position: relative;
-                z-index: 1;
-            }
-
-            html.ie-10 .ie-panel,
-            html.lt-ie-10 .ie-panel {
-                display: block;
-            }
-        </style>
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
         <script src="//code-sa1.jivosite.com/widget/zhp7E8bDRU" async></script>
-
     </head>
 
     <body>
@@ -59,13 +41,13 @@
                                     <!-- RD Navbar Toggle-->
                                     <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap"><span></span></button>
                                     <!--Navbar Brand-->
-                                    <div class="rd-navbar-brand"><a href="/"><img width='135' height='55' src='{{ asset('images/logo_big.png') }}' alt='Smart Veículos'/></a></div>
+                                    <div class="rd-navbar-brand "><a href="/"><img src='{{ asset('images/logo_big2.png') }}' alt='Smart Veículos'/></a></div>
                                 </div>
                                 <div class="rd-navbar-menu-wrap">
                                     <div class="rd-navbar-nav-wrap">
                                         <div class="rd-navbar-mobile-scroll hoverLink">
                                             <!--Navbar Brand Mobile-->
-                                            <div class="rd-navbar-mobile-brand"><a href="/"><img width='218' height='35' src='{{ asset('images/logo_big.png') }}' alt=''/></a></div>
+                                            <div class="rd-navbar-mobile-brand"><a href="/"><img width='90' height='35' src='{{ asset('images/logo_big.png') }}' alt='' /></a></div>
                                             <!-- RD Navbar Nav-->
                                             <ul class="rd-navbar-nav">
                                                 <li><a href="{{url('analise')}}"><span class="text-bold text-uppercase">Análise de Crédito</span></a>

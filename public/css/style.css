@@ -32754,7 +32754,8 @@ fieldset[disabled] .swiper-slide-caption .pagination-classic > li + li:not(:last
 }
 
 .rd-navbar-floated.rd-navbar-fixed .rd-navbar-brand {
-    display: none;
+    display: block;
+    text-align:center;
 }
 
 .rd-navbar-floated.rd-navbar-fixed .rd-navbar-search {
@@ -43718,8 +43719,8 @@ aside {
     .tagRed {
         border-radius: none;
         background-color: none;
-
     }
+
 
 }
 
@@ -43847,6 +43848,20 @@ aside {
     margin-top: -60px !important;
     background-color: white;
     border-radius: 10px 10px 10px 10px ;
-    padding: 30px;
+    padding: 20px 35px 0px 35px;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.2));
+
 }
 
+
+
+@media (max-width: 499px) {
+    .rd-navbar-floated.rd-navbar-fixed .rd-navbar-brand {
+        display: block;
+        text-align:center;
+        margin-top:-47px;
+    }
+    .form-buscar {
+        width:300px;
+    }
+}

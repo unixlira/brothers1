@@ -8,10 +8,10 @@
 <p>CPF: {{$user['cpf']}}</p>
 <p>NOME DA MÃE: {{$user['mae']}}</p>
 <p>ENDEREÇO: {{$user['endereco']}}</p>
+<p>ESTADO: {{$user['estado']}}</p>
 <p>CIDADE: {{$user['cidade']}}</p>
 <p>TELEFONE: {{$user['telefone']}}</p>
-<p>CELULAR1: {{$user['celular1']}}</p>
-<p>CELULAR2: {{$user['celular2']}}</p>
+<p>CELULAR: {{$user['celular']}}</p>
 <p>NOME DA EMPRESA: {{$user['empresa']}}</p>
 <p>CARGO: {{$user['cargo']}}</p>
 <p>RENDA: {{$user['renda']}}</p>
